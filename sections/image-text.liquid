@@ -1,0 +1,205 @@
+<style>
+  .mechanical-sec {
+      padding: 40px 0;
+  }
+
+  .mechanical-container {
+      max-width: 1340px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 50px;
+  }
+
+  .mechanical-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+      padding-top: 20px;
+  }
+
+  .mechanical-image {
+      position: relative;
+      width: 50%;
+      overflow: hidden;
+      border-radius: 50px;
+      padding-bottom: 500px;
+      height: 0;
+  }
+
+  .mch-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      object-fit: cover;
+  }
+
+  .mechanical-text {
+      width: 48%;
+      margin-left: 50px;
+  }
+
+  .heading-mechanical {
+    font-size: 40px;
+    color: #454545;
+    padding-bottom: 17px;
+    letter-spacing: 0;
+    margin: 0;
+  }
+
+  .mechanical-voxing-right-text p {
+      font-size: 22px;
+      color: #454545;
+      max-width: 90%;
+      letter-spacing: 0;
+      line-height: 30px;
+  }
+
+  .second-down-heading {
+      color: #454545;
+      padding-bottom: 17px;
+      font-size: 28px;
+      letter-spacing: 0;
+  }
+
+  .mechanical-down-text ul {
+      padding-left: 28px;
+  }
+
+  .mechanical-down-text ul li {
+      font-size: 21px;
+      color: #454545;
+      letter-spacing: 0;
+      line-height: 26px;
+  }
+
+  @media (max-width: 767px) {
+      .mechanical-flex {
+          flex-direction: column;
+          padding-top: 0;
+      }
+
+      .mechanical-image {
+          width: 100%;
+          padding-bottom: 60%;
+          border-radius: 20px;
+          margin-bottom: 20px;
+      }
+
+      .mechanical-text {
+          width: 100%;
+          margin-left: 0;
+      }
+
+      .mechanical-voxing-right-text p {
+          font-size: 18px;
+          line-height: 28px;
+      }
+
+      .second-down-heading {
+          font-size: 24px;
+      }
+
+      .mechanical-down-text ul li {
+          font-size: 18px;
+          line-height: 24px;
+      }
+
+      .heading-mechanical {
+          font-size: 32px;
+      }
+
+      .mechanical-container {
+          padding: 0 20px;
+      }
+  }
+</style>
+<section class="mechanical-sec">
+  <div class="mechanical-container">
+    <div class="mechanical-flex">
+      <div class="mechanical-image">
+        {% if section.settings.image_text !=blank %}
+          <img src="{{ section.settings.image_text | img_url:'master' }}" alt="" class="mch-img">
+        {% endif %}
+      </div>
+      <div class="mechanical-text">
+        <div class="mechanical-voxing-right-text">
+          <h3 class="heading-mechanical">{{ section.settings['image-text-heading'] }}</h3>
+          <p>{{ section.settings['cst-text-description'] }}</p>
+        </div>
+        <div class="mechanical-down-text">
+          <h2 class="second-down-heading">{{ section.settings['botom-descp-hdng'] }}</h2>
+          <ul>
+            <li>{{ section.settings['listed-item-1'] }}</li>
+            <li>{{ section.settings['listed-item-2'] }}</li>
+            <li>{{ section.settings['listed-item-3'] }}</li>
+            <li>{{ section.settings['listed-item-4'] }}</li>
+            <li>{{ section.settings['listed-item-5'] }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Image Text",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_text",
+      "label": "Image Mechanical"
+    },
+    {
+      "type": "text",
+      "id": "image-text-heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "cst-text-description",
+      "label": "Main Description"
+    },
+    {
+      "type": "text",
+      "id": "botom-descp-hdng",
+      "label": "List Heading"
+    },
+    {
+      "type": "text",
+      "id": "listed-item-1",
+      "label": "Listed Item 1"
+    },
+    {
+      "type": "text",
+      "id": "listed-item-2",
+      "label": "Listed Item 2"
+    },
+    {
+      "type": "text",
+      "id": "listed-item-3",
+      "label": "Listed Item 3"
+    },
+    {
+      "type": "text",
+      "id": "listed-item-4",
+      "label": "Listed Item 4"
+    },
+    {
+      "type": "text",
+      "id": "listed-item-5",
+      "label": "Listed Item 5"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Right Image Text"
+    }
+  ]
+}
+{% endschema %}

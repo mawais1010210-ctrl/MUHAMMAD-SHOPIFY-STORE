@@ -1,0 +1,233 @@
+<style>
+      .hover-images-sec {
+        padding: 50px 0;
+        overflow: hidden;
+      }
+
+      .hover-images-container {
+        padding: 0 50px;
+      }
+
+      .hover-images-top-heading {
+        width: 803px;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 1;
+        padding-bottom: 100px;
+      }
+
+      .hover-smart-comfort-heading {
+        color: rgba(69, 69, 69, 1);
+        font-size: 40px;
+        padding-bottom: 24px;
+      }
+
+      .hover-text-para {
+        font-size: 20px;
+        line-height: 27px;
+        color: rgba(69, 69, 69, 1);
+      }
+
+      .hover-images {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .hover-images .ih-base {
+        display: block;
+        width: 100%;
+        margin: auto;
+      }
+
+
+      .ih-hot {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      .ih-hot.tl {
+        top: 0;
+        left: 0;
+      }
+
+      .ih-hot.tr {
+        top: 0;
+        right: 0;
+      }
+
+      .ih-hot.bl {
+        bottom: 0;
+        left: 0;
+      }
+
+      .ih-hot.br {
+        bottom: 0;
+        right: 0;
+      }
+
+
+      .ih-overlay-wrap {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.1s ease;
+        z-index: 5;
+        will-change: opacity;
+      }
+
+      .ih-overlay-hover-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .overlay-hover-text {
+        position: absolute;
+        color: rgba(69, 69, 69, 1);
+        font-size: 16px;
+        line-height: 1.4;
+        max-width: 293px;
+        opacity: 0;
+        transition: opacity .25s ease;
+        visibility: hidden;
+      }
+
+      .img1 .overlay-hover-text {
+      top: 0%;
+      left: -26%;
+      text-align: right;
+  }
+
+      .img2 .overlay-hover-text {
+      top: 0%;
+      right: -40%;
+      text-align: left;
+  }
+
+      .img3 .overlay-hover-text {
+      bottom: 45%;
+      left: -37%;
+      text-align: right;
+  }
+
+      .img4 .overlay-hover-text {
+      bottom: 16%;
+      right: -38%;
+      text-align: left;
+  }
+
+
+      .hover-images:hover .ih-overlay-wrap {
+        z-index: 5;
+      }
+
+      .hover-images .ih-hot.tl:hover ~ .img1,
+      .hover-images .ih-hot.tr:hover ~ .img2,
+      .hover-images .ih-hot.bl:hover ~ .img3,
+      .hover-images .ih-hot.br:hover ~ .img4 {
+        opacity: 1;
+        z-index: 20;
+        pointer-events: auto;
+        transition: opacity 0.2s ease-in-out;
+      }
+
+      .hover-images .ih-hot.tl:hover ~ .img1 .overlay-hover-text,
+      .hover-images .ih-hot.tr:hover ~ .img2 .overlay-hover-text,
+      .hover-images .ih-hot.bl:hover ~ .img3 .overlay-hover-text,
+      .hover-images .ih-hot.br:hover ~ .img4 .overlay-hover-text {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        transition-delay: 0s;
+      }
+</style>
+<section class="hover-images-sec">
+  <div class="hover-images-container">
+    <div class="hover-images-top-heading">
+      <h2 class="hover-smart-comfort-heading">{{ section.settings['top-hover_heading'] }}</h2>
+      <span class="hover-text-para">
+        {{ section.settings['top-hover_para'] }}
+      </span>
+    </div>
+
+    <div class="hover-images">
+      {% if section.settings['top-main_image'] != blank %}
+        <img class="ih-base" src="{{ section.settings.top-main_image | img_url: 'master' }}" alt="">
+      {% endif %}
+
+      <span class="ih-hot tl"></span>
+      <span class="ih-hot tr"></span>
+      <span class="ih-hot bl"></span>
+      <span class="ih-hot br"></span>
+
+      {% for block in section.blocks %}
+        <div class="ih-overlay-wrap img{{ forloop.index }}">
+          {% if block.settings.four_image_hover != blank %}
+            <img class="ih-overlay-hover-image" src="{{ block.settings.four_image_hover | img_url: 'master' }}" alt="">
+          {% endif %}
+          <span class="overlay-hover-text">
+            {{ block.settings.image_text }}
+          </span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Image Hover Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "top-hover_heading",
+      "label": "Top Heading",
+      "default": "Smart Comfort"
+    },
+    {
+      "type": "textarea",
+      "id": "top-hover_para",
+      "label": "Top Paragraph",
+    },
+    {
+      "type": "image_picker",
+      "id": "top-main_image",
+      "label": "Main Background Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "hover_image_block",
+      "name": "Hover Image Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "four_image_hover",
+          "label": "Hover Image"
+        },
+        {
+          "type": "text",
+          "id": "image_text",
+          "label": "Hover Image Text",
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Hover Section",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
+

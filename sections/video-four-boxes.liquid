@@ -1,0 +1,338 @@
+<style>
+    .four-images-video-sec {
+        padding: 40px 0;
+    }
+
+    .four-images-video-container {
+        max-width: 1346px;
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+
+    .four-img-vid-top-heading {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+  .main-heading-h2 {
+      font-size: 40px;
+      color: #454545;
+      line-height: 1.2;
+      padding-bottom: 5px;
+      width: 50%;
+      font-weight: 600;
+      margin: 0 auto;
+  }
+
+    .images-video-text-para {
+        font-size: 19px;
+        letter-spacing: 0;
+        color: #454545;
+        line-height: 20px;
+        width: 91%;
+        display: block;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .four-images-video-flex {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    .video-image-left {
+        width: 41.5%;
+    }
+
+    .video-images-right {
+        width: 57.5%;
+    }
+
+    .position-video-image-div {
+        position: relative;
+        border-radius: 20px;
+        min-height: 599px;
+        overflow: hidden;
+    }
+
+    .four-img-flx {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 13px;
+    }
+
+    .images-text-div {
+        width: 49.1%;
+        padding: 32px;
+        border-radius: 24px;
+        min-height: 293px;
+    }
+
+    .img-main-images {
+        width: 100%;
+        max-width: 48px;
+        height: 48px;
+        object-fit: cover;
+    }
+
+    .images-title {
+        font-size: 20px;
+        color: #454545;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .images-content-descp p {
+        font-size: 16px;
+        color: #454545;
+        line-height: 1.4;
+        letter-spacing: 0;
+    }
+
+    .video-image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .images-text-div.img1 {
+        background: #f9f7f2;
+    }
+
+    .images-text-div.img2 {
+        background: #e4f0e1;
+    }
+
+    .images-text-div.img3 {
+        background: #f1fbcc;
+    }
+
+    .images-text-div.img4 {
+        background: #dbe7e7;
+    }
+
+    .play-pause-btn {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+        transition: opacity 0.3s ease;
+    }
+
+    .play-pause-btn img {
+        width: 45px;
+        height: 45px;
+    }
+
+    @media (max-width: 767px) {
+        .four-images-video-container {
+            padding: 0 20px;
+        }
+
+        .four-images-video-flex {
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .video-image-left,
+        .video-images-right {
+            width: 100%;
+        }
+
+        .position-video-image-div {
+            min-height: 300px;
+        }
+
+        .play-pause-btn {
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .play-pause-btn img {
+            width: 38px;
+            height: 38px;
+        }
+
+        .img-main-images {
+            max-width: 32px;
+            height: 32px;
+        }
+
+        .images-text-div {
+            width: 49%;
+            min-height: auto;
+            padding: 20px;
+        }
+
+        .main-heading-h2 {
+          font-size: 23px;
+          width: 100%;
+        }
+
+        .images-video-text-para {
+            font-size: 15px;
+            width: 100%;
+        }
+
+        .four-img-vid-top-heading {
+            padding-bottom: 30px;
+        }
+
+        .images-title {
+            font-size: 20px;
+            line-height: normal;
+        }
+
+        .images-content-descp p {
+            font-size: 16px;
+        }
+    }
+</style>
+
+<section class="four-images-video-sec">
+  <div class="four-images-video-container">
+    <div class="four-img-vid-top-heading">
+      <h2 class="main-heading-h2">
+        {{ section.settings['main-heading_hdg'] }}
+      </h2>
+      <span class="images-video-text-para">{{ section.settings['main-top_para'] }}</span>
+    </div>
+
+    <div class="four-images-video-flex">
+      <div class="video-image-left">
+        <div class="position-video-image-div">
+          {% if section.settings['video-image_file'] != blank %}
+            <video id="mainVideo" autoplay muted loop playsinline class="video-image">
+              <source src="{{ section.settings['video-image_file'] }}" type="video/mp4">
+            </video>
+          {% endif %}
+
+          <button id="toggleBtn" class="play-pause-btn">
+            {% if section.settings['pause-icon_image'] != blank and section.settings['play-icon_image'] != blank %}
+              <img
+                id="toggleIcon"
+                src="{{ section.settings.pause-icon_image | img_url: 'master' }}"
+                data-pause="{{ section.settings.pause-icon_image | img_url: 'master' }}"
+                data-play="{{ section.settings.play-icon_image | img_url: 'master' }}"
+                alt="Play Pause Icon"
+              >
+            {% endif %}
+          </button>
+        </div>
+      </div>
+
+      <div class="video-images-right">
+        <div class="four-img-flx">
+          {% for block in section.blocks %}
+            <div class="images-text-div img{{ forloop.index }}">
+              <div class="images-main">
+                {% if block.settings['img-four_images'] != blank %}
+                  <img class="img-main-images" src="{{ block.settings['img-four_images'] | img_url: 'master' }}" alt="">
+                {% endif %}
+              </div>
+              <h4 class="images-title">{{ block.settings['box-image_heading'] }}</h4>
+              <div class="images-content-descp">
+                <p>{{ block.settings['box-image_para'] }}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const video = document.getElementById('mainVideo');
+  const toggleBtn = document.getElementById('toggleBtn');
+  const toggleIcon = document.getElementById('toggleIcon');
+
+  if (video && toggleBtn && toggleIcon) {
+    const pauseIcon = toggleIcon.getAttribute('data-pause');
+    const playIcon = toggleIcon.getAttribute('data-play');
+
+    toggleBtn.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        toggleIcon.src = pauseIcon; // show pause icon
+      } else {
+        video.pause();
+        toggleIcon.src = playIcon; // show play icon
+      }
+    });
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Four Images Video",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main-heading_hdg",
+      "label": "Main Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "main-top_para",
+      "label": "Top Description"
+    },
+    {
+      "type": "text",
+      "id": "video-image_file",
+      "label": "Video File (MP4 URL)"
+    },
+    {
+      "type": "image_picker",
+      "id": "pause-icon_image",
+      "label": "Pause Icon"
+    },
+    {
+      "type": "image_picker",
+      "id": "play-icon_image",
+      "label": "Play Icon"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_with_text",
+      "name": "Image Box",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img-four_images",
+          "label": "Box Image"
+        },
+        {
+          "type": "text",
+          "id": "box-image_heading",
+          "label": "Box Title"
+        },
+        {
+          "type": "textarea",
+          "id": "box-image_para",
+          "label": "Box Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Four Images Video",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,613 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+>
+
+<style>
+    .go-lime-banner-sec {
+        padding-bottom: 20px;
+    }
+
+    .go-lime-banner-inner {
+        position: relative;
+    }
+
+    .banner-images {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        position: absolute;
+    }
+
+    .desktop-banner-image {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        object-position: right bottom;
+    }
+
+    .mobile-banner-image {
+        display: none;
+    }
+
+    .banner-position {
+        position: relative;
+        padding: 110px 40px 0;
+        width: 100%;
+    }
+
+    .banner-max-width {
+        max-width: 1437px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 12px;
+    }
+
+    .banner-main-content {
+        max-width: 690px;
+    }
+
+    .top-banner-breadcrumbs-flex {
+        margin: 1rem 0;
+    }
+
+    .breadcrumb {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        gap: 8px;
+        color: #ccc;
+    }
+
+    .breadcrumb a {
+        font-weight: 600;
+        text-decoration: none;
+        color: #666;
+        font-size: 18px;
+    }
+
+    .breadcrumb-back .icon {
+        margin-right: 4px;
+        font-size: 14px;
+        color: #666;
+    }
+
+    .breadcrumb-back:hover .icon {
+        color: #fff;
+    }
+
+    .breadcrumb-arrow i {
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    .breadcrumb-separator {
+        margin: 0 10px;
+        color: #666;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .breadcrumbs-text {
+        font-size: 17px;
+        cursor: pointer;
+        color: #666;
+        font-weight: 700;
+    }
+
+    .breadcrumb-arrow {
+        margin: 0 10px;
+        color: #666;
+    }
+
+    .breadcrumb-current {
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .banner-main-heading {
+        font-size: 56px;
+        color: #fff;
+        padding: 20px 0 10px;
+        line-height: 56px;
+        letter-spacing: 0;
+    }
+
+    .banner-text-description {
+        color: white;
+        font-size: 20px;
+        margin: 0;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+
+    .banner-buttons {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .buy-btn {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        background: #085A54;
+        display: flex;
+        width: fit-content;
+        white-space: nowrap;
+        padding: 0 26px;
+        border-radius: 50px;
+        align-items: center;
+        gap: 17px;
+        letter-spacing: normal;
+        height: 52px;
+        transition: 0.8s all ease-in-out;
+        cursor: pointer;
+    }
+
+    .buy-btn i {
+        font-size: 14px;
+    }
+
+    .expert-button {
+        text-decoration: none;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        letter-spacing: 0;
+        line-height: normal;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .expert-button i {
+        font-size: 14px;
+    }
+
+    .banner-botton-image {
+        position: relative;
+        height: 420px;
+        width: 68%;
+        margin-top: 20px;
+    }
+
+    .btm-image-for-desktop {
+    display: flex;
+    width: fit-content;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    bottom: 105px;
+    right: 20px;
+    z-index: 2;
+    }
+
+    .ups_box.ups_box_1 {
+        padding-right: 32px;
+        border-right: 1px solid #d9d9d9;
+    }
+
+    .ups-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .btm_bnr_icon {
+    position: relative;
+    height: 37.5px;
+    width: 72px;
+}
+    .btm_icnn {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .btm_bnr_text {
+        display: block;
+        width: fit-content;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: normal;
+        text-decoration: none;
+        cursor: pointer;
+        color: hsl(86, 86%, 40%);
+    }
+    .box_1 {
+    gap: 20px;
+    }
+    .box_2,
+    .box_3 {
+        padding: 0 10px;
+        border-right: 1px solid #D9D9D9;
+        height: 41px;
+    }
+
+    .ups_text {
+        font-size: 14px;
+        line-height: normal;
+        color: #454545;
+    }
+
+    .btm-image-for-mobile {
+        display: none;
+    }
+
+    .bnr-btm-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        border: 0;
+        object-fit: contain;
+        object-position: left;
+    }
+
+    @media (max-width: 767px) {
+        .breadcrumb-back .icon i {
+            font-size: 12px;
+        }
+
+        .breadcrumb-arrow i {
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        .banner-max-width {
+            padding: 12px;
+        }
+
+        .banner-main-heading {
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        .banner-text-description {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .buy-btn {
+            font-size: 16px;
+            padding: 13px 26px;
+            font-weight: 600;
+        }
+
+        .banner-buttons {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .expert-button {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .breadcrumbs-text {
+            font-size: 16px;
+        }
+
+        .breadcrumb a {
+            font-size: 16px;
+        }
+
+        .banner-position {
+            padding: 120px 15px 0;
+        }
+
+        .top-banner-breadcrumbs-flex {
+            margin: 0;
+        }
+
+        .banner-main-content {
+            max-width: 600px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .breadcrumb-current {
+            font-size: 16px;
+        }
+
+        .btm-image-for-mobile {
+            display: block;
+        }
+
+        .btm-image-for-desktop {
+            display: none;
+        }
+
+        .btm-image-carousel {
+            display: block;
+            padding: 20px;
+        }
+
+        .btm-image-carousel .ups-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .btm-image-carousel .btm_bnr_icon {
+            width: 60px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .btm-image-carousel .btm_icnn {
+            width: 100%;
+            height: auto;
+        }
+
+        .desktop-banner-image {
+            display: none;
+        }
+
+        .breadcrumb {
+            justify-content: center;
+        }
+
+        .mobile-banner-image {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            object-position: bottom center;
+            -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+            mask-image: linear-gradient(to bottom, black 80%, transparent 70%);
+        }
+
+        .banner-botton-image {
+            width: 283px;
+            height: 250px;
+            margin: 0 auto;
+        }
+
+        .bnr-btm-img {
+            object-position: center;
+            padding: 0 !important;
+        }
+        .botton-banner-content {
+            bottom: 20px;
+        }
+    }
+</style>
+
+<section class="go-lime-banner-sec">
+  <div class="go-lime-banner-inner">
+    <div class="banner-images">
+      {% if section.settings['banner-desktop_image'] != blank %}
+        <img src="{{ section.settings.banner-desktop_image | img_url:'master' }}" alt="" class="desktop-banner-image">
+      {% endif %}
+      {% if section.settings['banner-mobile_image'] != blank %}
+        <img src="{{ section.settings.banner-mobile_image | img_url:'master' }}" alt="" class="mobile-banner-image">
+      {% endif %}
+    </div>
+    <div class="banner-position">
+      <div class="banner-max-width">
+        <div class="banner-main-content">
+          <div class="top-banner-breadcrumbs-flex">
+            <nav class="breadcrumb">
+              <a href="#" class="breadcrumb-back">
+                <span class="breadcrumbs-icon"><i class="fa-solid fa-chevron-left"></i></span>
+                <span class="breadcrumbs-text">{{ section.settings.go_backtxt }}</span>
+              </a>
+              <span class="breadcrumb-separator">|</span>
+              <a href="#" class="breadcrumb-link">{{ section.settings.store_text }}</a>
+              <span class="breadcrumb-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+              <span class="breadcrumb-current">{{ section.settings.solar_text }}</span>
+            </nav>
+          </div>
+
+          <h1 class="banner-main-heading">{{ section.settings.main_heading }}</h1>
+          <div class="banner-text-description">{{ section.settings.main_para }}</div>
+
+          <div class="banner-buttons">
+            <a href="#" class="buy-btn">
+              <span>{{ section.settings['buynow-btn_text'] }}</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+            <a href="#" class="expert-button">
+              <span class="c_expert_textt">{{ section.settings['speaks-expert_text'] }}</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+
+          <div class="botton-banner-content">
+            <div class="banner-botton-image">
+              {% if section.settings.maxwidth_image != blank %}
+                <img src="{{ section.settings.maxwidth_image | img_url:'master' }}" alt="" class="bnr-btm-img">
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="btm-image-for-desktop">
+      {% for block in section.blocks %}
+        <div class="ups-box box_{{ forloop.index }}">
+          <div class="btm_bnr_icon btm_bnr_icon_{{ forloop.index }}">
+            {% if block.settings.icon_image != blank %}
+              <img src="{{ block.settings.icon_image | image_url }}" alt="" class="btm_icnn">
+            {% endif %}
+          </div>
+          {% if block.settings.link != blank %}
+            <a href="#" class="btm_bnr_text">{{ block.settings.text }}</a>
+          {% else %}
+            <span class="ups_text ups_text_{{ forloop.index }}">{{ block.settings.text }}</span>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="btm-image-for-mobile">
+    <div class="btm-image-carousel owl-carousel owl-theme">
+      {% for block in section.blocks %}
+        <div class="ups-box box_{{ forloop.index }}">
+          <div class="btm_bnr_icon btm_bnr_icon_{{ forloop.index }}">
+            {% if block.settings.icon_image != blank %}
+              <img src="{{ block.settings.icon_image | image_url }}" alt="" class="btm_icnn">
+            {% endif %}
+          </div>
+          {% if block.settings.link != blank %}
+            <a href="#" class="btm_bnr_text">{{ block.settings.text }}</a>
+          {% else %}
+            <span class="ups_text ups_text_{{ forloop.index }}">{{ block.settings.text }}</span>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.btm-image-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: false,
+      items: 2,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Go Lime Banner Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner-desktop_image",
+      "label": "Desktop Banner Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "banner-mobile_image",
+      "label": "Mobile Banner Image"
+    },
+    {
+      "type": "text",
+      "id": "go_backtxt",
+      "label": "Breadcrumb - Go Back Text"
+    },
+    {
+      "type": "text",
+      "id": "store_text",
+      "label": "Breadcrumb - Store Text"
+    },
+    {
+      "type": "text",
+      "id": "solar_text",
+      "label": "Breadcrumb - Current Page Text"
+    },
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "main_para",
+      "label": "Main Paragraph"
+    },
+    {
+      "type": "text",
+      "id": "buynow-btn_text",
+      "label": "Buy Now Button Text"
+    },
+    {
+      "type": "text",
+      "id": "buynow-btn_link",
+      "label": "Buy Now Button Link"
+    },
+    {
+      "type": "text",
+      "id": "speaks-expert_text",
+      "label": "Speak to Expert Button Text"
+    },
+    {
+      "type": "url",
+      "id": "speaks-expert_link",
+      "label": "Speak to Expert Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "maxwidth_image",
+      "label": "Bottom Banner Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon_block",
+      "name": "Icon Box",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon Image"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Icon Text"
+        },
+        {
+          "type": "text",
+          "id": "link",
+          "label": "Optional Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Go Lime Banner",
+      "category": "Banner"
+    }
+  ]
+}
+{% endschema %}

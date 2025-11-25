@@ -1,0 +1,196 @@
+<style>
+  .water-heating-sec {
+      padding: 40px 0;
+  }
+
+  .water-heating-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+  }
+
+  .water-heating-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+      padding-top: 20px;
+  }
+
+  .left-text {
+      width: 48%;
+  }
+
+  .right-image {
+      width: 50%;
+      position: relative;
+      height: 0;
+      padding-bottom: 500px;
+      overflow: hidden;
+      border-radius: 20px;
+  }
+
+  .water-heater-image {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      object-fit: cover;
+  }
+
+  .lrft-side-content {
+      padding-bottom: 30px;
+  }
+
+  .water-heading {
+      color: #454545;
+      font-size: 40px;
+      letter-spacing: 0;
+      padding-bottom: 17px;
+  }
+
+  .lrft-side-content p {
+      font-size: 21px;
+      color: #454545;
+      letter-spacing: 0;
+      max-width: 90%;
+      line-height: 30px;
+  }
+
+  .title-down-text {
+      padding-top: 20px;
+  }
+
+  .down-heading {
+      color: #454545;
+      padding-bottom: 17px;
+      font-size: 28px;
+      letter-spacing: 0;
+  }
+
+  .title-down-text ul {
+      padding-left: 28px;
+  }
+
+  .title-down-text ul li {
+      font-size: 20px;
+      color: #454545;
+      letter-spacing: 0;
+      line-height: 26px;
+  }
+
+  @media screen and (max-width: 767px) {
+      .water-heating-flex {
+          flex-direction: column;
+          padding-top: 0;
+          padding-bottom: 0;
+          margin-bottom: 0;
+      }
+
+      .left-text,
+      .right-image {
+          width: 100%;
+      }
+
+      .right-image {
+          padding-bottom: 250px;
+      }
+
+      .water-heating-container {
+          padding: 0 20px;
+      }
+
+      .water-heading {
+          font-size: 32px;
+      }
+
+      .lrft-side-content p {
+          font-size: 18px;
+          line-height: 26px;
+      }
+
+      .down-heading {
+          font-size: 24px;
+      }
+
+      .title-down-text ul li {
+          font-size: 18px;
+      }
+  }
+</style>
+<section class="water-heating-sec">
+  <div class="water-heating-container">
+    <div class="water-heating-flex">
+      <div class="left-text">
+        <div class="lrft-side-content">
+          <h3 class="water-heading">{{ section.settings.image2_text2 }}</h3>
+          <p>{{ section.settings.text2_tst }}</p>
+        </div>
+
+        <div class="title-down-text">
+          <h2 class="down-heading">{{ section.settings.para2_downheading }}</h2>
+          <ul>
+            <li>{{ section.settings.listed_item-1 }}</li>
+            <li>{{ section.settings.listed_item-2 }}</li>
+            <li>{{ section.settings.listed_item-3 }}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-image">
+        <img src="{{ section.settings.Water_image | img_url:'master' }}" alt="" class="water-heater-image">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Water",
+  "settings": [
+    {
+    "type": "text",
+    "id": "image2_text2",
+    "label": "Top Heading 1"
+    },
+    {
+    "type": "richtext",
+    "id": "text2_tst",
+    "label": "Top Para 1"
+    },
+    {
+    "type": "text",
+    "id": "para2_downheading",
+    "label": "Heading Para 1"
+    },
+    {
+    "type": "text",
+    "id": "listed_item-1",
+    "label": "Listed Item 1"
+    },
+    {
+    "type": "text",
+    "id": "listed_item-2",
+    "label": "Listed Item 2"
+    },
+    {
+    "type": "text",
+    "id": "listed_item-3",
+    "label": "Listed Item 3"
+    },
+    {
+    "type": "image_picker",
+    "id": "Water_image",
+    "label": "Image Water"
+    },
+  ],
+  "presets": [
+    {
+    "name": "Water Image Text"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,174 @@
+<style>
+          .go-lime-section {
+              padding: 40px 0;
+          }
+
+          .go-lime-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      padding: 0 20px;
+  }
+
+          .go-lime-flex {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+          }
+
+          .go-lime-description {
+              width: 45%;
+          }
+
+          .go-lime-image {
+              width: 51%;
+          }
+
+          .image {
+              width: 100%;
+          }
+
+          .h1-heading {
+              font-size: 55px;
+              line-height: 56px;
+              color: #454545;
+              letter-spacing: 0;
+              margin: 0;
+          }
+
+          .logo-text p {
+              font-size: 20px;
+              letter-spacing: 0;
+              color: #454545;
+              line-height: 21px;
+              margin: 0;
+              padding: 11px 0;
+              padding-top: 20px;
+          }
+
+          .link-button {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              padding-top: 12px;
+          }
+
+          .link-quote-btn {
+              color: #fff;
+              margin-right: 20px;
+              background: #085A54;
+              padding: 15px 20px;
+              display: inline-block;
+              text-decoration: none;
+              font-size: 16px;
+              transition: all 0.3s ease-in-out;
+              border-radius: 50px;
+          }
+
+          .logo-gio-lime {
+              line-height: 0;
+              padding-bottom: 20px;
+          }
+
+          .go-lime-logo {
+              max-width: 120px;
+              height: 35px;
+              line-height: 0;
+              letter-spacing: 0;
+          }
+
+
+          @media (max-width: 767px) {
+
+              .go-lime-description,
+              .go-lime-image {
+                  width: 100%;
+                  text-align: center;
+                  padding-top: 40px;
+              }
+
+              .h1-heading {
+                  font-size: 32px;
+                  line-height: 38px;
+              }
+
+              .logo-text p {
+                  font-size: 16px;
+                  line-height: 22px;
+              }
+
+              .link-button {
+                  justify-content: center;
+              }
+
+              .go-lime-logo {
+                  margin: 0 auto;
+              }
+          }
+</style>
+<section class="go-lime-section">
+  <div class="go-lime-container">
+    <div class="go-lime-flex">
+      <div class="go-lime-description">
+        <div class="logo-gio-lime">
+          {% if section.settings['Sub_go-lime-logo'] != blank %}
+            <img src="{{ section.settings.Sub_go-lime-logo |img_url:'master' }}" alt="" class="go-lime-logo">
+          {% endif %}
+        </div>
+
+        <div class="logo-text">
+          <h1 class="h1-heading">{{ section.settings['Golime_h1-heading'] }}</h1>
+          <p>
+            {{ section.settings['sub_Golime-para'] }}
+          </p>
+          <div class="link-button">
+            <a href="#" class="link-quote-btn">{{ section.settings['link-button'] }}</a>
+          </div>
+        </div>
+      </div>
+      <div class="go-lime-image">
+        {% if section.settings['second-image'] != blank %}
+          <img src="{{ section.settings.second-image |img_url:'master' }}" alt="" class="image">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Golime Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "Sub_go-lime-logo",
+      "label": "Logo Image"
+    },
+    {
+      "type": "text",
+      "id": "Golime_h1-heading",
+      "label": "Top Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "sub_Golime-para",
+      "label": "Para"
+    },
+    {
+      "type": "text",
+      "id": "link-button",
+      "label": "Button Btn"
+    },
+    {
+      "type": "image_picker",
+      "id": "second-image",
+      "label": "Text Image"
+    }
+  ],
+  "presets": [
+    {
+    "name": "Golime Section"
+    }
+  ]
+}
+{% endschema %}

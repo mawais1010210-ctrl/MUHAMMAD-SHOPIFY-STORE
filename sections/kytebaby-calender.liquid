@@ -1,0 +1,473 @@
+<style>
+            @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "Lexend", sans-serif;
+            }
+
+            .calender-kyte-baby {
+                padding: 30px 0;
+                background: #FBF6F3;
+            }
+
+            .calender-kyte-baby-flex {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .kyte-baby-customer-text {
+                width: 50%;
+                padding: 72px 40px;
+                align-items: center;
+                display: flex;
+            }
+
+            .customer-heading {
+                font-size: 64px;
+                font-weight: 600;
+                color: #000000;
+                line-height: 1.2;
+            }
+
+            .kyte-baby-customer-calender {
+                width: 50%;
+                background: #53544D;
+            }
+
+            .month-name {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 56px;
+                color: #000000;
+                border-bottom: 1px solid #fff;
+                padding: 10px;
+                font-weight: 400;
+            }
+
+            .monthly-weeklly-days {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 6px;
+            }
+
+            .week-days-flex {
+                padding: 50px 40px;
+            }
+
+            .days {
+                color: #000000;
+                font-weight: bold;
+                font-size: 24px;
+                width: 13%;
+                text-align: center;
+            }
+
+            .date-days {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                column-gap: 6px;
+                row-gap: 12px;
+                padding-top: 50px;
+                align-items: center;
+            }
+
+            .date-cell {
+                width: 13%;
+                text-align: center;
+                color: #e7dada;
+                font-weight: 400;
+            }
+
+            .event.meetup {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70px;
+                width: 70px;
+                background: #464c3f;
+                border-radius: 50px;
+                border: 2px solid #443838;
+                font-size: 14px;
+            }
+
+            .date-cell {
+              display: block !important;
+            }
+
+            .event.live {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70px;
+                width: 70px;
+                background: #464c3f;
+                border-radius: 50px;
+                font-size: 14px;
+            }
+
+            .black-text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70px;
+                width: 70px;
+                background: black;
+                border-radius: 50px;
+                border: 2px solid #443838;
+                font-size: 14px;
+            }
+
+            .date-number {
+               display: flex;
+               justify-content: center;
+               font-size: 22px;
+           }
+           .daily-data-month_days_UjAFrJ {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 70px;
+            background: #464c3f;
+            border-radius: 50px;
+            border: 2px solid #443838;
+            font-size: 15px;
+            line-height: 1.2;
+          }
+
+         .daily-data-month_days_74YLNz {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 70px;
+            background: #464c3f;
+            border-radius: 50px;
+            border: 2px solid #443838;
+            font-size: 15px;
+            line-height: 1.2;
+          }
+
+          .daily-data-month_days_wwUChA {
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 70px;
+            background: #464c3f;
+            border-radius: 50px;
+            border: 2px solid #443838;
+            font-size: 15px;
+            line-height: 1.2;
+          }
+
+         .daily-data-month_days_zqQMmV {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 70px;
+            background: #464c3f;
+            border-radius: 50px;
+            font-size: 15px;
+            line-height: 1.2;
+          }
+
+          .daily-data-month_days_YicrzB {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 70px;
+            background: #464c3f;
+            border-radius: 50px;
+            font-size: 15px;
+            line-height: 1.2;
+          }
+
+          .daily-data-month_days_H9RJD6 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 70px;
+            background: #464c3f;
+            border-radius: 50px;
+            font-size: 15px;
+            line-height: 1.2;
+          }
+
+          .daily-data-month_days_6FFr8G {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 70px;
+            background: black;
+            border-radius: 50px;
+            border: 2px solid #443838;
+            font-size: 15px;
+            line-height: 1.2;
+          }
+
+          .daily-data-month_days_gxp4Vy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 70px;
+            background: black;
+            border-radius: 50px;
+            border: 2px solid #443838;
+            font-size: 15px;
+            line-height: 1.2;
+          }
+
+          .daily-data-month_days_W7NDxy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 70px;
+            background: black;
+            border-radius: 50px;
+            border: 2px solid #443838;
+            font-size: 15px;
+            line-height: 1.2;
+          }
+         .daily-data-month_days_d7rgDf {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 70px;
+            background: black;
+            border-radius: 50px;
+            border: 2px solid #443838;
+            font-size: 15px;
+            line-height: 1.2;
+          }
+
+      @media screen and (max-width: 767px) {
+
+        .calender-kyte-baby-flex {
+            flex-direction: column-reverse;
+        }
+
+        .kyte-baby-customer-text {
+            width: 100%;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        .kyte-baby-customer-calender {
+            width: 100%;
+        }
+
+        .month-name {
+            font-size: 32px;
+            padding: 12px 0;
+        }
+
+        .monthly-weeklly-days {
+            gap: 4px;
+        }
+
+        .days {
+            font-size: 16px;
+            width: 13%;
+            text-align: center;
+        }
+
+            .date-days {
+            padding-top: 20px;
+            column-gap: 4px;
+            row-gap: 15px;
+        }
+
+        .date-cell {
+            width: 13%;
+            text-align: center;
+        }
+
+        .daily-date,
+        .event.meetup,
+        .event.live,
+        .black-text {
+            height: 70px;
+            width: 70px;
+            font-size: 15px;
+            border-radius: 50%;
+            padding: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.2;
+        }
+
+        .date-number {
+            font-size: 14px;
+        }
+
+        .customer-heading {
+          font-size: 32px;
+          font-weight: 400;
+          color: #000000;
+          line-height: 1.2;
+          text-align: left;
+        }
+      }
+  @media screen and (max-width:850px){
+     .customer-heading {
+       font-size: 63px;
+       font-weight: 600;
+       color: #000000;
+       line-height: 1.2;
+      }
+
+    .calender-kyte-baby-flex {
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction: column-reverse;
+     }
+
+    .kyte-baby-customer-calender {
+       width: 100%;
+       background: #53544D;
+    }
+
+    .kyte-baby-customer-text {
+       width: 100%;
+       padding: 72px 40px;
+       align-items: center;
+       display: flex;
+     }
+     }
+
+      @media screen and (min-width:1700px) {
+                .customer-heading {
+                    padding: 72px 70px 72px 167px;
+                }
+
+                .event.live {
+                    font-size: 16px;
+                    height: 80px;
+                    width: 80px;
+                }
+
+                .event.meetup {
+                    height: 80px;
+                    width: 80px;
+                    font-size: 16px;
+                }
+
+                .black-text {
+                    height: 80px;
+                    width: 80px;
+                    font-size: 16px;
+                }
+
+                .date-number {
+                    font-size: 30px;
+                    font-weight: 400;
+                }
+
+                .month-name {
+                    font-size: 72px;
+                }
+      }
+</style>
+
+<section class="calender-kyte-baby">
+  <div class="calender-baby-container">
+    <div class="calender-kyte-baby-flex">
+      <div class="kyte-baby-customer-text">
+        <h1 class="customer-heading">{{ section.settings.main_customer_heading }}</h1>
+      </div>
+      <div class="kyte-baby-customer-calender">
+        <div class="calender">
+          <div class="month-name">{{ section.settings['month_name-heading'] }}</div>
+          <div class="week-days-flex">
+            <div class="monthly-weeklly-days">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'week_days' %}
+                    <div class="days">{{ block.settings.week_daystext }}</div>
+                {% endcase %}
+              {% endfor %}
+            </div>
+
+            <div class="date-days">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'month-days' %}
+                    <div class="date-cell">
+                      <div class="daily-date daily-data-{{ block.id }}">
+                        {{ block.settings.month_daystext }}
+                      </div>
+                    </div>
+                {% endcase %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Kyte Baby Calender",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_customer_heading",
+      "label": "Main Customer Heading"
+    },
+    {
+      "type": "text",
+      "id": "month_name-heading",
+      "label": "Month Name Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "week_days",
+      "name": "Weeks Days",
+      "limit": 7,
+      "settings": [
+        {
+          "type": "text",
+          "id": "week_daystext",
+          "label": "Week Days Text"
+        }
+      ]
+    },
+
+    {
+      "type": "month-days",
+      "name": "Month Days",
+      "settings": [
+        {
+          "type": "text",
+          "id": "month_daystext",
+          "label": "Month Days Text"
+        }
+      ]
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Kyte Baby Calender"
+    }
+  ]
+}
+{% endschema %}

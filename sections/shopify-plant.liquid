@@ -1,0 +1,177 @@
+<style>
+    .cat-video_section_gl {
+        padding: 40px;
+    }
+
+    .cate_vide_gl_container {
+        max-width: 1337px;
+        padding: 0 50px;
+        margin: 0 auto;
+    }
+
+    .mn_cate_gl_video_conntent {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .vide_gl_ct_pg {
+        position: relative;
+    }
+
+    .vide_gl_ct_pg video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+      max-height: 437px;
+  }
+
+    .gl_vidoe_mn_pg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover;
+        border-radius: 24px;
+    }
+
+    .content_video_pg_ct {
+        position: absolute;
+        padding: 67px;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .mn_cate_gl_video_conntent::before {
+        background: linear-gradient(to left, rgba(228, 240, 225, 20%), rgba(228, 240, 225, 1) 58%);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        content: '';
+        border-radius: 24px;
+        z-index: 1;
+    }
+
+    .vide_title_gl {
+        width: 100%;
+        max-width: 31px;
+        height: 53px;
+        object-fit: contain;
+    }
+
+    .video_upper_title_gl {
+        padding: 18px 0;
+        font-size: 28px;
+        color: rgba(0, 55, 51, 1);
+    }
+
+    .video_upper_content_gl p {
+        font-size: 15px;
+        color: rgba(0, 55, 51, 1);
+        line-height: normal;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .cate_vide_gl_container {
+            padding: 0 15px;
+        }
+
+        .cat-video_section_gl {
+            padding: 20px 0;
+        }
+
+        .mn_cate_gl_video_conntent::before {
+            background: linear-gradient(to top, rgba(228, 240, 225, 39%), rgba(228, 240, 225, 1) 58%);
+        }
+
+        .vide_gl_ct_pg {
+            min-height: 590px;
+        }
+
+        .content_video_pg_ct {
+            padding: 20px;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+        }
+
+        .video_upper_title_gl {
+            padding: 10px 0;
+            font-size: 22px;
+        }
+    }
+</style>
+<section class="cat-video_section_gl">
+  <div class="cate_vide_gl_container">
+    <div class="mn_cate_gl_video_conntent">
+      <div class="vide_gl_ct_pg">
+        {% if section.settings.plants_image_video %}
+          {{
+            section.settings.plants_image_video
+            | video_tag: autoplay: true, loop: true, muted: true, playsinline: true
+          }}
+        {% endif %}
+      </div>
+
+      <div class="content_video_pg_ct">
+        <div class="vide_title_upper_icon">
+          {% if section.settings.plant_girl_image %}
+            <img src="{{ section.settings.plant_girl_image | img_url: 'master' }}" alt="" class="vide_title_gl">
+          {% endif %}
+        </div>
+        <h3 class="video_upper_title_gl">{{ section.settings.plants_heading }}</h3>
+        <div class="video_upper_content_gl">
+          <p>{{ section.settings.plants_para_description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Plant Image Section",
+  "settings": [
+    {
+      "type": "video",
+      "id": "plants_image_video",
+      "label": "Plants Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "plant_girl_image",
+      "label": "Plants Image"
+    },
+    {
+      "type": "text",
+      "id": "plants_heading",
+      "label": "Plants Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "plants_para_description",
+      "label": "Plants Description"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Plants Image Section"
+    }
+  ]
+}
+{% endschema %}
