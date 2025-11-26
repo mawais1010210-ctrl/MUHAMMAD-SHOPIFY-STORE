@@ -75,10 +75,14 @@
         </button>
       </div>
       {%- assign cart_total = 0 -%}
+
       {%- for item in cart.items -%}
+         {%- if items.require_shipping -%}
+           {%- assign cart_total = cart_total | plus: item.final_line_price -%}
+         {%- endif -%} 
       {%- endfor -%}
       <div>
-      FREE SHIPPING BAR GOES HERE
+        FREE SHIPPING BAR GOES HERE: {{ cart_total }}
       </div>
       
       <cart-drawer-items
