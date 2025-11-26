@@ -74,6 +74,8 @@
           </span>
         </button>
       </div>
+
+      {%- assign free_shipping_threshold = 500000 -%}
       {%- assign cart_total = 0 -%}
 
       {%- for item in cart.items -%}
