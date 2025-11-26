@@ -85,9 +85,9 @@
       {%- endfor -%}
 
       {%- assign amount_remaining = free_shipping_threshold | minus: cart_total -%}
+
       <div>
-        FREE SHIPPING BAR GOES HERE: {{ cart_total }}
-        amount_remaining: {{amount_remaining}}
+        You need {{ amount_remaining | money_with_currency }} to get free shipping
       </div>
       
       <cart-drawer-items
