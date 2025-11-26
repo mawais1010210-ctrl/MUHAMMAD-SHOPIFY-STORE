@@ -83,6 +83,8 @@
            {%- assign cart_total = cart_total | plus: item.final_line_price -%}
          {%- endif -%} 
       {%- endfor -%}
+
+      {%- assign amount_remaining = free_shipping_threshold | minus: cart_total -%}
       <div>
         FREE SHIPPING BAR GOES HERE: {{ cart_total }}
       </div>
