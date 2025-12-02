@@ -881,6 +881,100 @@
   </div>
 </section>
 
+<script>
+  const searchBtn = document.querySelector('.header-icon.search-icon');
+  const searchBox = document.getElementById('searchBox');
+  const closeSearch = document.getElementById('closeSearch');
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const navbarMenu = document.getElementById('navbarMenu');
+  const menuCloseBtn = document.getElementById('menuCloseBtn');
+
+  // Mobile menu toggle
+  hamburgerBtn.addEventListener('click', function (e) {
+    e.stopPropagation();
+    navbarMenu.classList.add('active');
+    document.body.classList.add('menu-open');
+    console.log('Menu opened');
+  });
+
+  // Close menu when clicking on close button
+  menuCloseBtn.addEventListener('click', function () {
+    navbarMenu.classList.remove('active');
+    document.body.classList.remove('menu-open');
+    console.log('Menu closed');
+  });
+
+  // Close menu when clicking outside on mobile
+  document.addEventListener('click', function (e) {
+    if (window.innerWidth <= 767) {
+      if (
+        !navbarMenu.contains(e.target) &&
+        !hamburgerBtn.contains(e.target) &&
+        navbarMenu.classList.contains('active')
+      ) {
+        navbarMenu.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      }
+    }
+  });
+
+  const plusIcons = document.querySelectorAll(
+    '.mega-menu-list-2 .mega-menu-list-item, .drop-down-list .mega-menu-list-item'
+  );
+  plusIcons.forEach((icon) => {
+    icon.addEventListener('click', function (e) {
+      if (window.innerWidth <= 767) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        this.classList.toggle('rotated');
+
+        // dropdowns کو چھپائیں (اگر کھلے ہوں)
+        const parentLi = this.closest('.mega-menu-list, .drop-down-list');
+        if (parentLi) {
+          parentLi.classList.remove('active');
+        }
+      }
+    });
+  });
+
+  // Search functionality
+  searchBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    searchBox.classList.add('active');
+  });
+
+  closeSearch.addEventListener('click', function (e) {
+    e.preventDefault();
+    searchBox.classList.remove('active');
+  });
+
+  // Close search when clicking outside
+  document.addEventListener('click', function (e) {
+    if (!searchBox.contains(e.target) && !searchBtn.contains(e.target) && searchBox.classList.contains('active')) {
+      searchBox.classList.remove('active');
+    }
+  });
+
+  // Close menu with escape key
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      if (window.innerWidth <= 767 && navbarMenu.classList.contains('active')) {
+        navbarMenu.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      }
+      if (searchBox.classList.contains('active')) {
+        searchBox.classList.remove('active');
+      }
+    }
+  });
+
+  // Debugging
+  console.log('Script loaded successfully');
+  console.log('Hamburger button found:', !!hamburgerBtn);
+  console.log('Navbar menu found:', !!navbarMenu);
+  console.log('Close button found:', !!menuCloseBtn);
+</script>
 {% schema %}
 {
   "name": "Larkspur Baby Header",
