@@ -1,1 +1,747 @@
-{"sections":{"golime_banner_b6nPwV":{"type":"golime-banner","blocks":{"icon_block_CnFm8b":{"type":"icon_block","settings":{"icon_image":"shopify:\/\/shop_images\/google-reviews.png","text":"5000+ Positive Reviews","link":""}},"icon_block_k8FVmw":{"type":"icon_block","settings":{"icon_image":"shopify:\/\/shop_images\/proudly-canadian.png","text":"Proudly Canadian","link":""}},"icon_block_XE8bya":{"type":"icon_block","settings":{"icon_image":"shopify:\/\/shop_images\/money-image.png","text":"30 Day MoneyBack Guarantee","link":""}},"icon_block_MpVPVz":{"type":"icon_block","settings":{"icon_image":"shopify:\/\/shop_images\/installation-image.png","text":"InstallationIncluded","link":""}}},"block_order":["icon_block_CnFm8b","icon_block_k8FVmw","icon_block_XE8bya","icon_block_MpVPVz"],"name":"Go Lime Banner","settings":{"banner-desktop_image":"shopify:\/\/shop_images\/desktop-images.png","banner-mobile_image":"shopify:\/\/shop_images\/download_27d00dab-3dd3-48b1-8b17-121008b99605.png","go_backtxt":"Go Back","store_text":"Store","solar_text":"Solar","main_heading":"Energy Solutions for Ontario Homes","main_para":"Cut your energy bills and reduce your carbon footprint with smart solar solutions designed for Ontario’s climate.","buynow-btn_text":"BUY NOW","buynow-btn_link":"","speaks-expert_text":"Speak With An Expert","speaks-expert_link":"","maxwidth_image":"shopify:\/\/shop_images\/banner-bottom-image.png"}},"featured_collection":{"type":"featured-collection","settings":{"collection":"all","products_to_show":8,"title":"Featured products","heading_size":"h2","description":"","show_description":false,"description_style":"body","columns_desktop":4,"enable_desktop_slider":false,"full_width":false,"show_view_all":true,"view_all_style":"solid","color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":false,"padding_top":44,"padding_bottom":36}},"new_section_DWHprm":{"type":"New_section","name":"Golime Section","settings":{"Sub_go-lime-logo":"shopify:\/\/shop_images\/logo.png","Golime_h1-heading":"Commercial HVAC Solutions That Work as Hard as You Do","sub_Golime-para":"<p>From offices and restaurants to multi-residential and industrial buildings, we design, install, and support energy-efficient systems built to perform - on time and on budget.<\/p>","link-button":"GET A QUOTE","second-image":"shopify:\/\/shop_images\/image.png"}},"three_image_wYi7Mw":{"type":"three-image","blocks":{"three_boxes_tNycFg":{"type":"three-boxes","settings":{"main_image":"shopify:\/\/shop_images\/img-1.png","other_para":"<p>Browse our online store anytime to find energy-efficient heating and cooling solutions with transparent pricing. No hidden fees, just straightforward comfort.<\/p>"}},"three_boxes_th8BiL":{"type":"three-boxes","settings":{"main_image":"shopify:\/\/shop_images\/img-2.png","other_para":"<p>Not sure what’s right for your home? Speak with one of our licensed pros for tailored recommendations and support - zero pressure, 100% honest.<br\/><br\/><\/p>"}},"three_boxes_cMtDNh":{"type":"three-boxes","settings":{"main_image":"shopify:\/\/shop_images\/img-3.png","other_para":"<p>Our in-house installers show up ready to deliver. With flexible scheduling and same-day service available, we get you up and running without the wait.<\/p>"}}},"block_order":["three_boxes_tNycFg","three_boxes_th8BiL","three_boxes_cMtDNh"],"name":"Three Boxes","settings":{"h2-heading-main":"How Does Go Lime Work?","main-top-para":"Your path to energy-efficient comfort starts here. From selecting the right product to getting it installed fast — we make the process simple, expert-guided, and stress-free."}},"image_text_YCcThz":{"type":"image-text","name":"right-image-text","settings":{"image_text":"shopify:\/\/shop_images\/mechanical-image.png","image-text-heading":"Mechanical","cst-text-description":"<p>We provide comprehensive mechanical solutions that ensure efficient, reliable, and cost-effective operations for your business.<\/p>","botom-descp-hdng":"Services Offered","listed-item-1":"Plumbing \/ Pipefitting","listed-item-2":"Gas Services \/ Installs \/ Inspections & Maintenance","listed-item-3":"HVAC-R (Heating, Ventilation, Air Conditioning & Refrigeration)","listed-item-4":"Energy Management Systems & Retrofits","listed-item-5":"Module \/ Equipment installations"}},"image2_text2_MneK4f":{"type":"image2-text2","name":"Water Image Text","settings":{"image2_text2":"Water Heating","text2_tst":"<p>We provide efficient and reliable water heating solutions, ensuring consistent hot water supply for businesses of all sizes.<\/p>","para2_downheading":"Services Offered:","listed_item-1":"Boilers","listed_item-2":"Solar Thermal Hot Water","listed_item-3":"Multi Tankless Units","Water_image":"shopify:\/\/shop_images\/Water_Heating.png"}},"golime_slider_e8xNeT":{"type":"golime-slider","blocks":{"slider_mHfDBM":{"type":"Slider","settings":{"slider_image":"shopify:\/\/shop_images\/Reddit_Logo_1.png","slider-heading":"<p>evereddie<\/p>","slider-description":"I just had Go Lime install my new hot water tank, and everything went great. No\n                                    issues at all, and you can't beat the price. Some people complained about the fan on\n                                    the hot water tank being super loud, but I don’t have that issue at all. In fact,\n                                    it’s quieter than my old tank"}},"slider_NUp4AA":{"type":"Slider","settings":{"slider_image":"shopify:\/\/shop_images\/HomeStars-Logo_Cyan_1_bffd3e8e-30af-47bf-b7c0-39baaf758939.png","slider-heading":"<p>HomeOwner<\/p>","slider-description":"This is the third time I met Ashraf to do the services at my home, everytime the next\n                                    experience waa wonderful than the previous one, he is extremely knowledgeable and\n                                    imparts wonderful professionalism. He not only fixed the issues but gave me the tips\n                                    & advices how to maintain and keep running the systems. He is very courteous,\n                                    friendly and helpful, I will definitely will recommend him100% for the jobs and want\n                                    to see him if I have the service calls."}},"slider_N9WiiV":{"type":"Slider","settings":{"slider_image":"shopify:\/\/shop_images\/download_87951a55-04b6-4539-b473-b90d774e4ac2.png","slider-heading":"<p>Adam Green<\/p>","slider-description":"I just replaced my hot water heater. I stumbled across this company online and read\n                                    the good reviews. Price was much better than other companies, so I was skeptical. I\n                                    called Saturday afternoon, confirmed online Saturday night, and the work was\n                                    completed Sunday afternoon. I have been so impressed with the service from my phone\n                                    conversation with Juan to the installation by Alireza. Now I can only hope that the\n                                    product is as good as the price, technicians, and customer service."}},"slider_TCLeW9":{"type":"Slider","settings":{"slider_image":"shopify:\/\/shop_images\/download_5eca64b2-acc5-485e-b56e-ece05b3422e7.png","slider-heading":"<p>HockeyfanCanada<\/p>","slider-description":"Finally, purchased today, scheduled installation over the weekend. For comparison I\n                                    have checked with Home Depot and they quoted $2200 +tax. Rheeem 50 Gallon power vent\n                                    $1489 is the item they will install, so roughly $700 installation fees. They won’t\n                                    return the old one. Not sure about Costco pricing, they have $300 Gift Card. I don’t\n                                    think anyone else would sell less than Go Lime. Thanks."}}},"block_order":["slider_mHfDBM","slider_NUp4AA","slider_N9WiiV","slider_TCLeW9"],"name":"Golime Slider","settings":{"main_heading":"Soft Flex, Big Proof.","main_descp":"<p>Join Thousands of Happy Ontario Homeowners<\/p>","star_para":"4.7\n                        <span>★<\/span>\n                        out of 5 based on 5,000+ reviews"}},"shopify_plant_WBFTRK":{"type":"shopify-plant","name":"Plants Image Section","settings":{"plants_image_video":"shopify:\/\/files\/videos\/a5e0deef9bc9493d8e6ad3ff3ed5c4d6.HD-1080p-7.2Mbps-51341469.mp4","plant_girl_image":"shopify:\/\/shop_images\/download_abcf3714-a27f-422f-b605-1b4ea403e0a9.png","plants_heading":"We Plant Goodness","plants_para_description":"Every order supports reforestation. For each purchase made, we plant a tree because real change starts with simple actions. Place an order, and we’ll plant a tree on your behalf."}},"tabbing_faq_wP6B39":{"type":"tabbing-faq","blocks":{"images_tab_8FCnGM":{"type":"images_tab","settings":{"tabbing_image1":"shopify:\/\/shop_images\/1-desktop.png","tabbing_heading1":"About Go Lime","tabbing_image2":"shopify:\/\/shop_images\/2-desktop.png","tabbing_heading2":"Installation and Equipment","tabbing_image3":"shopify:\/\/shop_images\/3-desktop.png","tabbing_heading3":"Billing and Accounts","tabbing_image4":"shopify:\/\/shop_images\/4-desktop.png","tabbing_heading4":"Service and Maintenance","tabbing_image5":"shopify:\/\/shop_images\/5-desktop.png","tabbing_heading5":"Heating and Cooling","tabbing_image6":"shopify:\/\/shop_images\/6-desktop.png","tabbing_heading6":"Water Heating Systems"}},"faq_text_m7kA8r":{"type":"faq_text","settings":{"tab1-question1_faq1":"<p>Who is Go Lime?<\/p>","tab1-faq1_para1":"<p>At Go Lime, we have been part of this industry for a long time. While we’re not\n                                    perfect, and we’ve never claimed to be, we have come to realize that this industry\n                                    needs change. We are here today to make it right.<\/p>\n                                <p><\/p>\n                                <p>Our mission is simple: to offer every household in Ontario the power of choice.<\/p>\n                                <p><\/p>\n                                <p>We asked ourselves: Why are Ontario homeowners stuck in overpriced water heater\n                                    rental contracts, facing costly buyouts, poor customer service, and endless rental\n                                    fees?<\/p>\n                                <p><\/p>\n                                <p>By listening to you, we have created a Canadian Owned Company that offers fair\n                                    pricing, and simplicity, providing exactly what you need, and never pushing for\n                                    more. We prioritize transparency with straightforward, digital first delivering more\n                                    for much less than you pay today. <\/p>\n                                <p>Our main objective is to eliminate unnecessary costs for you — we sell direct from\n                                    the manufacturer, offering commission free experts, always powered by technology —\n                                    and pass those savings directly to you.<\/p>\n                                <p>Our goal is to return over $1 billion back into the pockets of Ontario households.\n                                <\/p>\n                                <p>Our purpose is to reintroduce choice and control to customers across Ontario,\n                                    allowing you to take charge of your water heater costs, which have long been\n                                    inflated by other companies that have lost focus of their customers. <\/p>\n                                <p>Our commitment is to prioritize a customer-first approach. You decide how to interact\n                                    with us — whether you buy up-front or subscribe monthly, engage online, or talk\n                                    directly to an expert. The power is always in your hands. <\/p>\n                                <p>If you are tired of the old way, join us in the fresh new way and join the Go Lime\n                                    Green Revolution Today.<\/p>","tab1-question2_faq1":"<p>What areas does Go Lime service?<\/p>","tab1-faq2_para1":"<p>At Go Lime, we’re proud to offer reliable service to a wide range of areas every day.\n                                    We currently serve:\n                                    <br>\n                                    <br>\n                                    - City of Toronto\n                                    <br>\n                                    - Halton Region\n                                    <br>\n                                    - Peel Region\n                                    <br>\n                                    - Durham Region\n                                    <br>\n                                    - Sudbury Area\n                                    <br>\n                                    - Kingston Area\n                                    <br>\n                                    - Windsor Area\n                                    <br>\n                                    - London Area\n                                    <br>\n                                    - Ottawa Area\n                                    <br>\n                                    - Niagara Area\n                                    <br>\n                                    - Southern Ontario\n                                    <br>\n                                    <br>\n                                <\/p>\n                                <p>We are expanding each and every week so if you want to see Go Lime in your own\n                                    community, please email us at <a href=\"#\">care@golime.com<\/a>\n                                    <br>\n                                <\/p>","tab1-question3_faq1":"<p>Can I buy from Go Lime if I'm a Landlord?<\/p>","tab1-faq3_para1":"<p>Absolutely! As a landlord, you can easily purchase from Go Lime. The process is just\n                                    like buying for your own home. <\/p>\n                                <p>Simply select the equipment you’d like to upgrade, ensure the shipping address is the\n                                    installation location, and then reach out to your tenants to confirm they’ll be\n                                    available when our technicians arrive to install your new equipment. <\/p>\n                                <p>We're here to make the process as smooth as possible for you and your tenants!<\/p>","tab1-question4_faq1":"<p>Will Go Lime coordinate the return and upgrade with my existing provider?<\/p>","tab1-faq4_para1":"<p>We’ll handle the entire process for you—from closing your current provider’s account\n                                    to safely returning their old equipment. Once we pick up the equipment. from your\n                                    home, we take full responsibility for it, ensuring it's secure until it’s returned\n                                    to the previous provider. You won’t have to worry about a thing!<\/p>\n                                <p>Here’s how it works:<\/p>\n                                <ul>\n                                    <li>\n                                        <strong>Closing Your Account<\/strong>\n                                        : We’ll take care of all the steps needed to close your account with your\n                                        current provider.\n                                    <\/li>\n                                    <li>\n                                        <strong>Tank Collection<\/strong>\n                                        : We’ll pick up the tank directly from your home, so you don’t have to lift a\n                                        finger.\n                                    <\/li>\n                                    <li>\n                                        <strong>Responsibility<\/strong>\n                                        : From pickup to return, we ensure the tank is safely handled every step of the\n                                        way.\n                                    <\/li>\n                                <\/ul>\n                                \n                                <p>\n                                    <strong>Important Note<\/strong> : Depending on your existing provider and the age of\n                                    your equipment, there may be a buyout <strong>or exit fees<\/strong> for the\n                                    equipment. We are always here to help but please understand with your existing\n                                    provider what the cancellation\/buy-outs fees are — we will always do everything we\n                                    can to help, and that’s why we are so customer focused as part the Go Lime\n                                    Revolution. We know by switching to us you will save, so to have no surprises as a\n                                    new customer please always call your current provider and get all the details on\n                                    what to expect when leaving.\n                                <\/p>\n                                <p>Go Lime does not charge any cancellation fees and we have the most transparent terms\n                                    in the industry with our New Go Flex offering --- so sit back, relax, and let Go\n                                    Lime show you an entirely new way to enjoy your home hot water. <\/p>","tab1-question5_faq1":"<p>What makes Go Lime different from other HVAC companies?<\/p>","tab1-faq5_para1":"<p>What sets Go Lime apart from other HVAC companies is our commitment to making the\n                                    entire process as convenient and hassle-free as possible for you. We offer a simple\n                                    online shopping experience, with clear, upfront pricing and no hidden fees.<\/p>\n                                <p>Our flexible payment options through Go Flex make it easy to fit your new equipment\n                                    into your budget. On top of that, we provide free installation and extended\n                                    coverage, ensuring that your home comfort is always a top priority. With Go Lime,\n                                    you get more than just a regular HVAC company – you get peace of mind.<\/p>","tab2-question1_faq1":"<p>What is the process for returning my old Water Heater to my existing provider?<\/p>","tab2-faq1_para1":"<p>For your convenience, we ensure that your old water heater is returned to the\n                                    existing provider within 30 calendar days. Our team handles the process efficiently,\n                                    so you don’t have to worry about a thing. If you have any questions or need further\n                                    assistance, we're always here to help.<\/p>","tab2-question2_faq1":"<p>Can I purchase multiple products and have them all installed at the same time?<\/p>","tab2-faq2_para1":"<p>Yes, absolutely! You can purchase multiple products — whether it's a heat pump,\n                                    tankless water heater, or any other system on our website — we will coordinate the\n                                    entire installation of all your new products as soon as possible to meet your\n                                    installation needs!<\/p>\n                                <p>This way, you get everything installed on the same day, saving you time and making\n                                    the process as seamless and convenient as possible.<\/p>","tab2-faq2_question3":"<p>Is installation included when I buy online?<\/p>","tab2-faq3_para1":"<p>Yes, installation is included when you purchase anything from Go Lime! Professional\n                                    installation is part of the package, and during checkout, you’ll be able to select\n                                    your preferred installation date and time. Once your order is confirmed, our team\n                                    will reach out to finalize the details and schedule the installation at a time that\n                                    works best for you. <\/p>\n                                <p>(BTW if you order a T-Shirt --- we would have a hard time installing that for you but\n                                    aside from our merch everything else includes installation) <\/p>","tab2-faq4_question4":"<p>Do you offer free installation?<\/p>","tab2-faq4_para1":"<p>Yes, Go Lime offers free standard installation on all our home comfort products, with\n                                    no hidden fees. <\/p>\n                                <p>The price you see at checkout is all-inclusive – it covers both the equipment and the\n                                    professional installation, so you can enjoy a hassle-free experience from start to\n                                    finish.<\/p>","tab3-faq1_question1":"<p>What is Go Flex?<\/p>","tab3-faq1_para1":"<p>Go Flex is our flexible payment plan that allows you to enjoy your new equipment with\n                                    an affordable monthly subscription. If you decide to buy the equipment later, you\n                                    can purchase it outright at a reduced price at any time. <\/p>\n                                <p>It's designed to give you financial flexibility, so you can get the home comfort you\n                                    need without the upfront cost.<\/p>","tab3-faq2_question2":"<p>What is Go Pay?<\/p>","tab3-faq2_para1":"<p>Go Pay lets you purchase your new equipment outright, giving you complete ownership\n                                    and freedom.<\/p>\n                                <p>You’ll be responsible for any service and maintenance trips, but there is NO monthly\n                                    subscription or long-term commitment — just the flexibility to own your equipment on\n                                    your terms.<\/p>","tab3-faq3_question3":"<p>How does Go Flex work?<\/p>","tab3-faq3_para1":"<p>With Go Flex, you can enjoy your new home comfort equipment with an affordable\n                                    monthly subscription that includes unlimited service calls and yearly maintenance\n                                    visits. Plus, you have the flexibility to purchase the equipment outright at any\n                                    time, giving you full control and ownership when you're ready.<\/p>\n                                <p>It’s all about providing you with convenience and peace of mind, whenever you need\n                                    it.<\/p>","tab3-faq4_question4":"<p>Do my monthly prices ever increase?<\/p>","tab3-faq4_para1":"<p>At Go Lime, we are dedicated to offering the best prices for our customers. We\n                                    understand that inflation can affect everyone’s budget, which is why we’ve capped\n                                    price increases at just 3.99% + CPI. <\/p>\n                                <p>To ensure we continue delivering the highest level of customer service from our\n                                    licensed in-house technicians and 24\/7 call center support to full replacements and\n                                    repairs under Go Flex, there may be a slight increase in your monthly payment.<\/p>\n                                <p>We believe in transparency and fairness, and you can count on us to do everything we\n                                    can to keep costs low while maintaining the quality and reliability you expect. Our\n                                    commitment is to provide exceptional value, no matter the economic climate.<\/p>","tab3-faq5_question5":"<p>Is Go Flex a finance or rental contract?<\/p>","tab3-faq5_para1":"<p>No, Go Flex is not a finance or rental contract. Go Flex is our flexible payment plan\n                                    designed to make home comfort equipment more accessible and more affordable. With Go\n                                    Flex, you can get the equipment you need for a manageable monthly subscription,\n                                    allowing you to have your new equipment installed without the upfront cost.<\/p>\n                                <p>What sets Go Flex apart is it’s flexibility — you are not tied to a long-term\n                                    contract. You can choose to purchase your equipment outright at any time, giving you\n                                    full control and ownership when you’re ready.<\/p>\n                                <p>Unlike rental agreements or high-interest finance plans, Go Flex offers a\n                                    transparent, straightforward option that lets you enjoy your equipment without\n                                    limitations. At Go Lime, we’re committed to helping you make smart, stress-free\n                                    decisions for your home.<\/p>","tab4-faq1_question1":"<p>What is the warranty on your products?<\/p>","tab4-faq1_para1":"<p>When enrolling into our Go Flex subscription plan, you enroll into 15 years FULL 100%\n                                    parts and labour warranty including unlimited service calls and yearly maintenance\n                                    visits<\/p>\n                                <p>If we are ever unable to repair your equipment, we’ll replace it, ensuring your\n                                    system is always running at its best. At Go Lime, we’re committed to keeping your\n                                    home comfort in top shape, no matter what.<\/p>\n                                <p>If you decide to purchase your equipment with Go-Pay you will receive the\n                                    manufacturer’s warranty, typically ranging from 6 to 10 years on major components,\n                                    so you can enjoy peace of mind knowing your equipment is protected and remember we\n                                    have extended coverage with our Go Protect plans so you can always add coverage to\n                                    your purchased equipment at any time!<\/p>","tab4-faq2_question2":"<p>Is there a service plan included with my purchase?<\/p>","tab4-faq2_para1":"<p>The Go Flex subscription option includes FULL coverage for all your home comfort\n                                    equipment, keeping them in top condition with unlimited service calls, unlimited\n                                    repairs and yearly maintenance visits.<\/p>\n                                <p>If you prefer to purchase your equipment outright, we also offer Go Protect plans,\n                                    which provide comprehensive coverage, including regular maintenance and repairs.<\/p>\n                                <p>With Go Flex or Go Protect, you can ensure your system stays in great shape for years\n                                    to come. Learn more about our Go Protect plans to find the best option for your\n                                    needs!<\/p>","tab4-faq3_question3":"<p>Can I schedule a maintenance check-up for my existing equipment?<\/p>","tab4-faq3_para1":"<p>Yes, we offer maintenance services even if you didn’t purchase your system from us.\n                                    Regular maintenance helps keep your equipment running efficiently and extends its\n                                    lifespan.<\/p>\n                                <p>Just contact us to schedule a maintenance check-up, and we’ll take care of the rest!\n                                <\/p>","tab5-faq1_question1":"<p>What is the difference between Single Stage and Dual Stage Furnace?<\/p>","tab5-faq1_para1":"<p>The main difference between a <strong>Single-Stage Furnace<\/strong> and a\n                                    <strong>Dual-Stage Furnace<\/strong> lies in how the furnace operates and adjusts its\n                                    heating capacity.\n                                <\/p>\n                                <p><\/p>\n                                <p><strong>Single-Stage Furnace:<\/strong><\/p>\n                                <ul>\n                                    <li>\n                                        <strong>Operation<\/strong>\n                                        : Runs at full capacity or is off.\n                                    <\/li>\n                                    <li>\n                                        <strong>Efficiency<\/strong>\n                                        : Less efficient, with more temperature fluctuations.\n                                    <\/li>\n                                    <li>\n                                        <strong>Comfort<\/strong>\n                                        : Can cause uneven heating and more on\/off cycling.\n                                    <\/li>\n                                    <li>\n                                        <strong>Cost<\/strong>\n                                        : Lower initial cost, higher long-term energy costs.\n                                    <\/li>\n                                <\/ul>\n                                <p><\/p>\n                                <p><strong>Key Difference<\/strong> : Dual-stage furnaces offer better efficiency and\n                                    comfort with adjustable heating, while single-stage furnaces only run at full\n                                    capacity. <\/p>","tab5-faq2_question2":"<p>What size furnace do I require for my home?<\/p>","tab5-faq2_para1":"<p>While exact needs may vary, here is a rough estimate to determine furnace sizing:<\/p>\n                                <ul>\n                                    <li><strong>Up to–1,500 sq. ft. Home: 45,000 BTUs<\/strong><\/li>\n                                    <li><strong>1,500–2,500 sq. ft. Home: 70,000 BTUs<\/strong><\/li>\n                                    <li><strong>2,500–3,500 sq. ft. Home: 90,000 BTUs<\/strong><\/li>\n                                    <li><strong>3,000–4,000 sq. ft. Home: 110,000 BTUs<\/strong><\/li>\n                                <\/ul>\n                                <p>If you are unsure, consult a Go Lime expert to ensure your furnace is perfectly sized\n                                    for your home and region. They will factor in your home's unique characteristics\n                                    like the home's age, insulation, and windows to recommend the optimal furnace\n                                    size.Proper sizing ensures lower energy costs and a consistently comfortable home.\n                                <\/p>","tab6-faq1_question1":"<p>What does BTU mean?<\/p>","tab6-faq1_para1":"<p>BTU stands for British Thermal Unit, which is a unit of energy used to measure the\n                                    amount of heat required to raise the temperature of one pound of water by one degree\n                                    Fahrenheit.<\/p>\n                                <p><strong>In the context of air conditioning and heating:<\/strong><\/p>\n                                <ul>\n                                    <li>1 BTU is the amount of heat needed to increase the temperature of 1 pound of\n                                        water by 1°F.<\/li>\n                                    <li>Air conditioning and heating systems are often rated by their capacity to either\n                                        remove or add heat, and this capacity is commonly measured in BTUs.<\/li>\n                                <\/ul>\n                                <p><strong>For example:<\/strong><\/p>\n                                <ul>\n                                    <li>A 5,000 BTU air conditioner can cool a small room, while a 12,000 BTU air\n                                        conditioner is typically used for larger spaces.<\/li>\n                                <\/ul>\n                                <p>The BTU is important in understanding the cooling or heating power of HVAC systems,\n                                    with higher BTU ratings indicating more powerful units capable of handling larger\n                                    spaces or greater heat loads.<\/p>","tab6-faq2_question2":"<p>Will Go Lime take back my existing Water Heater?<\/p>","tab6-faq2_para1":"<p>Absolutely! We’ll handle everything for you. This includes closing your current\n                                    provider’s account and safely returning their water heater. Once we take the water\n                                    heater from your home, we assume full responsibility for it, ensuring it’s securely\n                                    managed until it’s returned to the provider. You can relax and leave the entire\n                                    transition to us—no worries, just smooth service!<\/p>\n                                <p><strong>Here’s how it works:<\/strong><\/p>\n                                <ul>\n                                    <li>Closing Your Account: We will take care of all the steps needed to close your\n                                        account with your current provider.<\/li>\n                                    <li>Equipment Collection: We will have our technician remove\/return your old\n                                        equipment directly from your home, so you don’t have to lift a finger.<\/li>\n                                    <li>Responsibility: From ordering to installation, removal to return, and every step\n                                        in between, we take full responsibility for ensuring your satisfaction. We\n                                        handle everything with care and safety at every stage of the process.<\/li>\n                                <\/ul>\n                                <p><\/p>\n                                <p>This way, you can relax and leave everything to us! <\/p>","tab6-faq3_question3":"<p>What size Water Heater should I get for my home?<\/p>","tab6-faq3_para1":"<p>Water heaters are sized based on their gallon capacity. Here are our most common\n                                    sizes to suit different household needs:<\/p>\n                                <p><\/p>\n                                <ul>\n                                    <li>\n<strong>40 Gallon<\/strong> - 151 Litres – Ideal for smaller families<\/li>\n                                    <li>\n<strong>50 Gallon<\/strong> - 189 Litres – Most common water heater in Ontario\n                                    <\/li>\n                                    <li>\n<strong>60 Gallon<\/strong> - 227 Litres – Best for larger households<\/li>\n                                    <li>\n<strong>TANKLESS<\/strong> - Unlimited Hot Water – We have various sizes to meet\n                                        all property requirements<\/li>\n                                <\/ul>\n                                <p><\/p>\n                                <p>This guide will help you choose the perfect water heater size for your home, but if\n                                    you have questions please reach out to our experts they will ensure you have plenty\n                                    of hot water for your family’s needs.<\/p>"}}},"block_order":["images_tab_8FCnGM","faq_text_m7kA8r"],"name":"FAQ TABS SECTION","settings":{"main-tabs_heading":"Frequently Asked Questions","main-description_para":"Got questions? We’ve grouped the most common topics to help you find quick, clear answers about our products, services, and support.","search_image":"shopify:\/\/shop_images\/Buttons_-_Calc.png"}},"hover_images_text_section_8hEYVQ":{"type":"hover-images-text-section","blocks":{"hover_image_block_7hpGd6":{"type":"hover_image_block","settings":{"four_image_hover":"shopify:\/\/shop_images\/image-1.png","image_text":"Save money with a system that can operate at over 400% efficiency, producing 4 units of heating or cooling for every 1 unit of electricity"}},"hover_image_block_xdEFea":{"type":"hover_image_block","settings":{"four_image_hover":"shopify:\/\/shop_images\/image-2.png","image_text":"Save money with a system that can operate at over 400% efficiency, producing 4 units of heating or cooling for every 1 unit of electricity"}},"hover_image_block_eew6LW":{"type":"hover_image_block","settings":{"four_image_hover":"shopify:\/\/shop_images\/image-3.png","image_text":"Save money with a system that can operate at over 400% efficiency, producing 4 units of heating or cooling for every 1 unit of electricity"}},"hover_image_block_q6fBYw":{"type":"hover_image_block","settings":{"four_image_hover":"shopify:\/\/shop_images\/image-4.png","image_text":"Save money with a system that can operate at over 400% efficiency, producing 4 units of heating or cooling for every 1 unit of electricity"}}},"block_order":["hover_image_block_7hpGd6","hover_image_block_xdEFea","hover_image_block_eew6LW","hover_image_block_q6fBYw"],"name":"Image Hover Section","settings":{"top-hover_heading":"Smart comfort, inside and out.","top-hover_para":"Quilt combines a discreet outdoor unit with slim indoor units and intuitive controls to deliver tailored comfort. With independent zoning, clients can enjoy personalized heating and cooling that adapts to the way they live, work, and entertain.","top-main_image":"shopify:\/\/shop_images\/image-3.png"}},"video_four_boxes_CdbyYc":{"type":"video-four-boxes","blocks":{"image_with_text_MNjxhy":{"type":"image_with_text","settings":{"img-four_images":"shopify:\/\/shop_images\/tap-image.png","box-image_heading":"Pure Reverse Osmosis Drinking Water","box-image_para":"Give your family the healthiest start every morning with crystal-clear, great-tasting filtered water right from the tap."}},"image_with_text_mdNUGK":{"type":"image_with_text","settings":{"img-four_images":"shopify:\/\/shop_images\/brush-image.png","box-image_heading":"Hot Showers Always Ready","box-image_para":"No more morning rush stress — with a reliable water heater, everyone gets their turn without running out."}},"image_with_text_qKnKH7":{"type":"image_with_text","settings":{"img-four_images":"shopify:\/\/shop_images\/dollar-pocket-image.png","box-image_heading":"Lower Monthly Costs","box-image_para":"Competitors: $35–$39 for just a heater. With Go Lime, you pay only $29.95 and get both Hot Water Heater + Reverse Osmosis Filtration System."}},"image_with_text_YXzxAN":{"type":"image_with_text","settings":{"img-four_images":"shopify:\/\/shop_images\/house-image.png","box-image_heading":"Worry-Free Installation & Service","box-image_para":"Delivered, installed, and backed by Go Lime — so you save time and money without lifting a finger."}}},"block_order":["image_with_text_MNjxhy","image_with_text_mdNUGK","image_with_text_qKnKH7","image_with_text_YXzxAN"],"name":"Four Images Video","settings":{"main-heading_hdg":"The Everyday Benefits ParentsActually Care About.","main-top_para":"No need to purchase plastic water bottles anymore with a Reverse Osmosis Water Filtration System.","video-image_file":"http:\/\/127.0.0.1:5500\/f5c6c442dbd64333a60514ea8bdfe37a.HD-720p-2.1Mbps-54483233.mp4","pause-icon_image":"shopify:\/\/shop_images\/pause-image_87135f96-bae1-43c9-927f-973fccb5b2b1.png","play-icon_image":"shopify:\/\/shop_images\/play-image.png"}},"kytebaby_calender_jFzmfq":{"type":"kytebaby-calender","blocks":{"week_days_8pPqwh":{"type":"week_days","settings":{"week_daystext":"S"}},"week_days_4tBTwJ":{"type":"week_days","settings":{"week_daystext":"M"}},"week_days_GJytbT":{"type":"week_days","settings":{"week_daystext":"T"}},"week_days_499NFc":{"type":"week_days","settings":{"week_daystext":"W"}},"week_days_zKhDNE":{"type":"week_days","settings":{"week_daystext":"T"}},"week_days_mdEiM7":{"type":"week_days","settings":{"week_daystext":"F"}},"week_days_FDVCyx":{"type":"week_days","settings":{"week_daystext":"S"}},"month_days_emb8HG":{"type":"month-days","settings":{"month_daystext":""}},"month_days_CjrykR":{"type":"month-days","settings":{"month_daystext":""}},"month_days_LcXjB7":{"type":"month-days","settings":{"month_daystext":""}},"month_days_8PJxxq":{"type":"month-days","settings":{"month_daystext":""}},"month_days_kmyWg4":{"type":"month-days","settings":{"month_daystext":""}},"month_days_zqpdNz":{"type":"month-days","settings":{"month_daystext":""}},"month_days_iMy4nE":{"type":"month-days","settings":{"month_daystext":"1"}},"month_days_UjAFrJ":{"type":"month-days","settings":{"month_daystext":"Scottsdale,AZ Meetup"}},"month_days_t3dd8P":{"type":"month-days","settings":{"month_daystext":"3"}},"month_days_zqQMmV":{"type":"month-days","settings":{"month_daystext":"Bamboo Flex Womens's Leggings"}},"month_days_74YLNz":{"type":"month-days","settings":{"month_daystext":"IG Lookahead Live at 10 AM CT"}},"month_days_YicrzB":{"type":"month-days","settings":{"month_daystext":"Puffin LE"}},"month_days_6FFr8G":{"type":"month-days","settings":{"month_daystext":"Nursery + Bath 20% Off"}},"month_days_byywea":{"type":"month-days","settings":{"month_daystext":"8"}},"month_days_KPjPFg":{"type":"month-days","settings":{"month_daystext":"9"}},"month_days_qAfT3j":{"type":"month-days","settings":{"month_daystext":"10"}},"month_days_rQzYU7":{"type":"month-days","settings":{"month_daystext":"11"}},"month_days_PhUfrf":{"type":"month-days","settings":{"month_daystext":"12"}},"month_days_H9RJD6":{"type":"month-days","settings":{"month_daystext":"Ski"}},"month_days_gxp4Vy":{"type":"month-days","settings":{"month_daystext":"Sleep Bags 20% Off"}},"month_days_TxEALH":{"type":"month-days","settings":{"month_daystext":"15"}},"month_days_wwUChA":{"type":"month-days","settings":{"month_daystext":"Los Angeles, CA Meetup"}},"month_days_dpAPm9":{"type":"month-days","settings":{"month_daystext":"17"}},"month_days_HyqD9R":{"type":"month-days","settings":{"month_daystext":"18"}},"month_days_Qade66":{"type":"month-days","settings":{"month_daystext":"19"}},"month_days_eTpXEQ":{"type":"month-days","settings":{"month_daystext":"20"}},"month_days_W7NDxy":{"type":"month-days","settings":{"month_daystext":"Adult + Adult Home 20% Off"}},"month_days_DdRH4f":{"type":"month-days","settings":{"month_daystext":"22"}},"month_days_7GXT8t":{"type":"month-days","settings":{"month_daystext":"23"}},"month_days_pNJNm6":{"type":"month-days","settings":{"month_daystext":"24"}},"month_days_bHaxqi":{"type":"month-days","settings":{"month_daystext":"25"}},"month_days_fj6t7g":{"type":"month-days","settings":{"month_daystext":"26"}},"month_days_Ajt8Kx":{"type":"month-days","settings":{"month_daystext":"27"}},"month_days_d7rgDf":{"type":"month-days","settings":{"month_daystext":"Kids Clothing 20% Off"}},"month_days_q6YbRE":{"type":"month-days","settings":{"month_daystext":"29"}},"month_days_qDfCMb":{"type":"month-days","settings":{"month_daystext":"30"}}},"block_order":["week_days_8pPqwh","week_days_4tBTwJ","week_days_GJytbT","week_days_499NFc","week_days_zKhDNE","week_days_mdEiM7","week_days_FDVCyx","month_days_emb8HG","month_days_CjrykR","month_days_LcXjB7","month_days_8PJxxq","month_days_kmyWg4","month_days_zqpdNz","month_days_iMy4nE","month_days_UjAFrJ","month_days_t3dd8P","month_days_zqQMmV","month_days_74YLNz","month_days_YicrzB","month_days_6FFr8G","month_days_byywea","month_days_KPjPFg","month_days_qAfT3j","month_days_rQzYU7","month_days_PhUfrf","month_days_H9RJD6","month_days_gxp4Vy","month_days_TxEALH","month_days_wwUChA","month_days_dpAPm9","month_days_HyqD9R","month_days_Qade66","month_days_eTpXEQ","month_days_W7NDxy","month_days_DdRH4f","month_days_7GXT8t","month_days_pNJNm6","month_days_bHaxqi","month_days_fj6t7g","month_days_Ajt8Kx","month_days_d7rgDf","month_days_q6YbRE","month_days_qDfCMb"],"name":"Kyte Baby Calender","settings":{"main_customer_heading":"November 2025 Launch Calendar Overview","month_name-heading":"november"}}},"order":["golime_banner_b6nPwV","featured_collection","new_section_DWHprm","three_image_wYi7Mw","image_text_YCcThz","image2_text2_MneK4f","golime_slider_e8xNeT","shopify_plant_WBFTRK","tabbing_faq_wP6B39","hover_images_text_section_8hEYVQ","video_four_boxes_CdbyYc","kytebaby_calender_jFzmfq"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "golime_banner_b6nPwV": {
+      "type": "golime-banner",
+      "blocks": {
+        "icon_block_CnFm8b": {
+          "type": "icon_block",
+          "settings": {
+            "icon_image": "shopify://shop_images/google-reviews.png",
+            "text": "5000+ Positive Reviews",
+            "link": ""
+          }
+        },
+        "icon_block_k8FVmw": {
+          "type": "icon_block",
+          "settings": {
+            "icon_image": "shopify://shop_images/proudly-canadian.png",
+            "text": "Proudly Canadian",
+            "link": ""
+          }
+        },
+        "icon_block_XE8bya": {
+          "type": "icon_block",
+          "settings": {
+            "icon_image": "shopify://shop_images/money-image.png",
+            "text": "30 Day MoneyBack Guarantee",
+            "link": ""
+          }
+        },
+        "icon_block_MpVPVz": {
+          "type": "icon_block",
+          "settings": {
+            "icon_image": "shopify://shop_images/installation-image.png",
+            "text": "InstallationIncluded",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_block_CnFm8b",
+        "icon_block_k8FVmw",
+        "icon_block_XE8bya",
+        "icon_block_MpVPVz"
+      ],
+      "name": "Go Lime Banner",
+      "settings": {
+        "banner-desktop_image": "shopify://shop_images/desktop-images.png",
+        "banner-mobile_image": "shopify://shop_images/download_27d00dab-3dd3-48b1-8b17-121008b99605.png",
+        "go_backtxt": "Go Back",
+        "store_text": "Store",
+        "solar_text": "Solar",
+        "main_heading": "Energy Solutions for Ontario Homes",
+        "main_para": "Cut your energy bills and reduce your carbon footprint with smart solar solutions designed for Ontario’s climate.",
+        "buynow-btn_text": "BUY NOW",
+        "buynow-btn_link": "",
+        "speaks-expert_text": "Speak With An Expert",
+        "speaks-expert_link": "",
+        "maxwidth_image": "shopify://shop_images/banner-bottom-image.png"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "all",
+        "products_to_show": 8,
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "new_section_DWHprm": {
+      "type": "New_section",
+      "name": "Golime Section",
+      "settings": {
+        "Sub_go-lime-logo": "shopify://shop_images/logo.png",
+        "Golime_h1-heading": "Commercial HVAC Solutions That Work as Hard as You Do",
+        "sub_Golime-para": "<p>From offices and restaurants to multi-residential and industrial buildings, we design, install, and support energy-efficient systems built to perform - on time and on budget.</p>",
+        "link-button": "GET A QUOTE",
+        "second-image": "shopify://shop_images/image.png"
+      }
+    },
+    "three_image_wYi7Mw": {
+      "type": "three-image",
+      "blocks": {
+        "three_boxes_tNycFg": {
+          "type": "three-boxes",
+          "settings": {
+            "main_image": "shopify://shop_images/img-1.png",
+            "other_para": "<p>Browse our online store anytime to find energy-efficient heating and cooling solutions with transparent pricing. No hidden fees, just straightforward comfort.</p>"
+          }
+        },
+        "three_boxes_th8BiL": {
+          "type": "three-boxes",
+          "settings": {
+            "main_image": "shopify://shop_images/img-2.png",
+            "other_para": "<p>Not sure what’s right for your home? Speak with one of our licensed pros for tailored recommendations and support - zero pressure, 100% honest.<br/><br/></p>"
+          }
+        },
+        "three_boxes_cMtDNh": {
+          "type": "three-boxes",
+          "settings": {
+            "main_image": "shopify://shop_images/img-3.png",
+            "other_para": "<p>Our in-house installers show up ready to deliver. With flexible scheduling and same-day service available, we get you up and running without the wait.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "three_boxes_tNycFg",
+        "three_boxes_th8BiL",
+        "three_boxes_cMtDNh"
+      ],
+      "name": "Three Boxes",
+      "settings": {
+        "h2-heading-main": "How Does Go Lime Work?",
+        "main-top-para": "Your path to energy-efficient comfort starts here. From selecting the right product to getting it installed fast — we make the process simple, expert-guided, and stress-free."
+      }
+    },
+    "image_text_YCcThz": {
+      "type": "image-text",
+      "name": "right-image-text",
+      "settings": {
+        "image_text": "shopify://shop_images/mechanical-image.png",
+        "image-text-heading": "Mechanical",
+        "cst-text-description": "<p>We provide comprehensive mechanical solutions that ensure efficient, reliable, and cost-effective operations for your business.</p>",
+        "botom-descp-hdng": "Services Offered",
+        "listed-item-1": "Plumbing / Pipefitting",
+        "listed-item-2": "Gas Services / Installs / Inspections & Maintenance",
+        "listed-item-3": "HVAC-R (Heating, Ventilation, Air Conditioning & Refrigeration)",
+        "listed-item-4": "Energy Management Systems & Retrofits",
+        "listed-item-5": "Module / Equipment installations"
+      }
+    },
+    "image2_text2_MneK4f": {
+      "type": "image2-text2",
+      "name": "Water Image Text",
+      "settings": {
+        "image2_text2": "Water Heating",
+        "text2_tst": "<p>We provide efficient and reliable water heating solutions, ensuring consistent hot water supply for businesses of all sizes.</p>",
+        "para2_downheading": "Services Offered:",
+        "listed_item-1": "Boilers",
+        "listed_item-2": "Solar Thermal Hot Water",
+        "listed_item-3": "Multi Tankless Units",
+        "Water_image": "shopify://shop_images/Water_Heating.png"
+      }
+    },
+    "golime_slider_e8xNeT": {
+      "type": "golime-slider",
+      "blocks": {
+        "slider_mHfDBM": {
+          "type": "Slider",
+          "settings": {
+            "slider_image": "shopify://shop_images/Reddit_Logo_1.png",
+            "slider-heading": "<p>evereddie</p>",
+            "slider-description": "I just had Go Lime install my new hot water tank, and everything went great. No\n                                    issues at all, and you can't beat the price. Some people complained about the fan on\n                                    the hot water tank being super loud, but I don’t have that issue at all. In fact,\n                                    it’s quieter than my old tank"
+          }
+        },
+        "slider_NUp4AA": {
+          "type": "Slider",
+          "settings": {
+            "slider_image": "shopify://shop_images/HomeStars-Logo_Cyan_1_bffd3e8e-30af-47bf-b7c0-39baaf758939.png",
+            "slider-heading": "<p>HomeOwner</p>",
+            "slider-description": "This is the third time I met Ashraf to do the services at my home, everytime the next\n                                    experience waa wonderful than the previous one, he is extremely knowledgeable and\n                                    imparts wonderful professionalism. He not only fixed the issues but gave me the tips\n                                    & advices how to maintain and keep running the systems. He is very courteous,\n                                    friendly and helpful, I will definitely will recommend him100% for the jobs and want\n                                    to see him if I have the service calls."
+          }
+        },
+        "slider_N9WiiV": {
+          "type": "Slider",
+          "settings": {
+            "slider_image": "shopify://shop_images/download_87951a55-04b6-4539-b473-b90d774e4ac2.png",
+            "slider-heading": "<p>Adam Green</p>",
+            "slider-description": "I just replaced my hot water heater. I stumbled across this company online and read\n                                    the good reviews. Price was much better than other companies, so I was skeptical. I\n                                    called Saturday afternoon, confirmed online Saturday night, and the work was\n                                    completed Sunday afternoon. I have been so impressed with the service from my phone\n                                    conversation with Juan to the installation by Alireza. Now I can only hope that the\n                                    product is as good as the price, technicians, and customer service."
+          }
+        },
+        "slider_TCLeW9": {
+          "type": "Slider",
+          "settings": {
+            "slider_image": "shopify://shop_images/download_5eca64b2-acc5-485e-b56e-ece05b3422e7.png",
+            "slider-heading": "<p>HockeyfanCanada</p>",
+            "slider-description": "Finally, purchased today, scheduled installation over the weekend. For comparison I\n                                    have checked with Home Depot and they quoted $2200 +tax. Rheeem 50 Gallon power vent\n                                    $1489 is the item they will install, so roughly $700 installation fees. They won’t\n                                    return the old one. Not sure about Costco pricing, they have $300 Gift Card. I don’t\n                                    think anyone else would sell less than Go Lime. Thanks."
+          }
+        }
+      },
+      "block_order": [
+        "slider_mHfDBM",
+        "slider_NUp4AA",
+        "slider_N9WiiV",
+        "slider_TCLeW9"
+      ],
+      "name": "Golime Slider",
+      "settings": {
+        "main_heading": "Soft Flex, Big Proof.",
+        "main_descp": "<p>Join Thousands of Happy Ontario Homeowners</p>",
+        "star_para": "4.7\n                        <span>★</span>\n                        out of 5 based on 5,000+ reviews"
+      }
+    },
+    "shopify_plant_WBFTRK": {
+      "type": "shopify-plant",
+      "name": "Plants Image Section",
+      "settings": {
+        "plants_image_video": "shopify://files/videos/a5e0deef9bc9493d8e6ad3ff3ed5c4d6.HD-1080p-7.2Mbps-51341469.mp4",
+        "plant_girl_image": "shopify://shop_images/download_abcf3714-a27f-422f-b605-1b4ea403e0a9.png",
+        "plants_heading": "We Plant Goodness",
+        "plants_para_description": "Every order supports reforestation. For each purchase made, we plant a tree because real change starts with simple actions. Place an order, and we’ll plant a tree on your behalf."
+      }
+    },
+    "tabbing_faq_wP6B39": {
+      "type": "tabbing-faq",
+      "blocks": {
+        "images_tab_8FCnGM": {
+          "type": "images_tab",
+          "settings": {
+            "tabbing_image1": "shopify://shop_images/1-desktop.png",
+            "tabbing_heading1": "About Go Lime",
+            "tabbing_image2": "shopify://shop_images/2-desktop.png",
+            "tabbing_heading2": "Installation and Equipment",
+            "tabbing_image3": "shopify://shop_images/3-desktop.png",
+            "tabbing_heading3": "Billing and Accounts",
+            "tabbing_image4": "shopify://shop_images/4-desktop.png",
+            "tabbing_heading4": "Service and Maintenance",
+            "tabbing_image5": "shopify://shop_images/5-desktop.png",
+            "tabbing_heading5": "Heating and Cooling",
+            "tabbing_image6": "shopify://shop_images/6-desktop.png",
+            "tabbing_heading6": "Water Heating Systems"
+          }
+        },
+        "faq_text_m7kA8r": {
+          "type": "faq_text",
+          "settings": {
+            "tab1-question1_faq1": "<p>Who is Go Lime?</p>",
+            "tab1-faq1_para1": "<p>At Go Lime, we have been part of this industry for a long time. While we’re not\n                                    perfect, and we’ve never claimed to be, we have come to realize that this industry\n                                    needs change. We are here today to make it right.</p>\n                                <p></p>\n                                <p>Our mission is simple: to offer every household in Ontario the power of choice.</p>\n                                <p></p>\n                                <p>We asked ourselves: Why are Ontario homeowners stuck in overpriced water heater\n                                    rental contracts, facing costly buyouts, poor customer service, and endless rental\n                                    fees?</p>\n                                <p></p>\n                                <p>By listening to you, we have created a Canadian Owned Company that offers fair\n                                    pricing, and simplicity, providing exactly what you need, and never pushing for\n                                    more. We prioritize transparency with straightforward, digital first delivering more\n                                    for much less than you pay today. </p>\n                                <p>Our main objective is to eliminate unnecessary costs for you — we sell direct from\n                                    the manufacturer, offering commission free experts, always powered by technology —\n                                    and pass those savings directly to you.</p>\n                                <p>Our goal is to return over $1 billion back into the pockets of Ontario households.\n                                </p>\n                                <p>Our purpose is to reintroduce choice and control to customers across Ontario,\n                                    allowing you to take charge of your water heater costs, which have long been\n                                    inflated by other companies that have lost focus of their customers. </p>\n                                <p>Our commitment is to prioritize a customer-first approach. You decide how to interact\n                                    with us — whether you buy up-front or subscribe monthly, engage online, or talk\n                                    directly to an expert. The power is always in your hands. </p>\n                                <p>If you are tired of the old way, join us in the fresh new way and join the Go Lime\n                                    Green Revolution Today.</p>",
+            "tab1-question2_faq1": "<p>What areas does Go Lime service?</p>",
+            "tab1-faq2_para1": "<p>At Go Lime, we’re proud to offer reliable service to a wide range of areas every day.\n                                    We currently serve:\n                                    <br>\n                                    <br>\n                                    - City of Toronto\n                                    <br>\n                                    - Halton Region\n                                    <br>\n                                    - Peel Region\n                                    <br>\n                                    - Durham Region\n                                    <br>\n                                    - Sudbury Area\n                                    <br>\n                                    - Kingston Area\n                                    <br>\n                                    - Windsor Area\n                                    <br>\n                                    - London Area\n                                    <br>\n                                    - Ottawa Area\n                                    <br>\n                                    - Niagara Area\n                                    <br>\n                                    - Southern Ontario\n                                    <br>\n                                    <br>\n                                </p>\n                                <p>We are expanding each and every week so if you want to see Go Lime in your own\n                                    community, please email us at <a href=\"#\">care@golime.com</a>\n                                    <br>\n                                </p>",
+            "tab1-question3_faq1": "<p>Can I buy from Go Lime if I'm a Landlord?</p>",
+            "tab1-faq3_para1": "<p>Absolutely! As a landlord, you can easily purchase from Go Lime. The process is just\n                                    like buying for your own home. </p>\n                                <p>Simply select the equipment you’d like to upgrade, ensure the shipping address is the\n                                    installation location, and then reach out to your tenants to confirm they’ll be\n                                    available when our technicians arrive to install your new equipment. </p>\n                                <p>We're here to make the process as smooth as possible for you and your tenants!</p>",
+            "tab1-question4_faq1": "<p>Will Go Lime coordinate the return and upgrade with my existing provider?</p>",
+            "tab1-faq4_para1": "<p>We’ll handle the entire process for you—from closing your current provider’s account\n                                    to safely returning their old equipment. Once we pick up the equipment. from your\n                                    home, we take full responsibility for it, ensuring it's secure until it’s returned\n                                    to the previous provider. You won’t have to worry about a thing!</p>\n                                <p>Here’s how it works:</p>\n                                <ul>\n                                    <li>\n                                        <strong>Closing Your Account</strong>\n                                        : We’ll take care of all the steps needed to close your account with your\n                                        current provider.\n                                    </li>\n                                    <li>\n                                        <strong>Tank Collection</strong>\n                                        : We’ll pick up the tank directly from your home, so you don’t have to lift a\n                                        finger.\n                                    </li>\n                                    <li>\n                                        <strong>Responsibility</strong>\n                                        : From pickup to return, we ensure the tank is safely handled every step of the\n                                        way.\n                                    </li>\n                                </ul>\n                                \n                                <p>\n                                    <strong>Important Note</strong> : Depending on your existing provider and the age of\n                                    your equipment, there may be a buyout <strong>or exit fees</strong> for the\n                                    equipment. We are always here to help but please understand with your existing\n                                    provider what the cancellation/buy-outs fees are — we will always do everything we\n                                    can to help, and that’s why we are so customer focused as part the Go Lime\n                                    Revolution. We know by switching to us you will save, so to have no surprises as a\n                                    new customer please always call your current provider and get all the details on\n                                    what to expect when leaving.\n                                </p>\n                                <p>Go Lime does not charge any cancellation fees and we have the most transparent terms\n                                    in the industry with our New Go Flex offering --- so sit back, relax, and let Go\n                                    Lime show you an entirely new way to enjoy your home hot water. </p>",
+            "tab1-question5_faq1": "<p>What makes Go Lime different from other HVAC companies?</p>",
+            "tab1-faq5_para1": "<p>What sets Go Lime apart from other HVAC companies is our commitment to making the\n                                    entire process as convenient and hassle-free as possible for you. We offer a simple\n                                    online shopping experience, with clear, upfront pricing and no hidden fees.</p>\n                                <p>Our flexible payment options through Go Flex make it easy to fit your new equipment\n                                    into your budget. On top of that, we provide free installation and extended\n                                    coverage, ensuring that your home comfort is always a top priority. With Go Lime,\n                                    you get more than just a regular HVAC company – you get peace of mind.</p>",
+            "tab2-question1_faq1": "<p>What is the process for returning my old Water Heater to my existing provider?</p>",
+            "tab2-faq1_para1": "<p>For your convenience, we ensure that your old water heater is returned to the\n                                    existing provider within 30 calendar days. Our team handles the process efficiently,\n                                    so you don’t have to worry about a thing. If you have any questions or need further\n                                    assistance, we're always here to help.</p>",
+            "tab2-question2_faq1": "<p>Can I purchase multiple products and have them all installed at the same time?</p>",
+            "tab2-faq2_para1": "<p>Yes, absolutely! You can purchase multiple products — whether it's a heat pump,\n                                    tankless water heater, or any other system on our website — we will coordinate the\n                                    entire installation of all your new products as soon as possible to meet your\n                                    installation needs!</p>\n                                <p>This way, you get everything installed on the same day, saving you time and making\n                                    the process as seamless and convenient as possible.</p>",
+            "tab2-faq2_question3": "<p>Is installation included when I buy online?</p>",
+            "tab2-faq3_para1": "<p>Yes, installation is included when you purchase anything from Go Lime! Professional\n                                    installation is part of the package, and during checkout, you’ll be able to select\n                                    your preferred installation date and time. Once your order is confirmed, our team\n                                    will reach out to finalize the details and schedule the installation at a time that\n                                    works best for you. </p>\n                                <p>(BTW if you order a T-Shirt --- we would have a hard time installing that for you but\n                                    aside from our merch everything else includes installation) </p>",
+            "tab2-faq4_question4": "<p>Do you offer free installation?</p>",
+            "tab2-faq4_para1": "<p>Yes, Go Lime offers free standard installation on all our home comfort products, with\n                                    no hidden fees. </p>\n                                <p>The price you see at checkout is all-inclusive – it covers both the equipment and the\n                                    professional installation, so you can enjoy a hassle-free experience from start to\n                                    finish.</p>",
+            "tab3-faq1_question1": "<p>What is Go Flex?</p>",
+            "tab3-faq1_para1": "<p>Go Flex is our flexible payment plan that allows you to enjoy your new equipment with\n                                    an affordable monthly subscription. If you decide to buy the equipment later, you\n                                    can purchase it outright at a reduced price at any time. </p>\n                                <p>It's designed to give you financial flexibility, so you can get the home comfort you\n                                    need without the upfront cost.</p>",
+            "tab3-faq2_question2": "<p>What is Go Pay?</p>",
+            "tab3-faq2_para1": "<p>Go Pay lets you purchase your new equipment outright, giving you complete ownership\n                                    and freedom.</p>\n                                <p>You’ll be responsible for any service and maintenance trips, but there is NO monthly\n                                    subscription or long-term commitment — just the flexibility to own your equipment on\n                                    your terms.</p>",
+            "tab3-faq3_question3": "<p>How does Go Flex work?</p>",
+            "tab3-faq3_para1": "<p>With Go Flex, you can enjoy your new home comfort equipment with an affordable\n                                    monthly subscription that includes unlimited service calls and yearly maintenance\n                                    visits. Plus, you have the flexibility to purchase the equipment outright at any\n                                    time, giving you full control and ownership when you're ready.</p>\n                                <p>It’s all about providing you with convenience and peace of mind, whenever you need\n                                    it.</p>",
+            "tab3-faq4_question4": "<p>Do my monthly prices ever increase?</p>",
+            "tab3-faq4_para1": "<p>At Go Lime, we are dedicated to offering the best prices for our customers. We\n                                    understand that inflation can affect everyone’s budget, which is why we’ve capped\n                                    price increases at just 3.99% + CPI. </p>\n                                <p>To ensure we continue delivering the highest level of customer service from our\n                                    licensed in-house technicians and 24/7 call center support to full replacements and\n                                    repairs under Go Flex, there may be a slight increase in your monthly payment.</p>\n                                <p>We believe in transparency and fairness, and you can count on us to do everything we\n                                    can to keep costs low while maintaining the quality and reliability you expect. Our\n                                    commitment is to provide exceptional value, no matter the economic climate.</p>",
+            "tab3-faq5_question5": "<p>Is Go Flex a finance or rental contract?</p>",
+            "tab3-faq5_para1": "<p>No, Go Flex is not a finance or rental contract. Go Flex is our flexible payment plan\n                                    designed to make home comfort equipment more accessible and more affordable. With Go\n                                    Flex, you can get the equipment you need for a manageable monthly subscription,\n                                    allowing you to have your new equipment installed without the upfront cost.</p>\n                                <p>What sets Go Flex apart is it’s flexibility — you are not tied to a long-term\n                                    contract. You can choose to purchase your equipment outright at any time, giving you\n                                    full control and ownership when you’re ready.</p>\n                                <p>Unlike rental agreements or high-interest finance plans, Go Flex offers a\n                                    transparent, straightforward option that lets you enjoy your equipment without\n                                    limitations. At Go Lime, we’re committed to helping you make smart, stress-free\n                                    decisions for your home.</p>",
+            "tab4-faq1_question1": "<p>What is the warranty on your products?</p>",
+            "tab4-faq1_para1": "<p>When enrolling into our Go Flex subscription plan, you enroll into 15 years FULL 100%\n                                    parts and labour warranty including unlimited service calls and yearly maintenance\n                                    visits</p>\n                                <p>If we are ever unable to repair your equipment, we’ll replace it, ensuring your\n                                    system is always running at its best. At Go Lime, we’re committed to keeping your\n                                    home comfort in top shape, no matter what.</p>\n                                <p>If you decide to purchase your equipment with Go-Pay you will receive the\n                                    manufacturer’s warranty, typically ranging from 6 to 10 years on major components,\n                                    so you can enjoy peace of mind knowing your equipment is protected and remember we\n                                    have extended coverage with our Go Protect plans so you can always add coverage to\n                                    your purchased equipment at any time!</p>",
+            "tab4-faq2_question2": "<p>Is there a service plan included with my purchase?</p>",
+            "tab4-faq2_para1": "<p>The Go Flex subscription option includes FULL coverage for all your home comfort\n                                    equipment, keeping them in top condition with unlimited service calls, unlimited\n                                    repairs and yearly maintenance visits.</p>\n                                <p>If you prefer to purchase your equipment outright, we also offer Go Protect plans,\n                                    which provide comprehensive coverage, including regular maintenance and repairs.</p>\n                                <p>With Go Flex or Go Protect, you can ensure your system stays in great shape for years\n                                    to come. Learn more about our Go Protect plans to find the best option for your\n                                    needs!</p>",
+            "tab4-faq3_question3": "<p>Can I schedule a maintenance check-up for my existing equipment?</p>",
+            "tab4-faq3_para1": "<p>Yes, we offer maintenance services even if you didn’t purchase your system from us.\n                                    Regular maintenance helps keep your equipment running efficiently and extends its\n                                    lifespan.</p>\n                                <p>Just contact us to schedule a maintenance check-up, and we’ll take care of the rest!\n                                </p>",
+            "tab5-faq1_question1": "<p>What is the difference between Single Stage and Dual Stage Furnace?</p>",
+            "tab5-faq1_para1": "<p>The main difference between a <strong>Single-Stage Furnace</strong> and a\n                                    <strong>Dual-Stage Furnace</strong> lies in how the furnace operates and adjusts its\n                                    heating capacity.\n                                </p>\n                                <p></p>\n                                <p><strong>Single-Stage Furnace:</strong></p>\n                                <ul>\n                                    <li>\n                                        <strong>Operation</strong>\n                                        : Runs at full capacity or is off.\n                                    </li>\n                                    <li>\n                                        <strong>Efficiency</strong>\n                                        : Less efficient, with more temperature fluctuations.\n                                    </li>\n                                    <li>\n                                        <strong>Comfort</strong>\n                                        : Can cause uneven heating and more on/off cycling.\n                                    </li>\n                                    <li>\n                                        <strong>Cost</strong>\n                                        : Lower initial cost, higher long-term energy costs.\n                                    </li>\n                                </ul>\n                                <p></p>\n                                <p><strong>Key Difference</strong> : Dual-stage furnaces offer better efficiency and\n                                    comfort with adjustable heating, while single-stage furnaces only run at full\n                                    capacity. </p>",
+            "tab5-faq2_question2": "<p>What size furnace do I require for my home?</p>",
+            "tab5-faq2_para1": "<p>While exact needs may vary, here is a rough estimate to determine furnace sizing:</p>\n                                <ul>\n                                    <li><strong>Up to–1,500 sq. ft. Home: 45,000 BTUs</strong></li>\n                                    <li><strong>1,500–2,500 sq. ft. Home: 70,000 BTUs</strong></li>\n                                    <li><strong>2,500–3,500 sq. ft. Home: 90,000 BTUs</strong></li>\n                                    <li><strong>3,000–4,000 sq. ft. Home: 110,000 BTUs</strong></li>\n                                </ul>\n                                <p>If you are unsure, consult a Go Lime expert to ensure your furnace is perfectly sized\n                                    for your home and region. They will factor in your home's unique characteristics\n                                    like the home's age, insulation, and windows to recommend the optimal furnace\n                                    size.Proper sizing ensures lower energy costs and a consistently comfortable home.\n                                </p>",
+            "tab6-faq1_question1": "<p>What does BTU mean?</p>",
+            "tab6-faq1_para1": "<p>BTU stands for British Thermal Unit, which is a unit of energy used to measure the\n                                    amount of heat required to raise the temperature of one pound of water by one degree\n                                    Fahrenheit.</p>\n                                <p><strong>In the context of air conditioning and heating:</strong></p>\n                                <ul>\n                                    <li>1 BTU is the amount of heat needed to increase the temperature of 1 pound of\n                                        water by 1°F.</li>\n                                    <li>Air conditioning and heating systems are often rated by their capacity to either\n                                        remove or add heat, and this capacity is commonly measured in BTUs.</li>\n                                </ul>\n                                <p><strong>For example:</strong></p>\n                                <ul>\n                                    <li>A 5,000 BTU air conditioner can cool a small room, while a 12,000 BTU air\n                                        conditioner is typically used for larger spaces.</li>\n                                </ul>\n                                <p>The BTU is important in understanding the cooling or heating power of HVAC systems,\n                                    with higher BTU ratings indicating more powerful units capable of handling larger\n                                    spaces or greater heat loads.</p>",
+            "tab6-faq2_question2": "<p>Will Go Lime take back my existing Water Heater?</p>",
+            "tab6-faq2_para1": "<p>Absolutely! We’ll handle everything for you. This includes closing your current\n                                    provider’s account and safely returning their water heater. Once we take the water\n                                    heater from your home, we assume full responsibility for it, ensuring it’s securely\n                                    managed until it’s returned to the provider. You can relax and leave the entire\n                                    transition to us—no worries, just smooth service!</p>\n                                <p><strong>Here’s how it works:</strong></p>\n                                <ul>\n                                    <li>Closing Your Account: We will take care of all the steps needed to close your\n                                        account with your current provider.</li>\n                                    <li>Equipment Collection: We will have our technician remove/return your old\n                                        equipment directly from your home, so you don’t have to lift a finger.</li>\n                                    <li>Responsibility: From ordering to installation, removal to return, and every step\n                                        in between, we take full responsibility for ensuring your satisfaction. We\n                                        handle everything with care and safety at every stage of the process.</li>\n                                </ul>\n                                <p></p>\n                                <p>This way, you can relax and leave everything to us! </p>",
+            "tab6-faq3_question3": "<p>What size Water Heater should I get for my home?</p>",
+            "tab6-faq3_para1": "<p>Water heaters are sized based on their gallon capacity. Here are our most common\n                                    sizes to suit different household needs:</p>\n                                <p></p>\n                                <ul>\n                                    <li>\n<strong>40 Gallon</strong> - 151 Litres – Ideal for smaller families</li>\n                                    <li>\n<strong>50 Gallon</strong> - 189 Litres – Most common water heater in Ontario\n                                    </li>\n                                    <li>\n<strong>60 Gallon</strong> - 227 Litres – Best for larger households</li>\n                                    <li>\n<strong>TANKLESS</strong> - Unlimited Hot Water – We have various sizes to meet\n                                        all property requirements</li>\n                                </ul>\n                                <p></p>\n                                <p>This guide will help you choose the perfect water heater size for your home, but if\n                                    you have questions please reach out to our experts they will ensure you have plenty\n                                    of hot water for your family’s needs.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "images_tab_8FCnGM",
+        "faq_text_m7kA8r"
+      ],
+      "name": "FAQ TABS SECTION",
+      "settings": {
+        "main-tabs_heading": "Frequently Asked Questions",
+        "main-description_para": "Got questions? We’ve grouped the most common topics to help you find quick, clear answers about our products, services, and support.",
+        "search_image": "shopify://shop_images/Buttons_-_Calc.png"
+      }
+    },
+    "hover_images_text_section_8hEYVQ": {
+      "type": "hover-images-text-section",
+      "blocks": {
+        "hover_image_block_7hpGd6": {
+          "type": "hover_image_block",
+          "settings": {
+            "four_image_hover": "shopify://shop_images/image-1.png",
+            "image_text": "Save money with a system that can operate at over 400% efficiency, producing 4 units of heating or cooling for every 1 unit of electricity"
+          }
+        },
+        "hover_image_block_xdEFea": {
+          "type": "hover_image_block",
+          "settings": {
+            "four_image_hover": "shopify://shop_images/image-2.png",
+            "image_text": "Save money with a system that can operate at over 400% efficiency, producing 4 units of heating or cooling for every 1 unit of electricity"
+          }
+        },
+        "hover_image_block_eew6LW": {
+          "type": "hover_image_block",
+          "settings": {
+            "four_image_hover": "shopify://shop_images/image-3.png",
+            "image_text": "Save money with a system that can operate at over 400% efficiency, producing 4 units of heating or cooling for every 1 unit of electricity"
+          }
+        },
+        "hover_image_block_q6fBYw": {
+          "type": "hover_image_block",
+          "settings": {
+            "four_image_hover": "shopify://shop_images/image-4.png",
+            "image_text": "Save money with a system that can operate at over 400% efficiency, producing 4 units of heating or cooling for every 1 unit of electricity"
+          }
+        }
+      },
+      "block_order": [
+        "hover_image_block_7hpGd6",
+        "hover_image_block_xdEFea",
+        "hover_image_block_eew6LW",
+        "hover_image_block_q6fBYw"
+      ],
+      "name": "Image Hover Section",
+      "settings": {
+        "top-hover_heading": "Smart comfort, inside and out.",
+        "top-hover_para": "Quilt combines a discreet outdoor unit with slim indoor units and intuitive controls to deliver tailored comfort. With independent zoning, clients can enjoy personalized heating and cooling that adapts to the way they live, work, and entertain.",
+        "top-main_image": "shopify://shop_images/image-3.png"
+      }
+    },
+    "video_four_boxes_CdbyYc": {
+      "type": "video-four-boxes",
+      "blocks": {
+        "image_with_text_MNjxhy": {
+          "type": "image_with_text",
+          "settings": {
+            "img-four_images": "shopify://shop_images/tap-image.png",
+            "box-image_heading": "Pure Reverse Osmosis Drinking Water",
+            "box-image_para": "Give your family the healthiest start every morning with crystal-clear, great-tasting filtered water right from the tap."
+          }
+        },
+        "image_with_text_mdNUGK": {
+          "type": "image_with_text",
+          "settings": {
+            "img-four_images": "shopify://shop_images/brush-image.png",
+            "box-image_heading": "Hot Showers Always Ready",
+            "box-image_para": "No more morning rush stress — with a reliable water heater, everyone gets their turn without running out."
+          }
+        },
+        "image_with_text_qKnKH7": {
+          "type": "image_with_text",
+          "settings": {
+            "img-four_images": "shopify://shop_images/dollar-pocket-image.png",
+            "box-image_heading": "Lower Monthly Costs",
+            "box-image_para": "Competitors: $35–$39 for just a heater. With Go Lime, you pay only $29.95 and get both Hot Water Heater + Reverse Osmosis Filtration System."
+          }
+        },
+        "image_with_text_YXzxAN": {
+          "type": "image_with_text",
+          "settings": {
+            "img-four_images": "shopify://shop_images/house-image.png",
+            "box-image_heading": "Worry-Free Installation & Service",
+            "box-image_para": "Delivered, installed, and backed by Go Lime — so you save time and money without lifting a finger."
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_MNjxhy",
+        "image_with_text_mdNUGK",
+        "image_with_text_qKnKH7",
+        "image_with_text_YXzxAN"
+      ],
+      "name": "Four Images Video",
+      "settings": {
+        "main-heading_hdg": "The Everyday Benefits ParentsActually Care About.",
+        "main-top_para": "No need to purchase plastic water bottles anymore with a Reverse Osmosis Water Filtration System.",
+        "video-image_file": "http://127.0.0.1:5500/f5c6c442dbd64333a60514ea8bdfe37a.HD-720p-2.1Mbps-54483233.mp4",
+        "pause-icon_image": "shopify://shop_images/pause-image_87135f96-bae1-43c9-927f-973fccb5b2b1.png",
+        "play-icon_image": "shopify://shop_images/play-image.png"
+      }
+    },
+    "kytebaby_calender_jFzmfq": {
+      "type": "kytebaby-calender",
+      "blocks": {
+        "week_days_8pPqwh": {
+          "type": "week_days",
+          "settings": {
+            "week_daystext": "S"
+          }
+        },
+        "week_days_4tBTwJ": {
+          "type": "week_days",
+          "settings": {
+            "week_daystext": "M"
+          }
+        },
+        "week_days_GJytbT": {
+          "type": "week_days",
+          "settings": {
+            "week_daystext": "T"
+          }
+        },
+        "week_days_499NFc": {
+          "type": "week_days",
+          "settings": {
+            "week_daystext": "W"
+          }
+        },
+        "week_days_zKhDNE": {
+          "type": "week_days",
+          "settings": {
+            "week_daystext": "T"
+          }
+        },
+        "week_days_mdEiM7": {
+          "type": "week_days",
+          "settings": {
+            "week_daystext": "F"
+          }
+        },
+        "week_days_FDVCyx": {
+          "type": "week_days",
+          "settings": {
+            "week_daystext": "S"
+          }
+        },
+        "month_days_emb8HG": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": ""
+          }
+        },
+        "month_days_CjrykR": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": ""
+          }
+        },
+        "month_days_LcXjB7": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": ""
+          }
+        },
+        "month_days_8PJxxq": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": ""
+          }
+        },
+        "month_days_kmyWg4": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": ""
+          }
+        },
+        "month_days_zqpdNz": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": ""
+          }
+        },
+        "month_days_iMy4nE": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "1"
+          }
+        },
+        "month_days_UjAFrJ": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "Scottsdale,AZ Meetup"
+          }
+        },
+        "month_days_t3dd8P": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "3"
+          }
+        },
+        "month_days_zqQMmV": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "Bamboo Flex Womens's Leggings"
+          }
+        },
+        "month_days_74YLNz": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "IG Lookahead Live at 10 AM CT"
+          }
+        },
+        "month_days_YicrzB": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "Puffin LE"
+          }
+        },
+        "month_days_6FFr8G": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "Nursery + Bath 20% Off"
+          }
+        },
+        "month_days_byywea": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "8"
+          }
+        },
+        "month_days_KPjPFg": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "9"
+          }
+        },
+        "month_days_qAfT3j": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "10"
+          }
+        },
+        "month_days_rQzYU7": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "11"
+          }
+        },
+        "month_days_PhUfrf": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "12"
+          }
+        },
+        "month_days_H9RJD6": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "Ski"
+          }
+        },
+        "month_days_gxp4Vy": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "Sleep Bags 20% Off"
+          }
+        },
+        "month_days_TxEALH": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "15"
+          }
+        },
+        "month_days_wwUChA": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "Los Angeles, CA Meetup"
+          }
+        },
+        "month_days_dpAPm9": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "17"
+          }
+        },
+        "month_days_HyqD9R": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "18"
+          }
+        },
+        "month_days_Qade66": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "19"
+          }
+        },
+        "month_days_eTpXEQ": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "20"
+          }
+        },
+        "month_days_W7NDxy": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "Adult + Adult Home 20% Off"
+          }
+        },
+        "month_days_DdRH4f": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "22"
+          }
+        },
+        "month_days_7GXT8t": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "23"
+          }
+        },
+        "month_days_pNJNm6": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "24"
+          }
+        },
+        "month_days_bHaxqi": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "25"
+          }
+        },
+        "month_days_fj6t7g": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "26"
+          }
+        },
+        "month_days_Ajt8Kx": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "27"
+          }
+        },
+        "month_days_d7rgDf": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "Kids Clothing 20% Off"
+          }
+        },
+        "month_days_q6YbRE": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "29"
+          }
+        },
+        "month_days_qDfCMb": {
+          "type": "month-days",
+          "settings": {
+            "month_daystext": "30"
+          }
+        }
+      },
+      "block_order": [
+        "week_days_8pPqwh",
+        "week_days_4tBTwJ",
+        "week_days_GJytbT",
+        "week_days_499NFc",
+        "week_days_zKhDNE",
+        "week_days_mdEiM7",
+        "week_days_FDVCyx",
+        "month_days_emb8HG",
+        "month_days_CjrykR",
+        "month_days_LcXjB7",
+        "month_days_8PJxxq",
+        "month_days_kmyWg4",
+        "month_days_zqpdNz",
+        "month_days_iMy4nE",
+        "month_days_UjAFrJ",
+        "month_days_t3dd8P",
+        "month_days_zqQMmV",
+        "month_days_74YLNz",
+        "month_days_YicrzB",
+        "month_days_6FFr8G",
+        "month_days_byywea",
+        "month_days_KPjPFg",
+        "month_days_qAfT3j",
+        "month_days_rQzYU7",
+        "month_days_PhUfrf",
+        "month_days_H9RJD6",
+        "month_days_gxp4Vy",
+        "month_days_TxEALH",
+        "month_days_wwUChA",
+        "month_days_dpAPm9",
+        "month_days_HyqD9R",
+        "month_days_Qade66",
+        "month_days_eTpXEQ",
+        "month_days_W7NDxy",
+        "month_days_DdRH4f",
+        "month_days_7GXT8t",
+        "month_days_pNJNm6",
+        "month_days_bHaxqi",
+        "month_days_fj6t7g",
+        "month_days_Ajt8Kx",
+        "month_days_d7rgDf",
+        "month_days_q6YbRE",
+        "month_days_qDfCMb"
+      ],
+      "name": "Kyte Baby Calender",
+      "settings": {
+        "main_customer_heading": "November 2025 Launch Calendar Overview",
+        "month_name-heading": "november"
+      }
+    },
+    "larkspur_baby_banner_RiU7YD": {
+      "type": "larkspur-baby-banner",
+      "name": "Larkspur Baby Banner",
+      "settings": {
+        "banner-video": "shopify://files/videos/3c7b1dec196e4f2ba3f49892eb1a0610.HD-1080p-7.2Mbps-63966920.mp4",
+        "banner-heading-desc": "Premium. Practical. Perfect",
+        "banner-shop-btn": "Shop New Arrivals →"
+      }
+    }
+  },
+  "order": [
+    "golime_banner_b6nPwV",
+    "featured_collection",
+    "new_section_DWHprm",
+    "three_image_wYi7Mw",
+    "image_text_YCcThz",
+    "image2_text2_MneK4f",
+    "golime_slider_e8xNeT",
+    "shopify_plant_WBFTRK",
+    "tabbing_faq_wP6B39",
+    "hover_images_text_section_8hEYVQ",
+    "video_four_boxes_CdbyYc",
+    "kytebaby_calender_jFzmfq",
+    "larkspur_baby_banner_RiU7YD"
+  ]
+}
