@@ -2,7 +2,13 @@
   <div class="larkspur-baby-container">
     <div class="larkspur-baby-calender-flex">
       <div class="larkspur-calender-image-main">
-        <div class="banner-video-div"></div>
+        <div class="banner-video-div">
+          <video playsinline autoplay loop muted class="video-customer">
+            {% if section.settings['banner-video'] != blank %}
+              <source src="{{ section.settings.banner-video.sources[0].url }}">
+            {% endif %}
+          </video>
+        </div>
         <div class="banner-text-div"></div>
       </div>
     </div>
