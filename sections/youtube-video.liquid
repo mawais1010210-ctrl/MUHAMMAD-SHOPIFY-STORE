@@ -1,3 +1,9 @@
+<div class="collection-list-container-{{ section.id }}">
+  <a class="collection-link-{{ section.id }}" href="{{ block.settings.collection_link }}">
+    <img class="collection-image-{{ section.id }}" src="{{ block.settings.collection_image | img_url:'master' }}">
+  </a>
+</div>
+
 {% schema %}
 {
   "name": "Collection List GM",
@@ -13,9 +19,9 @@
           "label": "Select Image"
         },
         {
-        "type": "url",
-        "id": "collection_link",
-        "label": "Select Collection"
+          "type": "url",
+          "id": "collection_link",
+          "label": "Select Collection"
         }
       ]
     }
