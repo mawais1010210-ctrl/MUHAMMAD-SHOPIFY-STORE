@@ -29,7 +29,7 @@
               {% when 'New' %}
                 <li class="drop-down-list">
                   <a href="#" class="mega-menu-list-item">
-                    <span class="mega-menu-list-item-title">New</span>
+                    <span class="mega-menu-list-item-title">{{ block.settings.sale_title }}</span>
                   </a>
                 </li>
               {% when 'Shop' %}
@@ -89,41 +89,38 @@
               {% when 'Collections' %}
                 <li class="drop-down-list">
                   <a href="#" class="mega-menu-list-item">
-                    <span class="mega-menu-list-item-title">Collections</span>
+                    <span class="mega-menu-list-item-title">{{ block.settings.collection_title }}</span>
                   </a>
                   <ul class="dropdown-menu-content">
                     <li>
-                      <a href="#" class="dropdown-child-link">Tiny Racers</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.tiny_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Milk and Cookies</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.milk_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Grounded Play</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.grounded_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Little Collective</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.little-title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Aectic Adventure</a>
+                      <a href="#" class="dropdown-child-link">{{block.settings.aectic_title}}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Aectic Adventures</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.wild_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Wild Cats</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.enchanted_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Enchanted Forest</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.harvest_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Harvest</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.tie_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Tie-Dye 25'</a>
-                    </li>
-                    <li>
-                      <a href="#" class="dropdown-child-link">Signature</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.signature_title }}</a>
                     </li>
                   </ul>
                 </li>
@@ -211,6 +208,18 @@
 {% schema %}
 {
   "name": "Larkspur Header",
-  "settings": []
+  "settings": [
+
+  ],
+ "blocks": [
+    {
+    "type": "New",
+    "name": "New",
+    "settings": [
+
+    ]
+    },
+
+ ]
 }
 {% endschema %}
