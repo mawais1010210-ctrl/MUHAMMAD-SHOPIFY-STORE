@@ -25,139 +25,147 @@
         </button>
         <ul class="mega-menu">
           {% for block in section.blocks %}
-            <li class="drop-down-list">
-              <a href="#" class="mega-menu-list-item">
-                <span class="mega-menu-list-item-title">New</span>
-              </a>
-            </li>
-            <li class="drop-down-list">
-              <a href="#" class="mega-menu-list-item">
-                <span class="mega-menu-list-item-title">Shop</span>
-              </a>
+            {% case block.types %}
+              {% when 'New' %}
+                <li class="drop-down-list">
+                  <a href="#" class="mega-menu-list-item">
+                    <span class="mega-menu-list-item-title">New</span>
+                  </a>
+                </li>
+              {% when 'Shop' %}
+                <li class="drop-down-list">
+                  <a href="#" class="mega-menu-list-item">
+                    <span class="mega-menu-list-item-title">Shop</span>
+                  </a>
 
-              <ul class="dropdown-menu-content">
-                <li>
-                  <a href="#" class="dropdown-child-link">Footies</a>
+                  <ul class="dropdown-menu-content">
+                    <li>
+                      <a href="#" class="dropdown-child-link">Footies</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Rompers</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Sleep Sacks</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Sleep Sacks Walkers</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Toddler PJs</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Blankets</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Crib Sheets</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Headbands</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Bodysuits</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Dresses</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Jogger Sets</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Hoodies</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Organic Cotton Daywear</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Women's</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Men's</a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Rompers</a>
+              {% when 'Collections' %}
+                <li class="drop-down-list">
+                  <a href="#" class="mega-menu-list-item">
+                    <span class="mega-menu-list-item-title">Collections</span>
+                  </a>
+                  <ul class="dropdown-menu-content">
+                    <li>
+                      <a href="#" class="dropdown-child-link">Tiny Racers</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Milk and Cookies</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Grounded Play</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Little Collective</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Aectic Adventure</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Aectic Adventures</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Wild Cats</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Enchanted Forest</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Harvest</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Tie-Dye 25'</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Signature</a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Sleep Sacks</a>
+              {% when 'Family' %}
+                <li class="drop-down-list">
+                  <a href="#" class="mega-menu-list-item">
+                    <span class="mega-menu-list-item-title">Family Matching</span>
+                  </a>
+                  <ul class="dropdown-menu-content">
+                    <li>
+                      <a href="#" class="dropdown-child-link">Mommy & Me</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Daddy & Me</a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Sleep Sacks Walkers</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Toddler PJs</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Blankets</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Crib Sheets</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Headbands</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Bodysuits</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Dresses</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Jogger Sets</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Hoodies</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Organic Cotton Daywear</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Women's</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Men's</a>
-                </li>
-              </ul>
-            </li>
-            <li class="drop-down-list">
-              <a href="#" class="mega-menu-list-item">
-                <span class="mega-menu-list-item-title">Collections</span>
-              </a>
-              <ul class="dropdown-menu-content">
-                <li>
-                  <a href="#" class="dropdown-child-link">Tiny Racers</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Milk and Cookies</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Grounded Play</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Little Collective</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Aectic Adventure</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Aectic Adventures</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Wild Cats</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Enchanted Forest</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Harvest</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Tie-Dye 25'</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Signature</a>
-                </li>
-              </ul>
-            </li>
-            <li class="drop-down-list">
-              <a href="#" class="mega-menu-list-item">
-                <span class="mega-menu-list-item-title">Family Matching</span>
-              </a>
-              <ul class="dropdown-menu-content">
-                <li>
-                  <a href="#" class="dropdown-child-link">Mommy & Me</a>
-                </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Daddy & Me</a>
-                </li>
-              </ul>
-            </li>
-            <li class="drop-down-list">
-              <a href="#" class="mega-menu-list-item">
-                <span class="mega-menu-list-item-title">More Goodies</span>
-              </a>
+              {% when 'More' %}
+                <li class="drop-down-list">
+                  <a href="#" class="mega-menu-list-item">
+                    <span class="mega-menu-list-item-title">More Goodies</span>
+                  </a>
 
-              <ul class="dropdown-menu-content">
-                <li>
-                  <a href="#" class="dropdown-child-link">Magic Points </a>
+                  <ul class="dropdown-menu-content">
+                    <li>
+                      <a href="#" class="dropdown-child-link">Magic Points </a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Gift Cards</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-child-link">Blog</a>
+                    </li>
+                  </ul>
                 </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Gift Cards</a>
+              {% when 'Sale' %}
+                <li class="drop-down-list">
+                  <a href="#" class="mega-menu-list-item">
+                    <span class="mega-menu-list-item-title">Sale</span>
+                  </a>
                 </li>
-                <li>
-                  <a href="#" class="dropdown-child-link">Blog</a>
-                </li>
-              </ul>
-            </li>
-            <li class="drop-down-list">
-              <a href="#" class="mega-menu-list-item">
-                <span class="mega-menu-list-item-title">Sale</span>
-              </a>
-            </li>
+            {% endcase %}
           {% endfor %}
         </ul>
       </nav>
