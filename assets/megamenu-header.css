@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .larkspur-baby-header {
     display: flex;
     flex-wrap: wrap;
@@ -88,82 +96,6 @@
     width: 100%;
 }
 
-.mega-menu-list {
-    position: static;
-    height: 100%;
-}
-
-.mega-menu-content {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: #fffefa;
-    z-index: 1000;
-    padding: 30px 0;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.mega-menu-list:hover .mega-menu-content {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.mega-menu-container {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 60px;
-}
-
-.mega-menu-flex {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    padding: 0 0 30px;
-}
-
-.mega-menu-content-box {
-    flex: 0 0 15% !important;
-    padding: 20px 20px 0 0;
-    width: 15% !important;
-}
-
-.menu-title {
-    font-family: "Lexend", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #777968 !important;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding-bottom: 15px;
-    display: block;
-}
-
-.customer-dropdown-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.customer-menu-list {
-    margin-bottom: 8px;
-}
-
-.customer-menu-list-item {
-    font-family: "Lexend", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
-    transition: color 0.2s;
-    display: block;
-    padding: 6px 0 0;
-}
-
 .header-icons {
     display: flex;
     align-items: center;
@@ -194,7 +126,6 @@
     padding: 10px 0;
     list-style: none;
     border-radius: 6px;
-
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -296,7 +227,6 @@
     align-items: center;
 }
 
-/* صرف یہ حصہ تبدیل کریں - SVG سے آئیکنز کے لیے */
 .hover-icon i {
     width: 18px;
     height: 18px;
@@ -331,7 +261,6 @@
 .mens-hover-svg:hover i {
     transform: scale(1.1);
 }
-
 
 .hamburger-btn {
     display: none;
@@ -394,21 +323,6 @@
         transition: transform 0.3s ease;
     }
 
-    .hamburger-btn.active i {
-        display: none;
-    }
-
-    .hamburger-btn.active::before {
-        content: "×";
-        font-size: 28px;
-        color: #000;
-        width: 24px;
-        height: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     .larkspur-logo-main {
         order: 2;
         flex-grow: 1;
@@ -466,7 +380,6 @@
         width: 100%;
     }
 
-    .mega-menu-list,
     .drop-down-list {
         width: 100%;
         position: relative;
@@ -504,7 +417,6 @@
         flex-grow: 1;
     }
 
-    .mega-menu-list-2 .mega-menu-list-item::after,
     .drop-down-list .mega-menu-list-item::after {
         content: "+";
         font-size: 24px;
@@ -518,87 +430,13 @@
         height: 24px;
     }
 
-    .mega-menu-list-2 .mega-menu-list-item.rotated::after,
     .drop-down-list .mega-menu-list-item.rotated::after {
         content: "-";
         transform: rotate(0deg);
     }
 
-    .mega-menu-content {
-        display: none !important;
-        position: static;
-        visibility: visible;
-        opacity: 1;
-        pointer-events: auto;
-        width: 100%;
-        background: transparent;
-        padding: 0;
-        margin: 0;
-        border: none;
-        box-shadow: none;
-    }
-
-    .mega-menu-list.active .mega-menu-content {
-        display: none !important;
-    }
-
-    .mega-menu-container {
-        padding: 0;
-        width: 100%;
-    }
-
-    .mega-menu-flex {
-        flex-direction: column;
-        padding: 0;
-        width: 100%;
-    }
-
-    .mega-menu-content-box {
-        flex: 0 0 100% !important;
-        width: 100% !important;
-        padding: 15px 0;
-        border-bottom: 1px solid #eee;
-    }
-
-    .mega-menu-content-box:last-child {
-        border-bottom: none;
-    }
-
-    .menu-title {
-        font-size: 16px;
-        padding-bottom: 10px;
-        color: #777968 !important;
-        text-transform: uppercase;
-        font-weight: 400;
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .customer-dropdown-menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .customer-menu-list {
-        margin-bottom: 12px;
-    }
-
-    .customer-menu-list:last-child {
-        margin-bottom: 0;
-    }
-
-    .customer-menu-list-item {
-        font-size: 16px;
-        color: #000;
-        text-decoration: none;
-        display: block;
-        padding: 8px 0;
-        font-weight: 400;
-    }
-
     .dropdown-menu-content {
-        display: none !important;
+        display: none;
         position: static;
         visibility: visible;
         opacity: 1;
@@ -612,7 +450,7 @@
     }
 
     .drop-down-list.active .dropdown-menu-content {
-        display: none !important;
+        display: block !important;
     }
 
     .dropdown-child-link {
