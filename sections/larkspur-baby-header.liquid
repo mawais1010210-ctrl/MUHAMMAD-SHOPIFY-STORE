@@ -25,7 +25,7 @@
         </button>
         <ul class="mega-menu">
           {% for block in section.blocks %}
-            {% case block.types %}
+            {% case block.type %}
               {% when 'New' %}
                 <li class="drop-down-list">
                   <a href="#" class="mega-menu-list-item">
@@ -102,7 +102,7 @@
                       <a href="#" class="dropdown-child-link">{{ block.settings.grounded_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">{{ block.settings['little-title'] }}</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.little_title }}</a>
                     </li>
                     <li>
                       <a href="#" class="dropdown-child-link">{{ block.settings.aectic_title }}</a>
@@ -228,8 +228,8 @@
       ]
     },
     {
-      "type": "shop",
-      "name": "shop",
+      "type": "Shop",
+      "name": "Shop",
       "settings": [
         {
           "type": "text",
