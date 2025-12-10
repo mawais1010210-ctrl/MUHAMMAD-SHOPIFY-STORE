@@ -727,6 +727,13 @@
         "banner-heading-desc": "Premium. Practical. Perfect",
         "banner-shop-btn": "Shop New Arrivals →"
       }
+    },
+    "larkspur_baby_header_mVbBFM": {
+      "type": "larkspur-baby-header",
+      "name": "Larkspur Baby Header",
+      "settings": {
+        "larkspur_logo": "shopify://shop_images/larkspur-image_e8249ad6-36c2-4394-98b1-b627c6048999.svg"
+      }
     }
   },
   "order": [
@@ -742,6 +749,7 @@
     "hover_images_text_section_8hEYVQ",
     "video_four_boxes_CdbyYc",
     "kytebaby_calender_jFzmfq",
-    "larkspur_baby_banner_RiU7YD"
+    "larkspur_baby_banner_RiU7YD",
+    "larkspur_baby_header_mVbBFM"
   ]
 }
