@@ -275,7 +275,7 @@
     display: block;
 }
 
-@media screen and (max-width: 767px) {
+@media screen (max-width: 767px) and (min-width: 992px) {
     .larkspur-baby-header {
         padding: 15px 20px;
         position: relative;
@@ -287,11 +287,13 @@
     .desktop-icon {
         display: none;
     }
+
    .header-icon.search-icon.mobile-search-btn {
     display: flex;
     align-items: center;
     text-decoration: none;
     }
+
     .mobile-search-btn {
         display: block;
     }
