@@ -108,13 +108,23 @@
             "mommy_title": "Mommy & Me",
             "daddy_title": "Daddy & Me"
           }
+        },
+        "more_AwfLjk": {
+          "type": "More",
+          "settings": {
+            "goodies_title": "More Goodies",
+            "magic_title": "Magic Points",
+            "gift_title": "Gift Cards",
+            "blog_title": "Blog"
+          }
         }
       },
       "block_order": [
         "new_K9jNAR",
         "shop_RHRd9a",
         "collections_xBFUNM",
-        "family_cCG9pw"
+        "family_cCG9pw",
+        "more_AwfLjk"
       ],
       "name": "Larkspur Baby Header",
       "settings": {
