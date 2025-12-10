@@ -730,6 +730,17 @@
     },
     "larkspur_baby_header_mVbBFM": {
       "type": "larkspur-baby-header",
+      "blocks": {
+        "new_WTJfgA": {
+          "type": "New",
+          "settings": {
+            "new_title": "New"
+          }
+        }
+      },
+      "block_order": [
+        "new_WTJfgA"
+      ],
       "name": "Larkspur Baby Header",
       "settings": {
         "larkspur_logo": "shopify://shop_images/larkspur-image_e8249ad6-36c2-4394-98b1-b627c6048999.svg"
