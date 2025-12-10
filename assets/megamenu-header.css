@@ -287,11 +287,11 @@
     .desktop-icon {
         display: none;
     }
-.header-icon.search-icon.mobile-search-btn {
+   .header-icon.search-icon.mobile-search-btn {
     display: flex;
     align-items: center;
     text-decoration: none;
-}
+    }
     .mobile-search-btn {
         display: block;
     }
@@ -707,15 +707,4 @@
     .menu-open {
         overflow: hidden;
     }
-}
-
-@media media screen and (max-width: 1150px){
-    .mega-menu-list-item-title {
-    font-size: 15px;
-}
-
-.larkspur-baby-header {
-    padding: 15px 30px !important;
-}
-
 }
