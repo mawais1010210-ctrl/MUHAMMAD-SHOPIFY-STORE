@@ -63,10 +63,32 @@
           "settings": {
             "new_title": "New"
           }
+        },
+        "shop_RHRd9a": {
+          "type": "Shop",
+          "settings": {
+            "shp_title": "Shop",
+            "fts_title": "Footies",
+            "romper_title": "Rompers",
+            "sleep_title": "Sleep Sacks",
+            "walkers_title": "Sleep Sacks Walkers",
+            "toddler_title": "Toddler PJs",
+            "blnkets_title": "Blankets",
+            "crib_title": "Crib Sheets",
+            "breadhands_title": "Headbands",
+            "bodysuits_title": "Body Suits",
+            "dresses_title": "Dresses",
+            "jogger_title": "Jogger Sets",
+            "hoodies_title": "Hoodies",
+            "organic_title": "Organic Cotton Daywear",
+            "wmn_title": "Women's",
+            "mns_title": "Men's"
+          }
         }
       },
       "block_order": [
-        "new_K9jNAR"
+        "new_K9jNAR",
+        "shop_RHRd9a"
       ],
       "name": "Larkspur Baby Header",
       "settings": {
