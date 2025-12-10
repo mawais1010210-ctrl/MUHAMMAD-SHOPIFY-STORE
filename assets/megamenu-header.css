@@ -1,3 +1,4 @@
+
 .larkspur-baby-header {
     display: flex;
     flex-wrap: wrap;
@@ -8,10 +9,6 @@
     background: #fffefa;
     position: relative;
     width: 100%;
-}
-
-.larkspur-baby-sec {
-    padding: 0 0;
 }
 
 .larkspur-baby-container {
