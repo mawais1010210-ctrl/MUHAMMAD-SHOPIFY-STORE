@@ -57,6 +57,17 @@
     },
     "larkspur_baby_header_UdzVCE": {
       "type": "larkspur-baby-header",
+      "blocks": {
+        "new_K9jNAR": {
+          "type": "New",
+          "settings": {
+            "new_title": "New"
+          }
+        }
+      },
+      "block_order": [
+        "new_K9jNAR"
+      ],
       "name": "Larkspur Baby Header",
       "settings": {
         "larkspur_logo": "shopify://shop_images/larkspur-image_e8249ad6-36c2-4394-98b1-b627c6048999.svg"
