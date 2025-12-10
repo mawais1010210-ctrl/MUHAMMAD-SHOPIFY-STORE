@@ -257,7 +257,11 @@
 .mens-hover-svg:hover i {
     transform: scale(1.1);
 }
-
+.header-icon.search-icon.mobile-search-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
 .hamburger-btn {
     display: none;
 }
