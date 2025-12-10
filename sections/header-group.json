@@ -100,12 +100,21 @@
             "tie_title": "Tie-Dye 25'",
             "signature_title": "Signature"
           }
+        },
+        "family_cCG9pw": {
+          "type": "Family",
+          "settings": {
+            "matching_title": "Family Matching",
+            "mommy_title": "Mommy & Me",
+            "daddy_title": "Daddy & Me"
+          }
         }
       },
       "block_order": [
         "new_K9jNAR",
         "shop_RHRd9a",
-        "collections_xBFUNM"
+        "collections_xBFUNM",
+        "family_cCG9pw"
       ],
       "name": "Larkspur Baby Header",
       "settings": {
