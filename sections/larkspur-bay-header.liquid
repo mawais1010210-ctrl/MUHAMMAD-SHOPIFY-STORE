@@ -102,10 +102,10 @@
                       <a href="#" class="dropdown-child-link">{{ block.settings.grounded_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">{{ block.settings.little-title }}</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings['little-title'] }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">{{block.settings.aectic_title}}</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.aectic_title }}</a>
                     </li>
                     <li>
                       <a href="#" class="dropdown-child-link">{{ block.settings.wild_title }}</a>
@@ -127,39 +127,39 @@
               {% when 'Family' %}
                 <li class="drop-down-list">
                   <a href="#" class="mega-menu-list-item">
-                    <span class="mega-menu-list-item-title">Family Matching</span>
+                    <span class="mega-menu-list-item-title">{{ block.settings.matching_title }}</span>
                   </a>
                   <ul class="dropdown-menu-content">
                     <li>
-                      <a href="#" class="dropdown-child-link">Mommy & Me</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.mommy_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Daddy & Me</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.daddy_title }}</a>
                     </li>
                   </ul>
                 </li>
               {% when 'More' %}
                 <li class="drop-down-list">
                   <a href="#" class="mega-menu-list-item">
-                    <span class="mega-menu-list-item-title">More Goodies</span>
+                    <span class="mega-menu-list-item-title">{{ block.settings.goodies_title }}</span>
                   </a>
 
                   <ul class="dropdown-menu-content">
                     <li>
-                      <a href="#" class="dropdown-child-link">Magic Points </a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.magic_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Gift Cards</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.gift_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Blog</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.blog_title }}</a>
                     </li>
                   </ul>
                 </li>
               {% when 'Sale' %}
                 <li class="drop-down-list">
                   <a href="#" class="mega-menu-list-item">
-                    <span class="mega-menu-list-item-title">Sale</span>
+                    <span class="mega-menu-list-item-title">{{ block.settings.sale_title }}</span>
                   </a>
                 </li>
             {% endcase %}
@@ -208,18 +208,13 @@
 {% schema %}
 {
   "name": "Larkspur Header",
-  "settings": [
-
-  ],
- "blocks": [
+  "settings": [],
+  "blocks": [
     {
-    "type": "New",
-    "name": "New",
-    "settings": [
-
-    ]
-    },
-
- ]
+      "type": "New",
+      "name": "New",
+      "settings": []
+    }
+  ]
 }
 {% endschema %}
