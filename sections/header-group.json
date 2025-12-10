@@ -84,11 +84,28 @@
             "wmn_title": "Women's",
             "mns_title": "Men's"
           }
+        },
+        "collections_xBFUNM": {
+          "type": "Collections",
+          "settings": {
+            "collection_title": "Collections",
+            "tiny_title": "Tiny Racers",
+            "milk_title": "Milk and Cookies",
+            "grounded_title": "Grounded Play",
+            "little_title": "Little Collective",
+            "aectic_title": "Aectic Adventure",
+            "wild_title": "Wild Cats",
+            "enchanted_title": "Enchanted Forest",
+            "harvest_title": "Harvest",
+            "tie_title": "Tie-Dye 25'",
+            "signature_title": "Signature"
+          }
         }
       },
       "block_order": [
         "new_K9jNAR",
-        "shop_RHRd9a"
+        "shop_RHRd9a",
+        "collections_xBFUNM"
       ],
       "name": "Larkspur Baby Header",
       "settings": {
