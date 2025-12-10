@@ -398,6 +398,12 @@
         display: inline-block;
         transition: transform 0.3s ease;
     }
+   .hamburger-btn i {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        transition: transform .3s ease;
+    }
 
     .mega-menu-list-item {
         padding: 18px 0;
