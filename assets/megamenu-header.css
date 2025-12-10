@@ -480,32 +480,3 @@
         overflow: hidden;
     }
 }
-
-/* Tablet Mode (768px – 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    
-    .larkspur-baby-header {
-        padding: 15px 40px;
-    }
-
-    .larkspur-logo-main {
-        width: 25%;
-    }
-
-    .header-navbar-menu {
-        width: 50%;
-    }
-
-    .header-icons {
-        width: 25%;
-    }
-
-    .mega-menu-list-item-title {
-        font-size: 15px;
-    }
-
-    .larkspur-baby-logo {
-        max-width: 160px;
-        height: 35px;
-    }
-}
