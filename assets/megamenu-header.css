@@ -204,7 +204,11 @@
 .search-box input::placeholder {
     color: #7a818b;
 }
-
+.header-icon.search-icon.mobile-search-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
 .search-box .search-icon {
     position: absolute;
     right: 18px;
