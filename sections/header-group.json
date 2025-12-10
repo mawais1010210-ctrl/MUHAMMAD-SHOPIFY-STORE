@@ -117,6 +117,12 @@
             "gift_title": "Gift Cards",
             "blog_title": "Blog"
           }
+        },
+        "sale_VCydqt": {
+          "type": "Sale",
+          "settings": {
+            "sale_title": "Sale"
+          }
         }
       },
       "block_order": [
@@ -124,7 +130,8 @@
         "shop_RHRd9a",
         "collections_xBFUNM",
         "family_cCG9pw",
-        "more_AwfLjk"
+        "more_AwfLjk",
+        "sale_VCydqt"
       ],
       "name": "Larkspur Baby Header",
       "settings": {
