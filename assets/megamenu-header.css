@@ -697,29 +697,3 @@
         overflow: hidden;
     }
 }
-/* Desktop: 1025px and above */
-@media (min-width: 1025px) {
-    .desktop-icon {
-        display: block;
-    }
-    .mobile-search-btn,
-    .hamburger-btn {
-        display: none;
-    }
-    .header-navbar-menu {
-        position: static;
-        width: 59%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        left: auto;
-        padding: 0;
-    }
-    .mega-menu {
-        flex-direction: row;
-        align-items: center;
-    }
-    .drop-down-list .mega-menu-list-item::after {
-        content: none;
-    }
-}
