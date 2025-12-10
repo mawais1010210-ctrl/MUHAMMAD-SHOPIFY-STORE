@@ -607,13 +607,18 @@
     .cart-hover-svg i,
     .search-hover-svg i,
     .mens-hover-svg i {
-        width: 24px;
-        font-size: 24px;
-        height: 24px;
+        width: 20px;
+        font-size: 20px;
+        height: 20px;
         display: inline-block;
         transition: transform 0.3s ease;
     }
-
+    .hamburger-btn i {
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        transition: transform .3s ease;
+    }
     .mega-menu-list-item {
         padding: 18px 0;
         width: 100%;
