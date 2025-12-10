@@ -697,3 +697,26 @@
         overflow: hidden;
     }
 }
+
+
+@media (max-width: 1150px) {
+    .larkspur-baby-header {
+        padding: 15px 40px; /* thoda padding kam kar sakte ho */
+    }
+
+    .larkspur-baby-logo {
+        max-width: 170px; /* slightly smaller */
+        height: 35px;
+    }
+
+    .header-navbar-menu {
+        width: 55%; /* thodi adjust */
+    }
+
+    /* Ensure hamburger menu is hidden */
+    .hamburger-btn,
+    .menu-close-btn,
+    .mobile-search-btn {
+        display: none !important;
+    }
+}
