@@ -275,7 +275,7 @@
     display: block;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .larkspur-baby-header {
         padding: 15px 20px;
         position: relative;
@@ -494,7 +494,7 @@
 }
 
 
-@media (max-width: 1024px) {
+@media media screen and (max-width: 1024px) {
     .larkspur-baby-header {
         padding: 15px 20px;
         position: relative;
@@ -707,4 +707,15 @@
     .menu-open {
         overflow: hidden;
     }
+}
+
+@media media screen and (max-width: 767px){
+    .mega-menu-list-item-title {
+    font-size: 15px;
+}
+
+.larkspur-baby-header {
+    padding: 15px 30px;
+}
+
 }
