@@ -543,6 +543,7 @@
     .header-icons {
         order: 3;
         margin-left: 0;
+        gap: 20px;
     }
 
     .larkspur-baby-logo {
