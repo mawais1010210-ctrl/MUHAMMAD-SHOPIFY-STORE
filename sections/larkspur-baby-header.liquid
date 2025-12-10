@@ -35,54 +35,54 @@
               {% when 'Shop' %}
                 <li class="drop-down-list">
                   <a href="#" class="mega-menu-list-item">
-                    <span class="mega-menu-list-item-title">Shop</span>
+                    <span class="mega-menu-list-item-title">{{ block.settings.shp_title }}</span>
                   </a>
 
                   <ul class="dropdown-menu-content">
                     <li>
-                      <a href="#" class="dropdown-child-link">Footies</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.fts_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Rompers</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.romper_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Sleep Sacks</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.sleep_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Sleep Sacks Walkers</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.walkers_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Toddler PJs</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.toddler_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Blankets</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.blnkets_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Crib Sheets</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.crib_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Headbands</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.breadhands_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Bodysuits</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.bodysuits_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Dresses</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.dresses_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Jogger Sets</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.jogger_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Hoodies</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.hoodies_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Organic Cotton Daywear</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.organic_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Women's</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.wmn_title }}</a>
                     </li>
                     <li>
-                      <a href="#" class="dropdown-child-link">Men's</a>
+                      <a href="#" class="dropdown-child-link">{{ block.settings.mns_title }}</a>
                     </li>
                   </ul>
                 </li>
@@ -208,12 +208,110 @@
 {% schema %}
 {
   "name": "Larkspur Header",
-  "settings": [],
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "larkspur_logo",
+      "label": "Larkspur Logo"
+    }
+  ],
   "blocks": [
     {
       "type": "New",
       "name": "New",
-      "settings": []
+      "settings": [
+        {
+          "type": "text",
+          "id": "sale_title",
+          "label": "Sale Title"
+        }
+      ]
+    },
+    {
+      "type": "shop",
+      "name": "shop",
+      "settings": [
+        {
+          "type": "text",
+          "id": "shp_title",
+          "label": "Shp Title"
+        },
+        {
+          "type": "text",
+          "id": "fts_title",
+          "label": "Fts Title"
+        },
+        {
+          "type": "text",
+          "id": "romper_title",
+          "label": "Romper Title"
+        },
+        {
+          "type": "text",
+          "id": "sleep_title",
+          "label": "Sleepwear Title"
+        },
+        {
+          "type": "text",
+          "id": "walkers_title",
+          "label": "Walker Tile"
+        },
+        {
+          "type": "text",
+          "id": "toddler_title",
+          "label": "Toddler Title"
+        },
+        {
+          "type": "text",
+          "id": "blnkets_title",
+          "label": "Blankets Title"
+        },
+        {
+          "type": "text",
+          "id": "crib_title",
+          "label": "Crib Title"
+        },
+        {
+          "type": "text",
+          "id": "breadhands_title",
+          "label": "Breadf Title"
+        },
+        {
+          "type": "text",
+          "id": "bodysuits_title",
+          "label": "Bodysuits Tile"
+        },
+        {
+          "type": "text",
+          "id": "dresses_title",
+          "label": "Dresses Title"
+        },
+        {
+        "type": "text",
+        "id": "jogger_title",
+        "label": "Jogger Tile"
+        },
+        {
+        "type": "text",
+        "id": "hoodies_title",
+        "label": "Hoodies Title"
+        },
+        {
+        "type": "text",
+        "id": "organic_title",
+        "label": "Organic Title"
+        },
+        {
+        "type": "text",
+        "id": "wmn_title",
+        "label": "Wmn Title"
+        },
+        {
+        "type": "text",
+        "id": "mns_title",
+        "label": "Mns Title"
+        }
+      ]
     }
   ]
 }
