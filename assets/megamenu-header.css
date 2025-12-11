@@ -274,26 +274,20 @@
 .desktop-icon {
     display: block;
 }
-
-/* YAHAN SE MEDIA QUERIES START HO RAHI HAIN */
-
-/* PEHLI MEDIA QUERY - 1700px */
 @media screen and (max-width: 1700px){
     .mega-menu-list-item {
-        text-decoration: none;
-        padding: 10px 10px;
+    text-decoration: none;
+    padding: 10px 10px;
     }
 
     .mega-menu-list-item-title {
-        font-size: 15px;
+    font-size: 15px;
     }
 
-    .larkspur-baby-header {
-        padding: 15px 30px;
+   .larkspur-baby-header {
+    padding: 15px 30px;
     }
 }
-
-/* DOSRI MEDIA QUERY - 1024px */
 @media screen and (max-width: 1024px) {
     .larkspur-baby-header {
         padding: 15px 20px;
@@ -357,19 +351,17 @@
         height: 30px;
     }
 
-    /* YAHAN MAIN HAMBURGER MENU KA CODE - 90% WIDTH */
     .header-navbar-menu {
         position: fixed;
         top: 0;
-        left: -90%; /* 90% width ke liye */
-        width: 90% !important; /* 90% width */
-        height: 100vh;
+        left: -100%;
+        width: 100% !important; 
         background: #fffefa;
-        z-index: 9999;
+        z-index: 1;
         padding: 60px 20px 20px;
         overflow-y: auto;
         transition: left .6s ease-in-out;
-        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.1);
+        box-shadow: none;
     }
 
     .header-navbar-menu.active {
@@ -379,8 +371,7 @@
     .menu-close-btn {
         position: absolute;
         top: 20px;
-        right: 20px;
-        left: auto;
+        left: 20px;
         background: transparent;
         border: none;
         font-size: 24px;
@@ -416,7 +407,6 @@
         display: inline-block;
         transition: transform 0.3s ease;
     }
-    
     .hamburger-btn i {
         width: 20px;
         height: 20px;
@@ -490,7 +480,7 @@
         font-weight: 400;
         border-bottom: 1px solid #eee;
         width: 100%;
-        box-sizing: border-box;
+        box-sizing: border-box; /* overflow fix */
     }
 
     .dropdown-child-link:last-child {
@@ -514,16 +504,9 @@
     }
 }
 
-/* TESRI MEDIA QUERY - 767px */
 @media screen and (max-width: 767px) {
-    /* Mobile pe bhi same 90% width */
     .header-navbar-menu {
-        width: 90% !important;
-        left: -90%;
-    }
-
-    .header-navbar-menu.active {
-        left: 0;
+        width: 100% !important;
     }
 
     .search {
