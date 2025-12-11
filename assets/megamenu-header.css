@@ -274,7 +274,20 @@
 .desktop-icon {
     display: block;
 }
+@media screen and (max-width: 1250px){
+    .mega-menu-list-item {
+    text-decoration: none;
+    padding: 10px 10px;
+    }
 
+    .mega-menu-list-item-title {
+    font-size: 15px;
+    }
+
+   .larkspur-baby-header {
+    padding: 15px 30px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .larkspur-baby-header {
         padding: 15px 20px;
@@ -506,19 +519,6 @@
     }
 }
 
-@media screen and (max-width: 1050px){
-    .mega-menu-list-item {
-    text-decoration: none;
-    padding: 10px 10px;
-    }
 
-    .mega-menu-list-item-title {
-    font-size: 15px;
-    }
-    
-   .larkspur-baby-header {
-    padding: 15px 30px;
-    }
-}
 
 
