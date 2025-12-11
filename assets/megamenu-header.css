@@ -274,7 +274,7 @@
 .desktop-icon {
     display: block;
 }
-@media screen and (max-width: 1250px){
+@media screen and (max-width: 1700px){
     .mega-menu-list-item {
     text-decoration: none;
     padding: 10px 10px;
