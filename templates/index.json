@@ -9,6 +9,15 @@
  */
 {
   "sections": {
+    "larkspur_baby_banner_RiU7YD": {
+      "type": "larkspur-baby-banner",
+      "name": "Larkspur Baby Banner",
+      "settings": {
+        "banner-video": "shopify://files/videos/3c7b1dec196e4f2ba3f49892eb1a0610.HD-1080p-7.2Mbps-63966920.mp4",
+        "banner-heading-desc": "Premium. Practical. Perfect",
+        "banner-shop-btn": "Shop New Arrivals →"
+      }
+    },
     "golime_banner_b6nPwV": {
       "type": "golime-banner",
       "blocks": {
@@ -718,18 +727,10 @@
         "main_customer_heading": "November 2025 Launch Calendar Overview",
         "month_name-heading": "november"
       }
-    },
-    "larkspur_baby_banner_RiU7YD": {
-      "type": "larkspur-baby-banner",
-      "name": "Larkspur Baby Banner",
-      "settings": {
-        "banner-video": "shopify://files/videos/3c7b1dec196e4f2ba3f49892eb1a0610.HD-1080p-7.2Mbps-63966920.mp4",
-        "banner-heading-desc": "Premium. Practical. Perfect",
-        "banner-shop-btn": "Shop New Arrivals →"
-      }
     }
   },
   "order": [
+    "larkspur_baby_banner_RiU7YD",
     "golime_banner_b6nPwV",
     "featured_collection",
     "new_section_DWHprm",
@@ -741,7 +742,6 @@
     "tabbing_faq_wP6B39",
     "hover_images_text_section_8hEYVQ",
     "video_four_boxes_CdbyYc",
-    "kytebaby_calender_jFzmfq",
-    "larkspur_baby_banner_RiU7YD"
+    "kytebaby_calender_jFzmfq"
   ]
 }
