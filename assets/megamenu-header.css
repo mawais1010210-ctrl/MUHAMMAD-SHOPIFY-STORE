@@ -275,9 +275,7 @@
     display: block;
 }
 
-/* --- YOUR ORIGINAL CODE SAME --- */
-
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
     .larkspur-baby-header {
         padding: 15px 20px;
         position: relative;
@@ -340,12 +338,11 @@
         height: 30px;
     }
 
-    /* ------------------------ FIX #1 ------------------------ */
     .header-navbar-menu {
         position: fixed;
         top: 0;
         left: -100%;
-        width: 100% !important;   /* overflow fix */
+        width: 100% !important; 
         background: #fffefa;
         z-index: 1;
         padding: 60px 20px 20px;
@@ -460,7 +457,6 @@
         display: block !important;
     }
 
-    /* ------------------------ FIX #3 ------------------------ */
     .dropdown-child-link {
         display: block;
         padding: 12px 0;
@@ -481,8 +477,7 @@
     .svg-wrapper.cart-icon {
         margin-left: 15px;
     }
-
-    /* ------------------------ FIX #2 ------------------------ */
+    
     .search {
         padding: 15px 20px !important;
     }
@@ -495,9 +490,6 @@
         overflow: hidden;
     }
 }
-
-
-/* ---- SAME FIXES REPEATED FOR 767px ---- */
 
 @media screen and (max-width: 767px) {
     .header-navbar-menu {
