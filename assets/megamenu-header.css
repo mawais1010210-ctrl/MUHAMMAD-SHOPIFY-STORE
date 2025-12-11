@@ -274,22 +274,20 @@
 .desktop-icon {
     display: block;
 }
-
 @media screen and (max-width: 1700px){
     .mega-menu-list-item {
-        text-decoration: none;
-        padding: 10px 10px;
+    text-decoration: none;
+    padding: 10px 10px;
     }
 
     .mega-menu-list-item-title {
-        font-size: 15px;
+    font-size: 15px;
     }
 
-    .larkspur-baby-header {
-        padding: 15px 30px;
+   .larkspur-baby-header {
+    padding: 15px 30px;
     }
 }
-
 @media screen and (max-width: 1024px) {
     .larkspur-baby-header {
         padding: 15px 20px;
@@ -353,30 +351,27 @@
         height: 30px;
     }
 
-    /* YAHAN MAIN CHANGE KIYA - 90% width kar di */
     .header-navbar-menu {
         position: fixed;
         top: 0;
-        left: -90%; /* Pehle -100% tha, ab -90% kar diya */
-        width: 90% !important; /* Width 90% kar di */
-        height: 100vh;
+        left: -100%;
+        width: 100% !important; 
         background: #fffefa;
-        z-index: 9999;
+        z-index: 1;
         padding: 60px 20px 20px;
         overflow-y: auto;
         transition: left .6s ease-in-out;
-        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.1);
+        box-shadow: none;
     }
 
     .header-navbar-menu.active {
-        left: 0; /* Jab open ho to left 0 */
+        left: 0;
     }
 
     .menu-close-btn {
         position: absolute;
         top: 20px;
-        right: 20px; /* Close button right side pe rahega */
-        left: auto;
+        left: 20px;
         background: transparent;
         border: none;
         font-size: 24px;
@@ -412,7 +407,6 @@
         display: inline-block;
         transition: transform 0.3s ease;
     }
-    
     .hamburger-btn i {
         width: 20px;
         height: 20px;
@@ -486,7 +480,7 @@
         font-weight: 400;
         border-bottom: 1px solid #eee;
         width: 100%;
-        box-sizing: border-box;
+        box-sizing: border-box; /* overflow fix */
     }
 
     .dropdown-child-link:last-child {
@@ -511,14 +505,8 @@
 }
 
 @media screen and (max-width: 767px) {
-    /* Mobile pe bhi 90% width rahegi */
     .header-navbar-menu {
-        width: 90% !important;
-        left: -90%;
-    }
-
-    .header-navbar-menu.active {
-        left: 0;
+        width: 100% !important;
     }
 
     .search {
@@ -530,3 +518,7 @@
         box-sizing: border-box;
     }
 }
+
+
+
+
