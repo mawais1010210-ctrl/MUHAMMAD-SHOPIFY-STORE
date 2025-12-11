@@ -506,7 +506,7 @@
 
 @media screen and (max-width: 767px) {
     .header-navbar-menu {
-        width: 100% !important;
+        width: 90% !important;
     }
 
     .search {
