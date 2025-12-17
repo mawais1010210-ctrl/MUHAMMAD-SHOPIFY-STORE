@@ -732,6 +732,21 @@
     },
     "testimonial_slider_wHVK9H": {
       "type": "testimonial-slider",
+      "blocks": {
+        "testimonial_T7QJnP": {
+          "type": "testimonial",
+          "settings": {
+            "text_description": "<p>\"I've been using this web hosting service for over a year and I'm really impressed with the uptime and support. The website has never gone down and the customer service is always quick to help with any issues I have. Highly recommend.\"</p>",
+            "stars_logos": "⭐⭐⭐⭐⭐",
+            "testimonials_image": "shopify://shop_images/jane_smith.jpg",
+            "name_heading": "Jane Smith",
+            "role_heading": "Freelance Designer"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_T7QJnP"
+      ],
       "name": "Testimonial Slider",
       "settings": {
         "testimonial_heading": "Testimonial",
