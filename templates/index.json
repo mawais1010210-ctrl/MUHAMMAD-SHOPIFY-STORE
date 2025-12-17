@@ -749,14 +749,25 @@
             "text_description": "<p>\"I've been using this web hosting service for a few months now and overall it's been fine. The uptime has been good and I haven't had any major issues. The pricing is also reasonable. Nothing particularly stands out as exceptional, but it gets the job done.\"</p>",
             "stars_logos": "⭐️⭐️⭐️☆☆",
             "testimonials_image": "shopify://shop_images/sarah-john.jpg",
-            "name_heading": "Tom Williams",
+            "name_heading": "Sarah Chen",
             "role_heading": "Software Developer"
+          }
+        },
+        "testimonial_ybFzWV": {
+          "type": "testimonial",
+          "settings": {
+            "text_description": "<p>\"I was hesitant to switch hosting providers, but this service made the migration seamless. Their 24/7 support team guided me through every step, and my site's speed improved noticeably. Truly a game-changer for my online business.\"</p>",
+            "stars_logos": "★☆☆☆☆",
+            "testimonials_image": "shopify://shop_images/tom_williams.jpg",
+            "name_heading": "Tom Williams",
+            "role_heading": " E-commerce Entrepreneur"
           }
         }
       },
       "block_order": [
         "testimonial_T7QJnP",
-        "testimonial_bXFUVJ"
+        "testimonial_bXFUVJ",
+        "testimonial_ybFzWV"
       ],
       "name": "Testimonial Slider",
       "settings": {
