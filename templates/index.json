@@ -792,6 +792,16 @@
             "name_heading": "Amit Patel",
             "role_heading": "Digital Marketer"
           }
+        },
+        "testimonial_UzMiEi": {
+          "type": "testimonial",
+          "settings": {
+            "text_description": "<p>\"I've been using this service for 8 months. The setup was easy, performance is smooth, and customer support is very helpful. It's also budget-friendly.\"</p>",
+            "stars_logos": "★★★★☆",
+            "testimonials_image": "shopify://shop_images/emily-jones.jpg",
+            "name_heading": "Neha Gupta",
+            "role_heading": "Startup Founder"
+          }
         }
       },
       "block_order": [
@@ -800,7 +810,8 @@
         "testimonial_ybFzWV",
         "testimonial_4KGbaT",
         "testimonial_RwpCwA",
-        "testimonial_bTNNyz"
+        "testimonial_bTNNyz",
+        "testimonial_UzMiEi"
       ],
       "name": "Testimonial Slider",
       "settings": {
