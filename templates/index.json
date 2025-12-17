@@ -826,7 +826,7 @@
       ],
       "name": "Testimonial Slider",
       "settings": {
-        "testimonial_heading": "Testimonial",
+        "maintestimonial_image": "shopify://shop_images/ChatGPT_Image_Dec_17_2025_11_59_20_AM.png",
         "testimonial_para": "<p>Don't just take our word for it—see what actual users of our service have to say about their experience.</p>"
       }
     }
