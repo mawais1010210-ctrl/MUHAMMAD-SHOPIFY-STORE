@@ -782,6 +782,16 @@
             "name_heading": "Rahul Verma",
             "role_heading": "Blogger"
           }
+        },
+        "testimonial_bTNNyz": {
+          "type": "testimonial",
+          "settings": {
+            "text_description": "<p>\" I have been using this hosting service for 1 year. The speed is excellent, uptime is 99.9%, and the support is amazing. I have never faced any issues.\"</p>",
+            "stars_logos": "★★★☆☆",
+            "testimonials_image": "shopify://shop_images/alamy.jpg",
+            "name_heading": "Amit Patel",
+            "role_heading": "Digital Marketer"
+          }
         }
       },
       "block_order": [
@@ -789,7 +799,8 @@
         "testimonial_bXFUVJ",
         "testimonial_ybFzWV",
         "testimonial_4KGbaT",
-        "testimonial_RwpCwA"
+        "testimonial_RwpCwA",
+        "testimonial_bTNNyz"
       ],
       "name": "Testimonial Slider",
       "settings": {
