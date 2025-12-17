@@ -5,7 +5,7 @@
   }
 
   .testimonial-container {
-    max-width: 1200px;
+    max-width: 10px;
     padding: 0 50px;
     margin: 0 auto;
   }
@@ -18,32 +18,14 @@
     -webkit-text-fill-color: transparent;
     font-family: 'Poppins', sans-serif;
   }
-  .text-arrow-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .heading {
-    width: 49%;
-  }
-  .arrows-icons {
-    width: 49%;
-    display: flex;
-    justify-content: end;
-  }
 </style>
 <section class="testimonial-section">
   <div class="testimonial-container">
-    <div class="text-arrow-flex">
-      <div class="heading">
-        <h2 class="testimonial-heading">{{ section.settings.testimonial_text }}</h2>
-        <div class="testimonial-description">
-          {{ section.settings.testimonial_para }}
-        </div>
-      </div>
-      <div class="arrows-icons">
-        <i class="fa-solid fa-arrow-left"></i>
-        <i class="fa-solid fa-arrow-right"></i>
+    <div class="heading">
+      <h2 class="testimonial-heading">{{ section.settings.testimonial_text }}</h2>
+
+      <div class="testimonial-description">
+        {{ section.settings.testimonial_para }}
       </div>
     </div>
 
@@ -87,8 +69,8 @@
     autoplay: false,
     autoplayTimeout: 1000,
     margin: 10,
-    nav: true,
-    dots: falsa,
+    nav: false,
+    dots: false,
     responsive: {
       0: {
         items: 1,
