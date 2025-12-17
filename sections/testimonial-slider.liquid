@@ -51,6 +51,29 @@
     max-width: 68%;
     letter-spacing: 0;
   }
+  .slider-description p {
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cccccc;
+  }
+
+  .testimonials-image {
+    height: 40px;
+    max-width: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 </style>
 <section class="testimonial-section">
   <div class="testimonial-container">
@@ -89,7 +112,7 @@
                     >
                   {% endif %}
 
-                  <h4>{{ block.settings.name_heading }}</h4>
+                  <h4 class="role-name">{{ block.settings.name_heading }}</h4>
 
                   <div class="role-wrap">
                     <span>{{ block.settings.role_heading }}</span>
