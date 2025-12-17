@@ -1,9 +1,27 @@
+<style>
+  .testimonial-section {
+    background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
+    padding: 40px 0;
+  }
+
+  .testimonial-container {
+    max-width: 1380px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+</style>
 <section class="testimonial-section">
   <div class="testimonial-container">
     <div class="heading">
-      <h2 class="testimonial-heading">
-        {{ section.settings.testimonial_heading }}
-      </h2>
+      <div class="testimonial-heading">
+        {% if section.settings.maintestimonial_image != blank %}
+          <img
+            class="testimonial_logo"
+            src="{{ block.settings.maintestimonial_image | img_url: 'master' }}"
+            alt="{{ block.settings.maintestimonial_image.alt | escape }}"
+          >
+        {% endif %}
+      </div>
 
       <div class="testimonial-description">
         {{ section.settings.testimonial_para }}
@@ -71,9 +89,9 @@
   "name": "Testimonial Slider",
   "settings": [
     {
-      "type": "text",
-      "id": "testimonial_heading",
-      "label": "Testimonial Heading"
+      "type": "image_picker",
+      "id": "maintestimonial_image",
+      "label": "Maintestimonial Image"
     },
     {
       "type": "richtext",
