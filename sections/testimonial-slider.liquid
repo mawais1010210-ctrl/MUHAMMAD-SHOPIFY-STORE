@@ -41,7 +41,10 @@
   <div class="testimonial-container">
     <div class="heading">
       <h2 class="testimonial-heading">{{ section.settings.testimonial_text }}</h2>
-
+      <div class="custom-nav">
+        <button class="custom-prev">Prev</button>
+        <button class="custom-next">Next</button>
+      </div>
       <div class="testimonial-description">
         {{ section.settings.testimonial_para }}
       </div>
@@ -77,11 +80,6 @@
           </div>
         </div>
       {% endfor %}
-    </div>
-
-    <div class="custom-nav">
-      <button class="custom-prev">Prev</button>
-      <button class="custom-next">Next</button>
     </div>
   </div>
 </section>
