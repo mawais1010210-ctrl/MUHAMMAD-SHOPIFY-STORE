@@ -17,8 +17,8 @@
         {% if section.settings.maintestimonial_image != blank %}
           <img
             class="testimonial_logo"
-            src="{{ block.settings.maintestimonial_image | img_url: 'master' }}"
-            alt="{{ block.settings.maintestimonial_image.alt | escape }}"
+            src="{{ section.settings.maintestimonial_image | img_url: 'master' }}"
+            alt="{{ section.settings.maintestimonial_image.alt | escape }}"
           >
         {% endif %}
       </div>
