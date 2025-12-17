@@ -747,7 +747,7 @@
           "type": "testimonial",
           "settings": {
             "text_description": "<p>\"I've been using this web hosting service for a few months now and overall it's been fine. The uptime has been good and I haven't had any major issues. The pricing is also reasonable. Nothing particularly stands out as exceptional, but it gets the job done.\"</p>",
-            "stars_logos": "⭐️⭐️⭐️☆☆",
+            "stars_logos": "★★★☆☆",
             "testimonials_image": "shopify://shop_images/sarah-john.jpg",
             "name_heading": "Sarah Chen",
             "role_heading": "Software Developer"
