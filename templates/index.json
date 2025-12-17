@@ -729,6 +729,14 @@
         "main_customer_heading": "November 2025 Launch Calendar Overview",
         "month_name-heading": "november"
       }
+    },
+    "testimonial_slider_Xzenyp": {
+      "type": "testimonial-slider",
+      "name": "Testimonial Slider",
+      "settings": {
+        "testimonial_heading": "Testimonial",
+        "testimonial_para": "<p><br/>“Don't just take our word for it - see what actual users of our service have to say about their experience.”</p>"
+      }
     }
   },
   "order": [
@@ -744,6 +752,7 @@
     "tabbing_faq_wP6B39",
     "hover_images_text_section_8hEYVQ",
     "video_four_boxes_CdbyYc",
-    "kytebaby_calender_jFzmfq"
+    "kytebaby_calender_jFzmfq",
+    "testimonial_slider_Xzenyp"
   ]
 }
