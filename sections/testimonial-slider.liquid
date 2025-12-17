@@ -39,17 +39,18 @@
 </style>
 <section class="testimonial-section">
   <div class="testimonial-container">
-    <div class="heading">
-      <h2 class="testimonial-heading">{{ section.settings.testimonial_text }}</h2>
+    <div class="text-arrow-flex">
+      <div class="heading">
+        <h2 class="testimonial-heading">{{ section.settings.testimonial_text }}</h2>
+        <div class="testimonial-description">
+          {{ section.settings.testimonial_para }}
+        </div>
+      </div>
       <div class="custom-nav">
         <button class="custom-prev">Prev</button>
         <button class="custom-next">Next</button>
       </div>
-      <div class="testimonial-description">
-        {{ section.settings.testimonial_para }}
-      </div>
     </div>
-
     <div class="owl-carousel owl-theme">
       {% for block in section.blocks %}
         <div class="item">
