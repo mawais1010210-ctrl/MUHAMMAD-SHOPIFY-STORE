@@ -1,0 +1,101 @@
+<section class="testimonial-section">
+  <div class="testimonial-container">
+    <div class="heading">
+      <h2 class="testimonial-heading">
+        {{ section.settings.testimonial_heading }}
+      </h2>
+
+      <div class="testimonial-description">
+        {{ section.settings.testimonial_para }}
+      </div>
+    </div>
+
+    <div class="owl-carousel owl-theme">
+      {% for block in section.blocks %}
+        <div class="item">
+          <div class="testimonial-card">
+            <div class="slider-description">
+              {{ block.settings.text_description }}
+            </div>
+
+            <div class="stars">
+              {{ block.settings.stars_logos }}
+            </div>
+
+            <div class="user-info">
+              {% if block.settings.testimonials_image != blank %}
+                <img
+                  class="testimonials-image"
+                  src="{{ block.settings.testimonials_image | img_url: 'master' }}"
+                  alt="{{ block.settings.testimonials_image.alt | escape }}"
+                >
+              {% endif %}
+
+              <h4>{{ block.settings.name_heading }}</h4>
+
+              <div class="role-wrap">
+                <span>{{ block.settings.role_heading }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Testimonial Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "testimonial_heading",
+      "label": "Testimonial Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "testimonial_para",
+      "label": "Testimonial Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text_description",
+          "label": "Text Description"
+        },
+        {
+          "type": "text",
+          "id": "stars_logos",
+          "label": "Stars Logos"
+        },
+        {
+          "type": "image_picker",
+          "id": "testimonials_image",
+          "label": "Customer Image"
+        },
+        {
+          "type": "text",
+          "id": "name_heading",
+          "label": "Customer Name"
+        },
+        {
+          "type": "text",
+          "id": "role_heading",
+          "label": "Customer Role"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial Slider"
+    }
+  ]
+}
+{% endschema %}
