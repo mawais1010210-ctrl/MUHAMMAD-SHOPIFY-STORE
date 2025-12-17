@@ -1,22 +1,40 @@
 <style>
-  .testimonial-section {
-    background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
-    padding: 40px 0;
+    .testimonial-section {
+      background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
+      padding: 40px 0;
+    }
+
+    .testimonial-container {
+      max-width: 1200px;
+      padding: 0 50px;
+      margin: 0 auto;
+    }
+
+    .testimonial-heading {
+      font-size: 54px;
+      font-weight: 700;
+      background: linear-gradient(180deg, #7458ff, #b4008e, #ff7a1a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .custom-nav {
+    text-align: center;
+    margin-top: 10px;
   }
 
-  .testimonial-container {
-    max-width: 1200px;
-    padding: 0 50px;
-    margin: 0 auto;
+  .custom-prev, .custom-next {
+    padding: 8px 15px;
+    background: #7a5cff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
 
-  .testimonial-heading {
-    font-size: 54px;
-    font-weight: 700;
-    background: linear-gradient(180deg, #7458ff, #b4008e, #ff7a1a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Poppins', sans-serif;
+  .custom-prev:hover, .custom-next:hover {
+    background: #ff4ecd;
   }
 </style>
 <section class="testimonial-section">
@@ -60,28 +78,36 @@
         </div>
       {% endfor %}
     </div>
+
+    <div class="custom-nav">
+      <button class="custom-prev">Prev</button>
+      <button class="custom-next">Next</button>
+    </div>
   </div>
 </section>
 
 <script>
-  $('.owl-carousel').owlCarousel({
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
     loop: true,
     autoplay: false,
-    autoplayTimeout: 1000,
     margin: 10,
-    nav: false,
+    nav: false, // default nav off
     dots: false,
     responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 5,
-      },
+      0: { items: 1 },
+      600: { items: 3 },
+      1000: { items: 5 },
     },
+  });
+
+  // Custom nav events
+  $('.custom-next').click(function () {
+    owl.trigger('next.owl.carousel');
+  });
+
+  $('.custom-prev').click(function () {
+    owl.trigger('prev.owl.carousel');
   });
 </script>
 
