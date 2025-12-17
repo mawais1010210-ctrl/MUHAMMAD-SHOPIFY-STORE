@@ -730,12 +730,12 @@
         "month_name-heading": "november"
       }
     },
-    "testimonial_slider_Xzenyp": {
+    "testimonial_slider_wHVK9H": {
       "type": "testimonial-slider",
       "name": "Testimonial Slider",
       "settings": {
         "testimonial_heading": "Testimonial",
-        "testimonial_para": "<p><br/>“Don't just take our word for it - see what actual users of our service have to say about their experience.”</p>"
+        "testimonial_para": "<p>Don't just take our word for it—see what actual users of our service have to say about their experience.</p>"
       }
     }
   },
@@ -753,6 +753,6 @@
     "hover_images_text_section_8hEYVQ",
     "video_four_boxes_CdbyYc",
     "kytebaby_calender_jFzmfq",
-    "testimonial_slider_Xzenyp"
+    "testimonial_slider_wHVK9H"
   ]
 }
