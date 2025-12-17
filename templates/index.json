@@ -762,12 +762,23 @@
             "name_heading": "Tom Williams",
             "role_heading": " E-commerce Entrepreneur"
           }
+        },
+        "testimonial_4KGbaT": {
+          "type": "testimonial",
+          "settings": {
+            "text_description": "<p>\"I switched to this hosting service six months ago and have seen a significant improvement in my site's loading speed. The control panel is user-friendly, and their customer support is both knowledgeable and patient. Very satisfied overall.\"</p>",
+            "stars_logos": "★★★★☆",
+            "testimonials_image": "shopify://shop_images/cute.jpg",
+            "name_heading": "Priya Sharma",
+            "role_heading": "Freelance Developer"
+          }
         }
       },
       "block_order": [
         "testimonial_T7QJnP",
         "testimonial_bXFUVJ",
-        "testimonial_ybFzWV"
+        "testimonial_ybFzWV",
+        "testimonial_4KGbaT"
       ],
       "name": "Testimonial Slider",
       "settings": {
