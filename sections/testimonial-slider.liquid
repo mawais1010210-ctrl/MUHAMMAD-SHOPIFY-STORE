@@ -63,36 +63,40 @@
         <button class="custom-next"><i class="fa-solid fa-arrow-right-long"></i></button>
       </div>
     </div>
-    <div class="owl-carousel owl-theme">
-      {% for block in section.blocks %}
-        <div class="item">
-          <div class="testimonial-card">
-            <div class="slider-description">
-              {{ block.settings.text_description }}
-            </div>
+    <div class="customer-main-conntent">
+      <div class="slider-content">
+        <div class="owl-carousel owl-theme">
+          {% for block in section.blocks %}
+            <div class="item">
+              <div class="testimonial-card">
+                <div class="slider-description">
+                  {{ block.settings.text_description }}
+                </div>
 
-            <div class="stars">
-              {{ block.settings.stars_logos }}
-            </div>
+                <div class="stars">
+                  {{ block.settings.stars_logos }}
+                </div>
 
-            <div class="user-info">
-              {% if block.settings.testimonials_image != blank %}
-                <img
-                  class="testimonials-image"
-                  src="{{ block.settings.testimonials_image | img_url: 'master' }}"
-                  alt="{{ block.settings.testimonials_image.alt | escape }}"
-                >
-              {% endif %}
+                <div class="user-info">
+                  {% if block.settings.testimonials_image != blank %}
+                    <img
+                      class="testimonials-image"
+                      src="{{ block.settings.testimonials_image | img_url: 'master' }}"
+                      alt="{{ block.settings.testimonials_image.alt | escape }}"
+                    >
+                  {% endif %}
 
-              <h4>{{ block.settings.name_heading }}</h4>
+                  <h4>{{ block.settings.name_heading }}</h4>
 
-              <div class="role-wrap">
-                <span>{{ block.settings.role_heading }}</span>
+                  <div class="role-wrap">
+                    <span>{{ block.settings.role_heading }}</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          {% endfor %}
         </div>
-      {% endfor %}
+      </div>
     </div>
   </div>
 </section>
