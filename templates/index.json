@@ -772,13 +772,24 @@
             "name_heading": "Priya Sharma",
             "role_heading": "Freelance Developer"
           }
+        },
+        "testimonial_RwpCwA": {
+          "type": "testimonial",
+          "settings": {
+            "text_description": "<p>“Maine is hosting service ko 6 mahine se use kiya hai aur performance bahut accha hai. Server kabhi down nahi hota aur support team har query ka turant jawab deti hai. Bilkul paisa vasool!”</p>",
+            "stars_logos": "★★☆☆☆",
+            "testimonials_image": "shopify://shop_images/michael-brown.jpg",
+            "name_heading": "Rahul Verma",
+            "role_heading": "Blogger"
+          }
         }
       },
       "block_order": [
         "testimonial_T7QJnP",
         "testimonial_bXFUVJ",
         "testimonial_ybFzWV",
-        "testimonial_4KGbaT"
+        "testimonial_4KGbaT",
+        "testimonial_RwpCwA"
       ],
       "name": "Testimonial Slider",
       "settings": {
