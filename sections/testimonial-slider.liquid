@@ -1,132 +1,147 @@
 <style>
-  .testimonial-section {
-    background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
-    padding: 40px 0;
-  }
+      .testimonial-section {
+        background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
+        padding: 40px 0;
+      }
 
-  .testimonial-container {
-    max-width: 1100px;
-    padding: 0 20px; /* Mobile ke liye thoda padding kam */
-    margin: 0 auto;
-  }
+      .testimonial-container {
+        max-width: 1100px;
+        padding: 0 50px;
+        margin: 0 auto;
+      }
 
-  .testimonial-heading {
-    font-size: 54px;
-    font-weight: 700;
-    background: linear-gradient(180deg, #7458ff, #b4008e, #ff7a1a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Poppins', sans-serif;
-  }
+      .testimonial-heading {
+        font-size: 54px;
+        font-weight: 700;
+        background: linear-gradient(180deg, #7458ff, #b4008e, #ff7a1a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Poppins', sans-serif;
+      }
 
-  .custom-nav {
-    text-align: center;
-    display: flex;
-    gap: 10px;
-  }
+     .custom-nav {
+       text-align: center;
+       display: flex;
+       gap: 10px;
+     }
 
-  .custom-prev, .custom-next {
-    padding: 10px 14px;
-    background: #302c2c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+     .custom-prev, .custom-next {
+       padding: 13px 16px;
+       background: #302c2c;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+     }
 
-  .custom-prev:hover, .custom-next:hover {
-    background: #443b42;
-  }
+     .custom-prev:hover, .custom-next:hover {
+      background: #443b42;
+     }
 
-  .text-arrow-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
+     .text-arrow-flex {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 0 50px;
+     }
 
-  .testimonial-description p {
-    color: #9c8d8d;
-    font-size: 12px;
-    max-width: 68%;
-    letter-spacing: 0;
-  }
+     .testimonial-description p {
+       color: #9c8d8d;
+       font-size: 12px;
+       max-width: 68%;
+       letter-spacing: 0;
+     }
 
-  .slider-description p {
-    font-size: 10px;
-    color: #cccccc;
-    text-align: center;
-  }
+     .slider-description{
+       min-height: 90px;
+     }
 
-  .testimonials-image {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 5px;
-  }
+     .slider-description p {
+       font-size: 10px;
+       color: #cccccc;
+       text-align: center;
+     }
 
-  .user-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: auto;
-    padding-top: 10px;
-  }
+     .testimonials-image {
+       height: 40px;
+       max-width: 40px;
+       border-radius: 50px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+     }
 
-  .stars {
-    text-align: center;
-    color: #c1a825;
-    padding: 10px 0;
-  }
+     .user-info {
+       display: flex;
+       flex-direction: column;
+       margin-top: auto;
+       align-items: center;
+       padding-top: 10px;
+     }
 
-  .testimonial-card {
-    height: 310px;
-    width: 280px;
-    background: #1a1818;
-    padding: 15px;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-  }
+     .stars {
+       text-align: center;
+       color: #c1a825;
+       padding-top: 10px;
+     }
 
-  .role-name {
-    margin-top: 5px;
-    color: #cccccc;
-    font-size: 12px;
-    font-weight: 400;
-  }
+     .testimonial-card{
+      height: 310px;
+      width: 280px;
+      background: #1a1818;
+      padding: 15px;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+     }
+     .role-name {
+       margin-top: 5px;
+       color: #cccccc;
+       font-size: 12px;
+       font-weight: 400;
+     }
 
-  .role-wrap span {
-    color: #8a8a8a;
-    font-size: 10px;
-    font-weight: 400;
-  }
+     .role-wrap span {
+       color: #8a8a8a;
+       font-size: 10px;
+       font-weight: 400;
+     }
 
-  .role-wrap {
-    line-height: 10px;
-  }
+     .role-wrap {
+       line-height: 10px;
+     }
 
-  /* Responsive font & card adjustments */
-  @media (max-width: 1024px) {
-    .testimonial-heading { font-size: 42px; }
-    .testimonial-card { width: 240px; }
-  }
+   @media (max-width: 1024px) {
+   .testimonial-heading {
+     font-size: 42px;
+   }
+   .testimonial-card {
+     max-width: 240px; /* Tablet */
+    }
+   }
 
-  @media (max-width: 768px) {
-    .testimonial-heading { font-size: 36px; }
-    .testimonial-card { width: 220px; }
+   @media (max-width: 768px) {
+   .testimonial-heading {
+    font-size: 36px;
+   }
+   .testimonial-card {
+     max-width: 220px; /* Small tablet */
+   }
   }
 
   @media (max-width: 480px) {
-    .testimonial-heading { font-size: 28px; }
-    .testimonial-card { width: 200px; }
-    .text-arrow-flex { flex-direction: column; gap: 10px; }
+   .testimonial-heading {
+     font-size: 28px;
+   }
+   .testimonial-card {
+     max-width: 200px; /* Mobile */
+   }
+   .text-arrow-flex {
+     flex-direction: column;
+     gap: 10px;
+   }
   }
 </style>
-
 <section class="testimonial-section">
   <div class="testimonial-container">
     <div class="text-arrow-flex">
@@ -150,9 +165,11 @@
                 <div class="slider-description">
                   {{ block.settings.text_description }}
                 </div>
+
                 <div class="stars">
                   {{ block.settings.stars_logos }}
                 </div>
+
                 <div class="user-info">
                   {% if block.settings.testimonials_image != blank %}
                     <img
@@ -161,7 +178,9 @@
                       alt="{{ block.settings.testimonials_image.alt | escape }}"
                     >
                   {% endif %}
+
                   <h4 class="role-name">{{ block.settings.name_heading }}</h4>
+
                   <div class="role-wrap">
                     <span>{{ block.settings.role_heading }}</span>
                   </div>
@@ -180,19 +199,79 @@
   owl.owlCarousel({
     loop: true,
     autoplay: false,
-    margin: 15,
+    margin: 10,
     nav: false,
     dots: false,
-    center: true, // Centering items for peek effect
     responsive: {
-      0: { items: 1.5 },      // Mobile
-      480: { items: 2 },      // Small tablet
-      768: { items: 3 },      // Tablet
-      1024: { items: 3.5 },   // Desktop
+      0: { items: 1.5 }, // Mobile, 1.5 cards visible
+      480: { items: 2 }, // Small tablet
+      768: { items: 3 }, // Tablet
+      1024: { items: 3.5 }, // Desktop
     },
   });
 
-  // Custom nav
-  $('.custom-next').click(function () { owl.trigger('next.owl.carousel'); });
-  $('.custom-prev').click(function () { owl.trigger('prev.owl.carousel'); });
+  // Custom nav events
+  $('.custom-next').click(function () {
+    owl.trigger('next.owl.carousel');
+  });
+
+  $('.custom-prev').click(function () {
+    owl.trigger('prev.owl.carousel');
+  });
 </script>
+
+{% schema %}
+{
+  "name": "Testimonial Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "testimonial_text",
+      "label": "Testimonial Text"
+    },
+    {
+      "type": "richtext",
+      "id": "testimonial_para",
+      "label": "Testimonial Description"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text_description",
+          "label": "Text Description"
+        },
+        {
+          "type": "text",
+          "id": "stars_logos",
+          "label": "Stars Logos"
+        },
+        {
+          "type": "image_picker",
+          "id": "testimonials_image",
+          "label": "Customer Image"
+        },
+        {
+          "type": "text",
+          "id": "name_heading",
+          "label": "Customer Name"
+        },
+        {
+          "type": "text",
+          "id": "role_heading",
+          "label": "Customer Role"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial Slider"
+    }
+  ]
+}
+{% endschema %}
