@@ -1,23 +1,23 @@
 <style>
-     .testimonial-section {
-    background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
-    padding: 40px 0;
-  }
+   .testimonial-section {
+     background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
+     padding: 40px 0;
+   }
 
-  .testimonial-container {
-    max-width: 1100px;
-    padding: 0 50px;
-    margin: 0 auto;
-  }
+   .testimonial-container {
+     max-width: 1100px;
+     padding: 0 50px;
+     margin: 0 auto;
+   }
 
-  .testimonial-heading {
-    font-size: 54px;
-    font-weight: 700;
-    background: linear-gradient(180deg, #7458ff, #b4008e, #ff7a1a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Poppins', sans-serif;
-  }
+   .testimonial-heading {
+     font-size: 54px;
+     font-weight: 700;
+     background: linear-gradient(180deg, #7458ff, #b4008e, #ff7a1a);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-family: 'Poppins', sans-serif;
+   }
 
   .custom-nav {
     text-align: center;
@@ -35,7 +35,7 @@
   }
 
   .custom-prev:hover, .custom-next:hover {
-    background: #443b42;
+   background: #443b42;
   }
 
   .text-arrow-flex {
@@ -52,9 +52,8 @@
     letter-spacing: 0;
   }
 
-  /* ❌ REMOVE min-height */
-  .slider-description {
-    /* no height/min-height */
+  .slider-description{
+    min-height: 90px;
   }
 
   .slider-description p {
@@ -72,26 +71,12 @@
     justify-content: space-between;
   }
 
-  /* ✅ user-info bottom fix with flex */
   .user-info {
     display: flex;
     flex-direction: column;
+    margin-top: auto;
     align-items: center;
     padding-top: 10px;
-    /* margin-top: auto removed */
-  }
-
-  /* ✅ testimonial card dynamic height */
-  .testimonial-card {
-    width: 280px;
-    background: #1a1818;
-    padding: 15px;
-    border-radius: 6px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* 🔑 dynamic spacing */
-    /* height removed */
   }
 
   .stars {
@@ -100,6 +85,15 @@
     padding-top: 10px;
   }
 
+  .testimonial-card{
+   height: 310px;
+   width: 280px;
+   background: #1a1818;
+   padding: 15px;
+   border-radius: 6px;
+   display: flex;
+   flex-direction: column;
+  }
   .role-name {
     margin-top: 5px;
     color: #cccccc;
@@ -116,8 +110,6 @@
   .role-wrap {
     line-height: 10px;
   }
-
-    }
 </style>
 <section class="testimonial-section">
   <div class="testimonial-container">
