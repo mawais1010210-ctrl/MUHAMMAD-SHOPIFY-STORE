@@ -829,6 +829,13 @@
         "testimonial_text": "Testimonial",
         "testimonial_para": "<p>Don't just take our word for it—see what actual users of our service have to say about their experience.</p>"
       }
+    },
+    "larkspur_slider_baby_NLtC9n": {
+      "type": "larkspur-slider-baby",
+      "name": "Larkspur Slider",
+      "settings": {
+        "heading_main": "What people are saying..."
+      }
     }
   },
   "order": [
@@ -845,6 +852,7 @@
     "hover_images_text_section_8hEYVQ",
     "video_four_boxes_CdbyYc",
     "kytebaby_calender_jFzmfq",
-    "testimonial_slider_wHVK9H"
+    "testimonial_slider_wHVK9H",
+    "larkspur_slider_baby_NLtC9n"
   ]
 }
