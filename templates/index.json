@@ -838,9 +838,9 @@
           "settings": {
             "customer_image": "shopify://shop_images/larksspur-baby-1.jpg",
             "customer_stars": "shopify://shop_images/stars.svg",
-            "customer_description": "<p>“It is so buttery and plush now and it's my favorite bamboo fabric. The colors are absolutely beautiful and everything fits so well, and my kids, and even my husband, love their new Larkspur clothing.”</p>",
-            "customer_name": "Taylor R.",
-            "customer_work": "Denver, CO"
+            "customer_description": "<p>“Our little family has always been a huge fan of Larkspur. When I first found out I was pregnant I was on the hunt for good quality soft baby clothes. I came across Larkspur and never turned back.”</p>",
+            "customer_name": "Olivia T.",
+            "customer_work": "Thousand Oaks, CA"
           }
         },
         "customer_gTkQLF": {
@@ -856,6 +856,8 @@
         "customer_ctthfG": {
           "type": "customer",
           "settings": {
+            "customer_image": "shopify://shop_images/larksspur-baby-3.jpg",
+            "customer_stars": "shopify://shop_images/stars.svg",
             "customer_description": "",
             "customer_name": "",
             "customer_work": ""
