@@ -1,0 +1,86 @@
+<section class="people-slider-sec">
+  <div class="people-slider-container">
+    <div class="people-slider-flex">
+      <div class="slider_heading">
+        <h2 class="slider-main-heading-hdg">{{ section.settings.heading_main }}</h2>
+      </div>
+      <div class="people-slider-main-content">
+        <div class="people-slider-item-main">
+          <div class="owl-carousel owl-theme">
+            {% for block in section.block %}
+              <div class="item">
+                <div class="image-main-div">
+                  {% if block.settings.customer_image != blank %}
+                    <img class="customer-images" src="{{ block.settings.customer_image | img_url: 'master' }}">
+                  {% endif %}
+                </div>
+                <div class="text-box-div">
+                  <div class="stars-image">
+                    {% if block.settings.customer_stars %}
+                      <img class="customer-stars" src="{{ block.settings.customer_stars | img_url: 'master' }}">
+                    {% endif %}
+                  </div>
+
+                  <div class="customer-description">{{ block.settings.customer_description }}</div>
+                  <div class="customer_name">{{ block.settings.customer_name }}</div>
+                  <div class="customer-work">{{ block.settings.customer_work }}</div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Larkspur Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_main",
+      "label": "Heading Main"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "customer",
+      "name": "customer",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "customer_image",
+          "label": "Customer Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "customer_stars",
+          "label": "Customer Stars"
+        },
+        {
+          "type": "textarea",
+          "id": "customer_description",
+          "label": "Customer Description"
+        },
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Customer Name"
+        },
+        {
+          "type": "text",
+          "id": "customer_work",
+          "label": "Customer Work"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Larkspur Slider"
+    }
+  ]
+}
+{% endschema %}
