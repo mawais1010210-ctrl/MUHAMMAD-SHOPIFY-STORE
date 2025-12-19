@@ -866,9 +866,11 @@
         "customer_YxcnbV": {
           "type": "customer",
           "settings": {
-            "customer_description": "",
-            "customer_name": "",
-            "customer_work": ""
+            "customer_image": "shopify://shop_images/larksspur-baby-4.jpg",
+            "customer_stars": "shopify://shop_images/stars.svg",
+            "customer_description": "<p>“It is so buttery and plush now and it's my favorite bamboo fabric. The colors are absolutely beautiful and everything fits so well, and my kids, and even my husband, love their new Larkspur clothing.”</p>",
+            "customer_name": "Taylor R.",
+            "customer_work": "Denver, CO"
           }
         },
         "customer_D6j4Ey": {
