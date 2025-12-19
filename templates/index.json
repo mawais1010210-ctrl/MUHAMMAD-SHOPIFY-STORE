@@ -886,9 +886,11 @@
         "customer_7mnBVW": {
           "type": "customer",
           "settings": {
-            "customer_description": "",
-            "customer_name": "",
-            "customer_work": ""
+            "customer_image": "shopify://shop_images/larksspur-baby-6.jpg",
+            "customer_stars": "shopify://shop_images/stars.svg",
+            "customer_description": "<p>“A company that understands the comfort that kids need in their clothing and the desire for beauty and longevity that mothers want. The softness and stretchiness of these fabrics check all the boxes and the beautiful colorways make buying them a no brainer!”</p>",
+            "customer_name": "Amanda H.",
+            "customer_work": "Chula Vista, CA"
           }
         }
       },
