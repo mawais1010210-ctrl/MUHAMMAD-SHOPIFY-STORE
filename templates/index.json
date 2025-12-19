@@ -876,9 +876,11 @@
         "customer_D6j4Ey": {
           "type": "customer",
           "settings": {
-            "customer_description": "",
-            "customer_name": "",
-            "customer_work": ""
+            "customer_image": "shopify://shop_images/larksspur-baby-5.jpg",
+            "customer_stars": "shopify://shop_images/stars.svg",
+            "customer_description": "<p>“We fell in love with larkspur baby 2 years ago when I was given a gift for my baby shower. We have been obsessed ever since!”</p>",
+            "customer_name": "April B.",
+            "customer_work": "Fiddletown, CA"
           }
         },
         "customer_7mnBVW": {
