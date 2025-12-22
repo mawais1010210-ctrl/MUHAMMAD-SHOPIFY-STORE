@@ -46,8 +46,11 @@
 <section class="annuncement-bar-sec">
   <div class="annoucement-bar-container">
     <div class="annoucement-bar-flex">
-      <div class="announcement-text">🔥 Free Shipping on Orders Over $50</div>
-      <div class="announcement-text">⭐ Limited Time Offer – Shop Now</div>
+      {% for block in section.blocks %}
+        <div class="announcement-text">
+          {{ block.settings['announcement-text'] }}
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>
