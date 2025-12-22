@@ -1,45 +1,58 @@
 <footer class="larkur-baby-ftr">
   <div class="larkspur-baby-container">
     <div class="larkspur-baby-flex">
+
       {% for block in section.blocks %}
         {% case block.type %}
+
           {% when 'link' %}
             <div class="larkspur-customer-menues">
               <div class="larkspur-navigation">
                 <div class="larkspur-cst-clmns">
                   <div class="customer-content">
-                    <span class="heading-customer-footer">{{ block.settings.menu_text }}</span>
+                    <span class="heading-customer-footer">
+                      {{ block.settings.menu_text }}
+                    </span>
+
                     <ul class="footer-col">
-                      {% for link in linklists[block.settings['footer-col']] %}
+                      {% for link in linklists[block.settings.footer-col].links %}
                         <li class="customer-footer-navigation-link">
-                          <a href="{{ link.url }}" class="customer-footer-link">{{ link.title }}</a>
+                          <a href="{{ link.url }}" class="customer-footer-link">
+                            {{ link.title }}
+                          </a>
                         </li>
                       {% endfor %}
                     </ul>
+
                   </div>
                 </div>
               </div>
             </div>
-        {% endcase %}
-      {% endfor %}
 
-      {% for block in section.blocks %}
-        {% case block.types %}
           {% when 'info' %}
             <div class="larkspur-cutomer-customer-content">
               <div class="customer-footer-right-block">
-                <h4 class="customer-signup-heading">{{ block.settings.signup_heading }}</h4>
+                <h4 class="customer-signup-heading">
+                  {{ block.settings.signup_heading }}
+                </h4>
+
                 <div class="cutomer-footer-signup-text">
-                  <div class="customer-text-description">{{ block.settings.description_text }}</div>
+                  <div class="customer-text-description">
+                    {{ block.settings.description_text }}
+                  </div>
 
                   <div class="customer-footer-buttons">
-                    <a href="#" class="cstm-btn">{{ block.settings.footer_btn }}</a>
+                    <a href="#" class="cstm-btn">
+                      {{ block.settings.footer_btn }}
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+
         {% endcase %}
       {% endfor %}
+
     </div>
 
     <div class="customer-bottom-content">
@@ -47,6 +60,7 @@
         <div class="footer-reserved-text">
           <span>© Larkspur Baby 2025. All rights reserved.</span>
         </div>
+
         <div class="ftr-btm-link-text">
           <ul class="footer-btm-links">
             <li class="btm-link">
@@ -59,8 +73,10 @@
         </div>
       </div>
     </div>
+
   </div>
 </footer>
+
 {% schema %}
 {
   "name": "Larkspur Footer",
