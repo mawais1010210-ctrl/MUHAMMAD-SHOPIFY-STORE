@@ -16,37 +16,30 @@
                         </li>
                       {% endfor %}
                     </ul>
-                  </div> 
+                  </div>
                 </div>
               </div>
             </div>
         {% endcase %}
       {% endfor %}
-      <div class="larkspur-cutomer-customer-content">
-        <div class="customer-footer-right-block">
-          <h4 class="customer-signup-heading">📲 Unlock 15% off your order</h4>
-          <div class="cutomer-footer-signup-text">
-            <div class="customer-text-description">
-              Be the First to Know! Get early access to launches and exclusive sales when you sign up for texts—plus
-              enjoy 15% off your first purchase. Don’t miss out on the latest from Larkspur!
-            </div>
 
-            <div class="customer-footer-buttons">
-              <a href="#" class="cstm-btn">REMIND ME!</a>
-            </div>
-          </div>
-        </div>
-        <div class="customer-footer-right-block">
-          <h4 class="customer-signup-heading">👩🏻‍🍼 Join the Larkspur Circle</h4>
-          <div class="cutomer-footer-signup-text">
-            <div class="customer-text-description">Get 15% off every new drop—just for VIPs.</div>
+      {% for block in section.blocks %}
+        {% case block.types %}
+          {% when 'info' %}
+            <div class="larkspur-cutomer-customer-content">
+              <div class="customer-footer-right-block">
+                <h4 class="customer-signup-heading">{{ block.settings.signup_heading }}</h4>
+                <div class="cutomer-footer-signup-text">
+                  <div class="customer-text-description">{{ block.settings.description_text }}</div>
 
-            <div class="customer-footer-buttons">
-              <a href="#" class="cstm-btn">JOIN NOW</a>
+                  <div class="customer-footer-buttons">
+                    <a href="#" class="cstm-btn">{{ block.settings.footer_btn }}</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+        {% endcase %}
+      {% endfor %}
     </div>
 
     <div class="customer-bottom-content">
@@ -74,20 +67,20 @@
   "settings": [],
   "blocks": [
     {
-    "type": "link",
-    "name": "Link",
-     "settings": [
+      "type": "link",
+      "name": "Link",
+      "settings": [
         {
-        "type": "text",
-        "id": "menu_text",
-        "label": "Menu Text"
+          "type": "text",
+          "id": "menu_text",
+          "label": "Menu Text"
         },
         {
-        "type": "link_list",
-        "id": "footer-col",
-        "label": "Footer Column"
+          "type": "link_list",
+          "id": "footer-col",
+          "label": "Footer Column"
         }
-     ]
+      ]
     }
   ],
   "presets": [
