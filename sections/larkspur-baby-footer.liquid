@@ -28,10 +28,10 @@
         </div>
       </div>
 
-      {% for block in section.blocks %}
-        {% case block.type %}
-          {% when 'info' %}
-            <div class="larkspur-customer-customer-content">
+      <div class="larkspur-customer-customer-content">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'info' %}
               <div class="customer-footer-right-block">
                 <h4 class="customer-signup-heading">
                   {{ block.settings.signup_heading }}
@@ -49,9 +49,9 @@
                   </div>
                 </div>
               </div>
-            </div>
-        {% endcase %}
-      {% endfor %}
+          {% endcase %}
+        {% endfor %}
+      </div>
     </div>
 
     <div class="customer-bottom-content">
