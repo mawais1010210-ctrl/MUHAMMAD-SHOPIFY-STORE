@@ -152,14 +152,11 @@
     gap: 0;
   }
 
-  /* FAQ layout */
   .customer-content,
   .customer-footer-right-block{
-    border-bottom: 1px solid #e5e5e5;
-    padding: 12px 0;
+    padding: 12px;
   }
 
-  /* FAQ headings */
   .heading-customer-footer,
   .customer-signup-heading{
     display: flex;
@@ -170,26 +167,24 @@
     letter-spacing: 1px;
   }
 
-  /* Hide content */
   .footer-col,
   .customer-footer-signup-text{
     display: none;
     margin-top: 10px;
   }
 
-  /* + icon */
   .heading-customer-footer::after,
   .customer-signup-heading::after{
     content: "+";
+    position: absolute;
+    right: 50px;
     font-size: 18px;
   }
 
-  /* Active state */
   .active::after{
     content: "−";
   }
 
-  /* Bottom section */
   .bottom-flex{
     flex-direction: column;
     text-align: center;
