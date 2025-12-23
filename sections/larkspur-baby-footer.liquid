@@ -1,11 +1,11 @@
 <footer class="larkspur-baby-ftr">
   <div class="larkspur-baby-container">
     <div class="larkspur-baby-flex">
-      {% for block in section.blocks %}
-        {% case block.type %}
-          {% when 'link' %}
-            <div class="larkspur-customer-menues">
-              <div class="larkspur-navigation">
+      <div class="larkspur-customer-menues">
+        <div class="larkspur-navigation">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'link' %}
                 <div class="larkspur-cst-clmns">
                   <div class="customer-content">
                     <span class="heading-customer-footer">
@@ -23,10 +23,10 @@
                     </ul>
                   </div>
                 </div>
-              </div>
-            </div>
-        {% endcase %}
-      {% endfor %}
+            {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
 
       {% for block in section.blocks %}
         {% case block.type %}
