@@ -281,7 +281,6 @@
 </footer>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
   if (window.innerWidth <= 767) {
 
     const toggles = document.querySelectorAll(
@@ -290,14 +289,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     toggles.forEach((toggle) => {
       toggle.addEventListener("click", function () {
-
         this.classList.toggle("active");
 
         const content = this.nextElementSibling;
         if (!content) return;
 
-        content.style.display =
-          content.style.display === "block" ? "none" : "block";
+        content.classList.toggle("show");
       });
     });
 
