@@ -39,7 +39,7 @@
           "type": "info",
           "settings": {
             "signup_heading": "📲 Unlock 15% off your order",
-            "description_text": "Be the First to Know! Get early access to launches and exclusive sales when you sign up for texts—plus enjoy 15% off your first purchase. Don’t miss out on the latest from Larkspur!",
+            "description_text": "<p>Be the First to Know! Get early access to launches and exclusive sales when you sign up for texts—plus enjoy 15% off your first purchase. Don’t miss out on the latest from Larkspur!</p>",
             "footer_btn": "REMIND ME!"
           }
         },
@@ -47,7 +47,7 @@
           "type": "info",
           "settings": {
             "signup_heading": "👩🏻‍🍼 Join the Larkspur Circle",
-            "description_text": "Get 15% off every new drop—just for VIPs.",
+            "description_text": "<p>Get 15% off every new drop—just for VIPs.</p>",
             "footer_btn": "JOIN NOW"
           }
         }
