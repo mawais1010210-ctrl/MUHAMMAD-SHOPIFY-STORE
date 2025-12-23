@@ -165,11 +165,15 @@
     letter-spacing: 1px;
   }
 
-  .footer-col,
-  .customer-footer-signup-text{
-    display: none;
-    margin-top: 10px;
-  }
+  .footer-col {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.footer-col.show {
+  max-height: 500px; /* sufficient height for content */
+}
 
   .heading-customer-footer::after,
   .customer-signup-heading::after{
