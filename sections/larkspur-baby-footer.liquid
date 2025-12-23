@@ -1,206 +1,200 @@
 <style>
-  .larkspur-baby-ftr {
-    padding: 20px 0;
-    background: #f5f2e6;
-  }
-  .larkspur-baby-container {
-    width: 100%;
-    max-width: 1380px;
-    margin: 0 auto;
-    padding: 0 40px;
+      .larkspur-baby-ftr {
+       padding: 20px 0;
+       background: #f5f2e6;
+      }
+     .larkspur-baby-container {
+       width: 100%;
+       max-width: 1380px;
+       margin: 0 auto;
+       padding: 0 40px;
+     }
+
+     .larkspur-baby-flex {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+     }
+
+     .larkspur-customer-menues {
+        width: 67%;
+        background: #fff;
+        border-radius: 10px;
+     }
+
+     .larkspur-navigation {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px;
+        gap: 30px;
+     }
+
+     .larkspur-customer-customer-content {
+        width: 31%;
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+     }
+
+     .larkspur-cst-clmns {
+         width: 30%;
+     }
+
+     .customer-footer-right-block {
+        width: 100%;
+        padding: 30px;
+        background: #fff;
+        border-radius: 10px;
+     }
+
+     .heading-customer-footer {
+       font-size: 13px;
+       display: block;
+       color: #000000;
+       letter-spacing: 2px;
+       font-weight: 400;
+       margin-bottom: 15px;
+     }
+
+     .customer-footer-navigation-link {
+       list-style: none;
+     }
+
+     .customer-footer-link {
+       text-decoration: none;
+       color: #737373;
+       font-size: 14px;
+       display: block;
+     }
+
+    .customer-signup-heading {
+     font-size: 13px;
+     letter-spacing: 2px;
+     margin-bottom: 8px;
+     line-height: 22px;
+    }
+
+    .customer-text-description p {
+      color: #737373;
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+
+    .cstm-btn {
+      color: #fff;
+      background: #242f3f;
+      display: inline-block;
+      font-size: 14px;
+      border-radius: 10px;
+      padding: 9px 15px;
+      border: none;
+      text-align: center;
+      outline: none;
+      text-decoration: none;
+      line-height: 16px;
+      letter-spacing: 1.54px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .customer-footer-buttons {
+      margin-top: 15px;
+    }
+
+    .bottom-flex {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .page-link {
+      text-decoration: none;
+      color: #737373;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .footer-btm-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .customer-bottom-content {
+      margin-top: 20px;
   }
 
-  .larkspur-baby-flex {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+  .footer-reserved-text span {
+      font-size: 14px;
+      color: #737373;
+      font-weight: 400;
   }
 
-  .larkspur-customer-menues {
-    width: 67%;
-    background: #fff;
-    border-radius: 10px;
-  }
-
-  .larkspur-navigation {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 30px;
-    gap: 30px;
-  }
-
-  .larkspur-customer-customer-content {
-    width: 31%;
-    display: flex;
+  @media (max-width: 767px){
+  .larkspur-baby-flex{
     flex-direction: column;
     gap: 20px;
   }
 
-  .larkspur-cst-clmns {
-    width: 30%;
-  }
-
-  .customer-footer-right-block {
+  .larkspur-customer-menues,
+  .larkspur-customer-customer-content,
+  .larkspur-cst-clmns{
     width: 100%;
-    padding: 30px;
-    background: #fff;
-    border-radius: 10px;
   }
 
-  .heading-customer-footer {
-    font-size: 13px;
-    display: block;
-    color: #000000;
-    letter-spacing: 2px;
-    font-weight: 400;
-    margin-bottom: 15px;
+  .larkspur-navigation{
+    flex-direction: column;
+    padding: 15px;
+    gap: 0;
   }
 
-  .customer-footer-navigation-link {
-    list-style: none;
+  .customer-content,
+  .customer-footer-right-block{
+    padding: 12px;
   }
 
-  .customer-footer-link {
-    text-decoration: none;
-    color: #737373;
-    font-size: 14px;
-    display: block;
-  }
-
-  .customer-signup-heading {
-    font-size: 13px;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
-    line-height: 22px;
-  }
-
-  .customer-text-description p {
-    color: #737373;
-    font-size: 13px;
-    line-height: 20px;
-    font-weight: 400;
-  }
-
-  .cstm-btn {
-    color: #fff;
-    background: #242f3f;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 10px;
-    padding: 9px 15px;
-    border: none;
-    text-align: center;
-    outline: none;
-    text-decoration: none;
-    line-height: 16px;
-    letter-spacing: 1.54px;
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .customer-footer-buttons {
-    margin-top: 15px;
-  }
-
-  .bottom-flex {
+  .heading-customer-footer,
+  .customer-signup-heading{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
-  }
-
-  .page-link {
-    text-decoration: none;
-    color: #737373;
+    cursor: pointer;
     font-size: 14px;
-    font-weight: 400;
+    letter-spacing: 1px;
   }
 
-  .footer-btm-links {
-    display: flex;
-    gap: 30px;
-    list-style: none;
+  .footer-col,
+  .customer-footer-signup-text{
+    display: none;
+    margin-top: 10px;
   }
 
-  .customer-bottom-content {
-    margin-top: 20px;
+  .heading-customer-footer::after,
+  .customer-signup-heading::after{
+    content: "+";
+    position: absolute;
+    right: 50px;
+    font-size: 18px;
   }
 
-  .footer-reserved-text span {
-    font-size: 14px;
-    color: #737373;
-    font-weight: 400;
+  .active::after{
+    content: "−";
   }
 
-  /* MOBILE STYLES */
-  @media (max-width: 767px){
-    .larkspur-baby-flex{
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .larkspur-customer-menues,
-    .larkspur-customer-customer-content,
-    .larkspur-cst-clmns{
-      width: 100%;
-    }
-
-    .larkspur-navigation{
-      flex-direction: column;
-      padding: 15px;
-      gap: 0;
-    }
-
-    .customer-content,
-    .customer-footer-right-block{
-      padding: 12px;
-    }
-
-    .heading-customer-footer,
-    .customer-signup-heading{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-      font-size: 14px;
-      letter-spacing: 1px;
-      position: relative;
-    }
-
-    .footer-col,
-    .customer-footer-signup-text{
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease;
-    }
-
-    .footer-col.show,
-    .customer-footer-signup-text.show {
-      max-height: 500px; /* adjust if needed */
-    }
-
-    .heading-customer-footer::after,
-    .customer-signup-heading::after{
-      content: "+";
-      font-size: 18px;
-    }
-
-    .active::after{
-      content: "−";
-    }
-
-    .bottom-flex{
-      flex-direction: column;
-      text-align: center;
-      gap: 12px;
-    }
-
-    .footer-btm-links{
-      justify-content: center;
-    }
+  .bottom-flex{
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
   }
+
+  .footer-btm-links{
+    justify-content: center;
+  }
+}
+
 </style>
-
 <footer class="larkspur-baby-ftr">
   <div class="larkspur-baby-container">
     <div class="larkspur-baby-flex">
@@ -281,24 +275,95 @@
     </div>
   </div>
 </footer>
-
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
   if (window.innerWidth <= 767) {
+
     const toggles = document.querySelectorAll(
       ".heading-customer-footer, .customer-signup-heading"
     );
 
     toggles.forEach((toggle) => {
       toggle.addEventListener("click", function () {
+
         this.classList.toggle("active");
 
         const content = this.nextElementSibling;
         if (!content) return;
 
-        content.classList.toggle("show");
+        content.style.display =
+          content.style.display === "block" ? "none" : "block";
       });
     });
+
   }
 });
 </script>
+
+{% schema %}
+{
+  "name": "Larkspur Footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "reserved_text",
+      "label": "Reserved Text"
+    },
+    {
+      "type": "text",
+      "id": "tcs_text",
+      "label": "Terms Text"
+    },
+    {
+      "type": "text",
+      "id": "privacy_text",
+      "label": "Privacy Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Link Column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu_text",
+          "label": "Menu Heading"
+        },
+        {
+          "type": "link_list",
+          "id": "footer_col",
+          "label": "Footer Menu"
+        }
+      ]
+    },
+    {
+      "type": "info",
+      "name": "Info Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "signup_heading",
+          "label": "Signup Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "description_text",
+          "label": "Para Text"
+        },
+        {
+          "type": "text",
+          "id": "footer_btn",
+          "label": "Button Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Larkspur Footer"
+    }
+  ]
+}
+{% endschema %}
