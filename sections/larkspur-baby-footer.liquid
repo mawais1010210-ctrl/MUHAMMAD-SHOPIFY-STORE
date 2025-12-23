@@ -165,15 +165,11 @@
     letter-spacing: 1px;
   }
 
-  .footer-col {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-}
-
-.footer-col.show {
-  max-height: 500px; /* sufficient height for content */
-}
+  .footer-col,
+  .customer-footer-signup-text{
+    display: none;
+    margin-top: 10px;
+  }
 
   .heading-customer-footer::after,
   .customer-signup-heading::after{
@@ -281,6 +277,7 @@
 </footer>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
   if (window.innerWidth <= 767) {
 
     const toggles = document.querySelectorAll(
@@ -289,12 +286,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     toggles.forEach((toggle) => {
       toggle.addEventListener("click", function () {
+
         this.classList.toggle("active");
 
         const content = this.nextElementSibling;
         if (!content) return;
 
-        content.classList.toggle("show");
+        content.style.display =
+          content.style.display === "block" ? "none" : "block";
       });
     });
 
