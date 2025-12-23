@@ -42,13 +42,22 @@
             "description_text": "Be the First to Know! Get early access to launches and exclusive sales when you sign up for texts—plus enjoy 15% off your first purchase. Don’t miss out on the latest from Larkspur!",
             "footer_btn": "REMIND ME!"
           }
+        },
+        "info_mD9NFb": {
+          "type": "info",
+          "settings": {
+            "signup_heading": "👩🏻‍🍼 Join the Larkspur Circle",
+            "description_text": "Get 15% off every new drop—just for VIPs.",
+            "footer_btn": "JOIN NOW"
+          }
         }
       },
       "block_order": [
         "link_WFjfid",
         "link_BVbzqr",
         "link_ffntyE",
-        "info_tCFKLw"
+        "info_tCFKLw",
+        "info_mD9NFb"
       ],
       "name": "Larkspur Footer",
       "settings": {
