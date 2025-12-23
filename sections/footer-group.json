@@ -27,11 +27,19 @@
             "menu_text": "Customer Service",
             "footer_col": "footer-2"
           }
+        },
+        "link_ffntyE": {
+          "type": "link",
+          "settings": {
+            "menu_text": "More Goodies",
+            "footer_col": ""
+          }
         }
       },
       "block_order": [
         "link_WFjfid",
-        "link_BVbzqr"
+        "link_BVbzqr",
+        "link_ffntyE"
       ],
       "name": "Larkspur Footer",
       "settings": {
