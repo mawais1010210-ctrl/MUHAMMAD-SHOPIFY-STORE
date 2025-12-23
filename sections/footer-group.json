@@ -11,20 +11,8 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "larkspur_baby_footer_bdyaae": {
+    "larkspur_baby_footer_zRrn7j": {
       "type": "larkspur-baby-footer",
-      "blocks": {
-        "link_zdnWUd": {
-          "type": "link",
-          "settings": {
-            "menu_text": "About",
-            "footer_col": ""
-          }
-        }
-      },
-      "block_order": [
-        "link_zdnWUd"
-      ],
       "name": "Larkspur Footer",
       "settings": {
         "reserved_text": "© Larkspur Baby 2025. All rights reserved.",
@@ -52,7 +40,7 @@
     }
   },
   "order": [
-    "larkspur_baby_footer_bdyaae",
+    "larkspur_baby_footer_zRrn7j",
     "footer"
   ]
 }
