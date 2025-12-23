@@ -8,11 +8,16 @@
               <div class="larkspur-navigation">
                 <div class="larkspur-cst-clmns">
                   <div class="customer-content">
-                    <span class="heading-customer-footer">{{ block.settings.menu_text }}</span>
+                    <span class="heading-customer-footer">
+                      {{ block.settings.menu_text }}
+                    </span>
+
                     <ul class="footer-col">
-                      {% for link in linklists[block.settings['footer-col']] %}
+                      {% for link in linklists[block.settings.footer_col].links %}
                         <li class="customer-footer-navigation-link">
-                          <a href="{{ link.url }}" class="customer-footer-link">{{ link.title }}</a>
+                          <a href="{{ link.url }}" class="customer-footer-link">
+                            {{ link.title }}
+                          </a>
                         </li>
                       {% endfor %}
                     </ul>
@@ -24,16 +29,23 @@
       {% endfor %}
 
       {% for block in section.blocks %}
-        {% case block.types %}
+        {% case block.type %}
           {% when 'info' %}
             <div class="larkspur-cutomer-customer-content">
               <div class="customer-footer-right-block">
-                <h4 class="customer-signup-heading">{{ block.settings.signup_heading }}</h4>
+                <h4 class="customer-signup-heading">
+                  {{ block.settings.signup_heading }}
+                </h4>
+
                 <div class="cutomer-footer-signup-text">
-                  <div class="customer-text-description">{{ block.settings.description_text }}</div>
+                  <div class="customer-text-description">
+                    {{ block.settings.description_text }}
+                  </div>
 
                   <div class="customer-footer-buttons">
-                    <a href="#" class="cstm-btn">{{ block.settings.footer_btn }}</a>
+                    <a href="#" class="cstm-btn">
+                      {{ block.settings.footer_btn }}
+                    </a>
                   </div>
                 </div>
               </div>
@@ -47,13 +59,18 @@
         <div class="footer-reserved-text">
           <span>{{ section.settings.reserved_text }}</span>
         </div>
+
         <div class="ftr-btm-link-text">
           <ul class="footer-btm-links">
             <li class="btm-link">
-              <a href="#" class="page-link">{{ section.settings.tcs_text }}</a>
+              <a href="#" class="page-link">
+                {{ section.settings.tcs_text }}
+              </a>
             </li>
             <li class="btm-link">
-              <a href="#" class="page-link">{{ section.settings.privacy-text }}</a>
+              <a href="#" class="page-link">
+                {{ section.settings.privacy_text }}
+              </a>
             </li>
           </ul>
         </div>
@@ -61,47 +78,64 @@
     </div>
   </div>
 </footer>
+
 {% schema %}
 {
   "name": "Larkspur Footer",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "id": "reserved_text",
+      "label": "Reserved Text"
+    },
+    {
+      "type": "text",
+      "id": "tcs_text",
+      "label": "Terms Text"
+    },
+    {
+      "type": "text",
+      "id": "privacy_text",
+      "label": "Privacy Text"
+    }
+  ],
   "blocks": [
     {
       "type": "link",
-      "name": "Link",
+      "name": "Link Column",
       "settings": [
         {
           "type": "text",
           "id": "menu_text",
-          "label": "Menu Text"
+          "label": "Menu Heading"
         },
         {
           "type": "link_list",
-          "id": "footer-col",
-          "label": "Footer Column"
+          "id": "footer_col",
+          "label": "Footer Menu"
         }
       ]
     },
     {
-    "type": "info",
-    "name": "info",
-    "settings": [
+      "type": "info",
+      "name": "Info Block",
+      "settings": [
         {
-        "type": "text",
-        "id": "signup_heading",
-        "label": "Signup Heading"
+          "type": "text",
+          "id": "signup_heading",
+          "label": "Signup Heading"
         },
         {
-        "type": "textarea",
-        "id": "description_text",
-        "label": "Description Text"
+          "type": "textarea",
+          "id": "description_text",
+          "label": "Description Text"
         },
         {
-        "type": "text",
-        "id": "footer_btn",
-        "label": "Footer Button"
+          "type": "text",
+          "id": "footer_btn",
+          "label": "Button Text"
         }
-    ]
+      ]
     }
   ],
   "presets": [
