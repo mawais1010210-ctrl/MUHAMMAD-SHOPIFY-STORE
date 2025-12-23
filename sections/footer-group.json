@@ -32,14 +32,23 @@
           "type": "link",
           "settings": {
             "menu_text": "More Goodies",
-            "footer_col": ""
+            "footer_col": "footer-3"
+          }
+        },
+        "info_tCFKLw": {
+          "type": "info",
+          "settings": {
+            "signup_heading": "📲 Unlock 15% off your order",
+            "description_text": "Be the First to Know! Get early access to launches and exclusive sales when you sign up for texts—plus enjoy 15% off your first purchase. Don’t miss out on the latest from Larkspur!",
+            "footer_btn": "REMIND ME!"
           }
         }
       },
       "block_order": [
         "link_WFjfid",
         "link_BVbzqr",
-        "link_ffntyE"
+        "link_ffntyE",
+        "info_tCFKLw"
       ],
       "name": "Larkspur Footer",
       "settings": {
