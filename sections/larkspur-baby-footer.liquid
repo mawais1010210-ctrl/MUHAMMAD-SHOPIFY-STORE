@@ -1,80 +1,83 @@
-<footer class="larkur-baby-ftr">
+<footer class="larkspur-baby-ftr">
   <div class="larkspur-baby-container">
     <div class="larkspur-baby-flex">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'link' %}
+            <div class="larkspur-customer-menues">
+              <div class="larkspur-navigation">
+                <div class="larkspur-cst-clmns">
+                  <div class="customer-content">
+                    <span class="heading-customer-footer">
+                      {{ block.settings.menu_text }}
+                    </span>
+
+                    <ul class="footer-col">
+                      {% for link in linklists[block.settings.footer_col].links %}
+                        <li class="customer-footer-navigation-link">
+                          <a href="{{ link.url }}" class="customer-footer-link">
+                            {{ link.title }}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+        {% endcase %}
+      {% endfor %}
 
       {% for block in section.blocks %}
         {% case block.type %}
-
-          {% when 'link' %}
-            <div class="larkspur-customer-menues">
-              <div class="customer-content">
-                <span class="heading-customer-footer">
-                  {{ block.settings.menu_text }}
-                </span>
-
-                {% if block.settings.footer_col != blank %}
-                  <ul class="footer-col">
-                    {% for link in linklists[block.settings.footer_col].links %}
-                      <li class="customer-footer-navigation-link">
-                        <a href="{{ link.url }}" class="customer-footer-link">
-                          {{ link.title }}
-                        </a>
-                      </li>
-                    {% endfor %}
-                  </ul>
-                {% endif %}
-              </div>
-            </div>
-
           {% when 'info' %}
-            <div class="larkspur-cutomer-customer-content">
+            <div class="larkspur-customer-customer-content">
               <div class="customer-footer-right-block">
                 <h4 class="customer-signup-heading">
                   {{ block.settings.signup_heading }}
                 </h4>
 
-                <div class="customer-text-description">
-                  {{ block.settings.description_text }}
-                </div>
+                <div class="customer-footer-signup-text">
+                  <div class="customer-text-description">
+                    {{ block.settings.description_text }}
+                  </div>
 
-                <div class="customer-footer-buttons">
-                  <a href="#" class="cstm-btn">
-                    {{ block.settings.footer_btn }}
-                  </a>
+                  <div class="customer-footer-buttons">
+                    <a href="#" class="cstm-btn">
+                      {{ block.settings.footer_btn }}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-
         {% endcase %}
       {% endfor %}
-
     </div>
 
-    <!-- Bottom Footer -->
     <div class="customer-bottom-content">
       <div class="bottom-flex">
         <div class="footer-reserved-text">
           <span>{{ section.settings.reserved_text }}</span>
         </div>
 
-        <ul class="footer-btm-links">
-          <li class="btm-link">
-            <a href="#" class="page-link">
-              {{ section.settings.tcs_text }}
-            </a>
-          </li>
-          <li class="btm-link">
-            <a href="#" class="page-link">
-              {{ section.settings.privacy_text }}
-            </a>
-          </li>
-        </ul>
+        <div class="ftr-btm-link-text">
+          <ul class="footer-btm-links">
+            <li class="btm-link">
+              <a href="#" class="page-link">
+                {{ section.settings.tcs_text }}
+              </a>
+            </li>
+            <li class="btm-link">
+              <a href="#" class="page-link">
+                {{ section.settings.privacy_text }}
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-
   </div>
 </footer>
-
 
 {% schema %}
 {
@@ -142,4 +145,3 @@
   ]
 }
 {% endschema %}
-
