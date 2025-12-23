@@ -132,7 +132,75 @@
       font-weight: 400;
   }
 
-  
+  @media (max-width: 767px){
+
+  /* Whole footer column */
+  .larkspur-baby-flex{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .larkspur-customer-menues,
+  .larkspur-customer-customer-content,
+  .larkspur-cst-clmns{
+    width: 100%;
+  }
+
+  .larkspur-navigation{
+    flex-direction: column;
+    padding: 15px;
+    gap: 0;
+  }
+
+  /* FAQ layout */
+  .customer-content,
+  .customer-footer-right-block{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 12px 0;
+  }
+
+  /* FAQ headings */
+  .heading-customer-footer,
+  .customer-signup-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  /* Hide content */
+  .footer-col,
+  .customer-footer-signup-text{
+    display: none;
+    margin-top: 10px;
+  }
+
+  /* + icon */
+  .heading-customer-footer::after,
+  .customer-signup-heading::after{
+    content: "+";
+    font-size: 18px;
+  }
+
+  /* Active state */
+  .active::after{
+    content: "−";
+  }
+
+  /* Bottom section */
+  .bottom-flex{
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .footer-btm-links{
+    justify-content: center;
+  }
+}
+
 </style>
 <footer class="larkspur-baby-ftr">
   <div class="larkspur-baby-container">
@@ -214,6 +282,31 @@
     </div>
   </div>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (window.innerWidth <= 767) {
+
+    const toggles = document.querySelectorAll(
+      ".heading-customer-footer, .customer-signup-heading"
+    );
+
+    toggles.forEach((toggle) => {
+      toggle.addEventListener("click", function () {
+
+        this.classList.toggle("active");
+
+        const content = this.nextElementSibling;
+        if (!content) return;
+
+        content.style.display =
+          content.style.display === "block" ? "none" : "block";
+      });
+    });
+
+  }
+});
+</script>
 
 {% schema %}
 {
