@@ -13,6 +13,26 @@
   "sections": {
     "larkspur_baby_footer_zRrn7j": {
       "type": "larkspur-baby-footer",
+      "blocks": {
+        "link_WFjfid": {
+          "type": "link",
+          "settings": {
+            "menu_text": "About",
+            "footer_col": "footer-1"
+          }
+        },
+        "link_BVbzqr": {
+          "type": "link",
+          "settings": {
+            "menu_text": "Customer Service",
+            "footer_col": ""
+          }
+        }
+      },
+      "block_order": [
+        "link_WFjfid",
+        "link_BVbzqr"
+      ],
       "name": "Larkspur Footer",
       "settings": {
         "reserved_text": "© Larkspur Baby 2025. All rights reserved.",
