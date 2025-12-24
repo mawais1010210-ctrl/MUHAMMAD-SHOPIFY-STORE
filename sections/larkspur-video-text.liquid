@@ -12,6 +12,19 @@
   .larkspur-video-flex {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .larkspur-text {
+    width: 44%;
+  }
+
+  .larkspur-video {
+    width: 47%;
+  }
+
+  .video-plays {
+    width: 100%;
   }
 </style>
 <section class="larkspur-video-text-sec">
@@ -33,7 +46,13 @@
         <div class="video-main-upper">
           <div class="video-main-second-div">
             {% if section.settings.larkspur_video != blank %}
-              <video autoplay playsinline loop src="{{ section.settings.larkspur_video.sources[1].url }}" class="video-plays"> </video>
+              <video
+                autoplay
+                playsinline
+                loop
+                src="{{ section.settings.larkspur_video.sources[1].url }}"
+                class="video-plays"
+              ></video>
             {% endif %}
           </div>
         </div>
