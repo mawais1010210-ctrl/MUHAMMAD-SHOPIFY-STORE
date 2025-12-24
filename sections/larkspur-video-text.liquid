@@ -3,31 +3,15 @@
   <div class="larkspur-video-container">
     <div class="larkspur-video-flex">
       <div class="larkspur-text">
-        {% if section.settings.heading_text != blank %}
-          <div class="text-heading">
-            <h3 class="video-title-text">
-              {{ section.settings.heading_text }}
-            </h3>
-          </div>
-        {% endif %}
+        <div class="text-heading">
+          <h3 class="video-title-text">
+            {{ section.settings.heading_text }}
+          </h3>
+        </div>
 
-        {% if section.settings.text_description_1 != blank %}
-          <div class="video-text-description">
-            {{ section.settings.text_description_1 }}
-          </div>
-        {% endif %}
-
-        {% if section.settings.text_description_2 != blank %}
-          <div class="video-text-description">
-            {{ section.settings.text_description_2 }}
-          </div>
-        {% endif %}
-
-        {% if section.settings.text_description_3 != blank %}
-          <div class="video-text-description">
-            {{ section.settings.text_description_3 }}
-          </div>
-        {% endif %}
+        <div class="video-text-description">
+          {{ section.settings.text_description }}
+        </div>
       </div>
 
       <div class="larkspur-video">
@@ -36,7 +20,7 @@
             {% if section.settings.larkspur_video != blank %}
               {{
                 section.settings.larkspur_video
-                | video_tag: autoplay: true, loop: true, controls: true, playsinline: true
+                | video_tag: autoplay: false, loop: true, controls: true, playsinline: true
               }}
             {% endif %}
           </div>
@@ -57,23 +41,13 @@
     },
     {
       "type": "richtext",
-      "id": "text_description_1",
-      "label": "Text Description 1"
-    },
-    {
-      "type": "richtext",
-      "id": "text_description_2",
-      "label": "Text Description 2"
-    },
-    {
-      "type": "richtext",
-      "id": "text_description_3",
-      "label": "Text Description 3"
+      "id": "text_description",
+      "label": "Text Description"
     },
     {
       "type": "video",
       "id": "larkspur_video",
-      "label": "Upload Video"
+      "label": "Larkspur Video"
     }
   ],
   "presets": [
