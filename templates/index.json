@@ -907,6 +907,16 @@
       "settings": {
         "heading_main": "What people are saying..."
       }
+    },
+    "larkspur_video_text_RMx7Ke": {
+      "type": "larkspur-video-text",
+      "name": "Larkspur Video Text",
+      "settings": {
+        "heading_text": "What makes Larkspur a mom must-have",
+        "text_description_1": "<p>We asked real moms what makes Larkspur a must-have, and the love was loud and clear 💛</p>",
+        "text_description_2": "<p>From buttery-soft bamboo to thoughtful features that make life a little easier—like easy diaper changes, potty-friendly fits, and cozy fabrics that actually last—our pieces are made for real moments and real families.</p>",
+        "text_description_3": "<p>Whether it's better sleep, smoother mornings, or a toddler who finally wants to get dressed on their own, we’re here to help you feel just a little more confident every step of the way. Because when your little one feels good, so do you.</p>"
+      }
     }
   },
   "order": [
@@ -924,6 +934,7 @@
     "video_four_boxes_CdbyYc",
     "kytebaby_calender_jFzmfq",
     "testimonial_slider_wHVK9H",
-    "larkspur_slider_baby_NLtC9n"
+    "larkspur_slider_baby_NLtC9n",
+    "larkspur_video_text_RMx7Ke"
   ]
 }
