@@ -36,7 +36,7 @@
             {% if section.settings.larkspur_video != blank %}
               {{
                 section.settings.larkspur_video
-                | video_tag: autoplay: false, loop: true, controls: true, playsinline: true
+                | video_tag: autoplay: true, loop: true, controls: true, playsinline: true
               }}
             {% endif %}
           </div>
