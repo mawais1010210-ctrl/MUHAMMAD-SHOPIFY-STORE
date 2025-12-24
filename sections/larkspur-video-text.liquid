@@ -1,19 +1,33 @@
-<style>
-
-</style>
+<style></style>
 <section class="larkspur-video-text-sec">
   <div class="larkspur-video-container">
     <div class="larkspur-video-flex">
       <div class="larkspur-text">
-        <div class="text-heading">
-          <h3 class="video-title-text">
-            {{ section.settings.heading_text }}
-          </h3>
-        </div>
+        {% if section.settings.heading_text != blank %}
+          <div class="text-heading">
+            <h3 class="video-title-text">
+              {{ section.settings.heading_text }}
+            </h3>
+          </div>
+        {% endif %}
 
-        <div class="video-text-description">
-          {{ section.settings.text_description }}
-        </div>
+        {% if section.settings.text_description_1 != blank %}
+          <div class="video-text-description">
+            {{ section.settings.text_description_1 }}
+          </div>
+        {% endif %}
+
+        {% if section.settings.text_description_2 != blank %}
+          <div class="video-text-description">
+            {{ section.settings.text_description_2 }}
+          </div>
+        {% endif %}
+
+        {% if section.settings.text_description_3 != blank %}
+          <div class="video-text-description">
+            {{ section.settings.text_description_3 }}
+          </div>
+        {% endif %}
       </div>
 
       <div class="larkspur-video">
@@ -43,13 +57,23 @@
     },
     {
       "type": "richtext",
-      "id": "text_description",
-      "label": "Text Description"
+      "id": "text_description_1",
+      "label": "Text Description 1"
+    },
+    {
+      "type": "richtext",
+      "id": "text_description_2",
+      "label": "Text Description 2"
+    },
+    {
+      "type": "richtext",
+      "id": "text_description_3",
+      "label": "Text Description 3"
     },
     {
       "type": "video",
       "id": "larkspur_video",
-      "label": "Larkspur Video"
+      "label": "Upload Video"
     }
   ],
   "presets": [
