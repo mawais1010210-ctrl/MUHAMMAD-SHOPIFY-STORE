@@ -33,10 +33,7 @@
         <div class="video-main-upper">
           <div class="video-main-second-div">
             {% if section.settings.larkspur_video != blank %}
-              {{
-                section.settings.larkspur_video
-                | video_tag: autoplay: false, loop: true, controls: true, playsinline: true
-              }}
+              <video autoplay playsinline loop src="{{ section.settings.larkspur_video.sources[1].url }}" class="video-plays"> </video>
             {% endif %}
           </div>
         </div>
