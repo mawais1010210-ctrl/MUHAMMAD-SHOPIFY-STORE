@@ -1,0 +1,89 @@
+<section class="collection-slider-sec">
+  <div class="collection-slider-container">
+    <div class="collection-slider-heading">
+      <h2 class="collection-slider-title">{{ section.settings.collection_heading }}</h2>
+    </div>
+
+    <div class="collection-slider-flex">
+      <div class="owl-carousel owl-theme">
+        {% for block in section.blocks %}
+          <div class="item">
+            <div class="slider-images">
+              {% if block.settings.collection_image != blank %}
+                <img
+                  class="collection-slider-img"
+                  src="{{ block.settings.collection_image | img_url: 'master' }}"
+                  alt="{{ block.settings.collection_alt }}"
+                >
+              {% endif %}
+            </div>
+            <div class="collection-text">
+              <h3 class="collection-slider-subtitle">{{ block.settings.collection_subtitle }}</h3>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+      items: 3,
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      responsive: {
+        0: { items: 1 },
+        600: { items: 2 },
+        1000: { items: 3 },
+      },
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Collection Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "collection_heading",
+      "label": "Collection Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_block",
+      "name": "Slider Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "collection_image",
+          "label": "Collection Image"
+        },
+        {
+          "type": "text",
+          "id": "collection_alt",
+          "label": "Alt Text"
+        },
+        {
+          "type": "text",
+          "id": "collection_subtitle",
+          "label": "Subtitle"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "Collection Slider"
+    }
+  ]
+}
+{% endschema %}
