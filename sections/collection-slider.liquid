@@ -1,33 +1,35 @@
-<!-- Font Awesome -->
+<!-- Font Awesome CDN for icons --> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Slick CSS -->
+<!-- Slick Slider CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
 <style>
-/* ===== Section ===== */
 .collection-slider-sec {
   padding: 30px 0;
 }
 
 .collection-slider-container {
   max-width: 1380px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 50px;
 }
 
+.collection-slider-heading {
+  margin-bottom: 10px;
+}
+
 .collection-slider-title {
+  color: #343132;
   text-align: center;
+  margin-bottom: 24px;
   font-size: 28px;
-  margin-bottom: 25px;
+  font-weight: 500;
 }
 
-/* ===== Slider ===== */
-.collection-slider {
-  display: block;
-}
-
-.slider-item {
+.slider-item.slick-slide {
   padding: 0 15px;
 }
 
@@ -36,108 +38,113 @@
   height: 370px;
   object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-/* ===== Custom Buttons ===== */
-.collection-slick-nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.collection-slider-btn {
-  width: 42px;
-  height: 42px;
+/* Custom Arrows */
+.slick-prev, .slick-next {
+  width: 40px;
+  height: 40px;
+  background: rgba(0,0,0,0.3);
   border-radius: 50%;
-  background: #000;
-  border: none;
-  cursor: pointer;
-  display: flex;
+  z-index: 2;
+  display: flex !important;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.collection-slider-btn i {
+.slick-prev:hover, .slick-next:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+.slick-prev {
+  left: -20px;
+}
+
+.slick-next {
+  right: -20px;
+}
+
+/* Font Awesome icon style */
+.slick-prev i, .slick-next i {
   color: #fff;
   font-size: 16px;
-}
-
-.collection-slider-btn:hover {
-  background: #444;
 }
 </style>
 
 <section class="collection-slider-sec">
   <div class="collection-slider-container">
+    <div class="collection-slider-heading">
+      <h2 class="collection-slider-title">{{ section.settings.collection_heading }}</h2>
+    </div>
 
-    <h2 class="collection-slider-title">
-      {{ section.settings.collection_heading }}
-    </h2>
-
-    <!-- SLIDER -->
     <div class="collection-slider-main">
-      <div class="collection-slider">
+      <div class="slick-slider">
         {% for block in section.blocks %}
-        <div class="slider-item">
-          {% if block.settings.collection_image != blank %}
-          <img
-            class="collection-slider-img"
-            src="{{ block.settings.collection_image | img_url: 'master' }}"
-            alt=""
-          >
-          {% endif %}
-          <h3>{{ block.settings.collection_subtitle }}</h3>
-        </div>
+          <div class="slider-item">
+            {% if block.settings.collection_image != blank %}
+              <img
+                class="collection-slider-img"
+                src="{{ block.settings.collection_image | img_url: 'master' }}"
+                alt=""
+              >
+            {% endif %}
+            <div class="collection-text">
+              <h3 class="collection-slider-subtitle">{{ block.settings.collection_subtitle }}</h3>
+            </div>
+          </div>
         {% endfor %}
       </div>
+    
+
+
     </div>
 
-    <!-- CUSTOM NAV -->
     <div class="collection-slick-nav">
-      <button class="collection-slider-btn prev">
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      <button class="collection-slider-btn next">
-        <i class="fas fa-chevron-right"></i>
-      </button>
+        <div class="slick-prev-wrap">
+            <button class="collection-slider-btn prev">
+               <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+         <div class="slick-next-wrap">
+            <button class="collection-slider-btn next">
+               <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
     </div>
-
   </div>
 </section>
 
-<!-- jQuery -->
+<!-- jQuery + Slick JS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Slick JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 <script>
 $(document).ready(function () {
-
-  var $slider = $('.collection-slider');
+  var $slider = $('.collection-slider-main .slick-slider');
 
   $slider.slick({
     slidesToShow: 3.2,
     slidesToScroll: 1,
-    arrows: false,   // ❌ slick default arrows off
+    arrows: true, // custom arrows
     dots: false,
+    autoplay: false,
     infinite: false,
+    rtl: false,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
     responsive: [
       { breakpoint: 992, settings: { slidesToShow: 2 } },
       { breakpoint: 600, settings: { slidesToShow: 1 } }
     ]
   });
 
-  // Custom buttons control
-  $('.collection-slider-btn.prev').on('click', function () {
-    $slider.slick('slickPrev');
-  });
-
-  $('.collection-slider-btn.next').on('click', function () {
-    $slider.slick('slickNext');
-  });
-
+  // Last slide se start karne ke liye
+  var totalSlides = $slider.slick('getSlick').slideCount;
+  $slider.slick('slickGoTo', totalSlides - 1, true);
 });
 </script>
 
@@ -148,18 +155,18 @@ $(document).ready(function () {
     {
       "type": "text",
       "id": "collection_heading",
-      "label": "Heading"
+      "label": "Collection Heading"
     }
   ],
   "blocks": [
     {
-      "type": "slide",
-      "name": "Slide",
+      "type": "image_block",
+      "name": "Slider Image",
       "settings": [
         {
           "type": "image_picker",
           "id": "collection_image",
-          "label": "Image"
+          "label": "Collection Image"
         },
         {
           "type": "text",
@@ -169,6 +176,7 @@ $(document).ready(function () {
       ]
     }
   ],
+  "max_blocks": 6,
   "presets": [
     {
       "name": "Collection Slider"
