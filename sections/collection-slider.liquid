@@ -167,34 +167,64 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 <script>
-  $(document).ready(function () {
-    var $slider = $('.collection-slider-main .slick-slider');
+$(document).ready(function () {
 
-    $slider.slick({
-      slidesToShow: 3.2,
-      slidesToScroll: 1,
-      arrows: false, 
-      dots: false,
-      autoplay: false,
-      infinite: false,
-      rtl: false,
-      responsive: [
-        { breakpoint: 992, settings: { slidesToShow: 2 } },
-        { breakpoint: 600, settings: { slidesToShow: 1 } },
-      ],
-    });
+  var $slider = $('.collection-slider-main .slick-slider');
+  var $prev = $('.collection-slider-btn.prev');
+  var $next = $('.collection-slider-btn.next');
 
-    $('.collection-slider-btn.prev').on('click', function () {
-      $slider.slick('slickPrev');
-    });
-
-    $('.collection-slider-btn.next').on('click', function () {
-      $slider.slick('slickNext');
-    });
-
-    var totalSlides = $slider.slick('getSlick').slideCount;
-    $slider.slick('slickGoTo', totalSlides - 1, true);
+  /* 🔹 SLICK INIT */
+  $slider.slick({
+    slidesToShow: 3.2,
+    slidesToScroll: 1,
+    arrows: false, // custom buttons
+    dots: false,
+    autoplay: false,
+    infinite: false, // finite slides
+    rtl: false,
+    responsive: [
+      { breakpoint: 992, settings: { slidesToShow: 2 } },
+      { breakpoint: 600, settings: { slidesToShow: 1 } }
+    ]
   });
+
+  /* 🔹 Update arrows opacity based on current slide */
+  function updateArrows() {
+    var current = $slider.slick('slickCurrentSlide');
+    var total = $slider.slick('getSlick').slideCount;
+
+    if (current === 0) {
+      $prev.css('opacity', 0.3); // disable left arrow
+    } else {
+      $prev.css('opacity', 1);
+    }
+
+    if (current >= total - $slider.slick('slickGetOption', 'slidesToShow')) {
+      $next.css('opacity', 0.3); // disable right arrow
+    } else {
+      $next.css('opacity', 1);
+    }
+  }
+
+  /* 🔹 Initial update */
+  updateArrows();
+
+  /* 🔹 On slide change */
+  $slider.on('afterChange', function () {
+    updateArrows();
+  });
+
+  /* 🔹 Custom buttons click */
+  $prev.on('click', function () {
+    $slider.slick('slickPrev');
+  });
+
+  $next.on('click', function () {
+    $slider.slick('slickNext');
+  });
+
+});
+
 </script>
 
 {% schema %}
