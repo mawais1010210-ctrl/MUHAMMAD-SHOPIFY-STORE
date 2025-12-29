@@ -16,7 +16,7 @@
                   alt="{{ block.settings.collection_alt }}"
                 >
               {% endif %}
-            </div> 
+            </div>
             <div class="collection-text">
               <h3 class="collection-slider-subtitle">{{ block.settings.collection_subtitle }}</h3>
             </div>
@@ -29,12 +29,12 @@
 
 <script>
   $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
+    $('.collection-slider-sec .owl-carousel').owlCarousel({
       items: 3,
       loop: true,
       margin: 20,
       nav: true,
-      dots: false,
+      dots: false, // dots off
       autoplay: true,
       autoplayTimeout: 3000,
       responsive: {
