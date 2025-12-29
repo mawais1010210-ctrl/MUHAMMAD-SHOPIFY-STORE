@@ -41,7 +41,7 @@
   margin-bottom: 10px;
 }
 
-/* Custom Arrows */
+/* (CSS SAME rakhi hai – aap ne kaha tha aur kuch change na karen) */
 .slick-prev, .slick-next {
   width: 40px;
   height: 40px;
@@ -68,7 +68,6 @@
   right: -20px;
 }
 
-/* Font Awesome icon style */
 .slick-prev i, .slick-next i {
   color: #fff;
   font-size: 16px;
@@ -93,28 +92,29 @@
               >
             {% endif %}
             <div class="collection-text">
-              <h3 class="collection-slider-subtitle">{{ block.settings.collection_subtitle }}</h3>
+              <h3 class="collection-slider-subtitle">
+                {{ block.settings.collection_subtitle }}
+              </h3>
             </div>
           </div>
         {% endfor %}
       </div>
-    
-
-
     </div>
 
+    <!-- AAP KE CUSTOM BUTTONS (SAME) -->
     <div class="collection-slick-nav">
-        <div class="slick-prev-wrap">
-            <button class="collection-slider-btn prev">
-               <i class="fas fa-chevron-left"></i>
-            </button>
-        </div>
-         <div class="slick-next-wrap">
-            <button class="collection-slider-btn next">
-               <i class="fas fa-chevron-right"></i>
-            </button>
-        </div>
+      <div class="slick-prev-wrap">
+        <button class="collection-slider-btn prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+      <div class="slick-next-wrap">
+        <button class="collection-slider-btn next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
     </div>
+
   </div>
 </section>
 
@@ -124,27 +124,37 @@
 
 <script>
 $(document).ready(function () {
+
   var $slider = $('.collection-slider-main .slick-slider');
 
+  /* 🔹 SLICK INIT (sirf arrows setting change ki) */
   $slider.slick({
     slidesToShow: 3.2,
     slidesToScroll: 1,
-    arrows: true, // custom arrows
+    arrows: false,        // ❌ slick default arrows band
     dots: false,
     autoplay: false,
     infinite: false,
     rtl: false,
-    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
     responsive: [
       { breakpoint: 992, settings: { slidesToShow: 2 } },
       { breakpoint: 600, settings: { slidesToShow: 1 } }
     ]
   });
 
-  // Last slide se start karne ke liye
+  /* 🔹 AAP KE CUSTOM BUTTONS CONNECT */
+  $('.collection-slider-btn.prev').on('click', function () {
+    $slider.slick('slickPrev');
+  });
+
+  $('.collection-slider-btn.next').on('click', function () {
+    $slider.slick('slickNext');
+  });
+
+  /* 🔹 LAST SLIDE SE START (same logic) */
   var totalSlides = $slider.slick('getSlick').slideCount;
   $slider.slick('slickGoTo', totalSlides - 1, true);
+
 });
 </script>
 
