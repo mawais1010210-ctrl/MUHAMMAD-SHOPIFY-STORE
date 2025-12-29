@@ -919,6 +919,53 @@
     },
     "collection_slider_eMVWTW": {
       "type": "collection-slider",
+      "blocks": {
+        "image_block_CEpkz9": {
+          "type": "image_block",
+          "settings": {
+            "collection_image": "shopify://shop_images/download_6ddfa2f8-3ff7-4850-bc30-21a1aab0a268.webp",
+            "collection_subtitle": ""
+          }
+        },
+        "image_block_YVnXbJ": {
+          "type": "image_block",
+          "settings": {
+            "collection_subtitle": ""
+          }
+        },
+        "image_block_pzAgPA": {
+          "type": "image_block",
+          "settings": {
+            "collection_subtitle": ""
+          }
+        },
+        "image_block_3RWVDz": {
+          "type": "image_block",
+          "settings": {
+            "collection_subtitle": ""
+          }
+        },
+        "image_block_fJRr8i": {
+          "type": "image_block",
+          "settings": {
+            "collection_subtitle": ""
+          }
+        },
+        "image_block_pGVwRX": {
+          "type": "image_block",
+          "settings": {
+            "collection_subtitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_block_CEpkz9",
+        "image_block_YVnXbJ",
+        "image_block_pzAgPA",
+        "image_block_3RWVDz",
+        "image_block_fJRr8i",
+        "image_block_pGVwRX"
+      ],
       "name": "Collection Slider",
       "settings": {
         "collection_heading": "Explore Our Collections"
