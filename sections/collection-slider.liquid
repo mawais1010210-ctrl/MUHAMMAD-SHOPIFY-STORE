@@ -1,3 +1,13 @@
+<!-- Slick Slider CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+<!-- jQuery (already required for Shopify) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick Slider JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 <style>
   .collection-slider-sec {
     padding: 30px 0;
@@ -21,7 +31,26 @@
     font-size: 28px;
     font-weight: 500;
   }
+
+  .collection-slider-main .slider-item {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .collection-slider-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .collection-slider-subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+  }
 </style>
+
 <section class="collection-slider-sec">
   <div class="collection-slider-container">
     <div class="collection-slider-heading">
@@ -29,18 +58,16 @@
     </div>
 
     <div class="collection-slider-main">
-      <div class="owl-carousel owl-theme">
+      <div class="slick-slider">
         {% for block in section.blocks %}
-          <div class="item">
-            <div class="slider-images">
-              {% if block.settings.collection_image != blank %}
-                <img
-                  class="collection-slider-img"
-                  src="{{ block.settings.collection_image | img_url: 'master' }}"
-                  alt=""
-                >
-              {% endif %}
-            </div>
+          <div class="slider-item">
+            {% if block.settings.collection_image != blank %}
+              <img
+                class="collection-slider-img"
+                src="{{ block.settings.collection_image | img_url: 'master' }}"
+                alt=""
+              >
+            {% endif %}
             <div class="collection-text">
               <h3 class="collection-slider-subtitle">{{ block.settings.collection_subtitle }}</h3>
             </div>
@@ -52,21 +79,28 @@
 </section>
 
 <script>
-  $(document).ready(function () {
-    $('.collection-slider-sec .owl-carousel').owlCarousel({
-      items: 4, 
-      loop: true,
-      margin: 20,
-      nav: true,
+  $(document).ready(function(){
+    $('.collection-slider-main .slick-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
       dots: false,
       autoplay: true,
-      autoplayTimeout: 3000,
-      responsive: {
-        0: { items: 1 }, 
-        600: { items: 2 }, 
-        992: { items: 4 }, 
-        1200: { items: 4 }, 
-      },
+      autoplaySpeed: 3000,
+      responsive: [
+        {
+          breakpoint: 992, 
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 600, 
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
   });
 </script>
