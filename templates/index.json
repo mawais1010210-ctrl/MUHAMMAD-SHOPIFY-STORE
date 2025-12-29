@@ -958,7 +958,8 @@
         "image_block_pGVwRX": {
           "type": "image_block",
           "settings": {
-            "collection_subtitle": ""
+            "collection_image": "shopify://shop_images/download_f3078461-6009-4254-99d5-05e2ed1a0ec3.webp",
+            "collection_subtitle": "Little Collective"
           }
         }
       },
