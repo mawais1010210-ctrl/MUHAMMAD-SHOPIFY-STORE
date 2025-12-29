@@ -1,4 +1,4 @@
-<!-- Font Awesome CDN for icons --> 
+<!-- Font Awesome CDN for icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <!-- Slick Slider CSS -->
@@ -6,122 +6,120 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
 <style>
-.collection-slider-sec {
-  padding: 30px 0;
-}
+  .collection-slider-sec {
+    padding: 30px 0;
+  }
 
-.collection-slider-container {
-  max-width: 1380px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 50px;
-}
+  .collection-slider-container {
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
 
-.collection-slider-heading {
-  margin-bottom: 10px;
-}
+  .collection-slider-heading {
+    margin-bottom: 10px;
+  }
 
-.collection-slider-title {
-  color: #343132;
-  text-align: center;
-  margin-bottom: 24px;
-  font-size: 28px;
-  font-weight: 500;
-}
-
-.slider-item.slick-slide {
-  padding: 0 15px;
-}
-
-.collection-slider-img {
-  width: 100%;
-  height: 370px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-/* Slider main relative */
-.collection-slider-main {
-  position: relative;
-}
-
-/* Custom arrows container */
-.collection-slick-nav {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  pointer-events: none; /* wrap container non-clickable */
-  z-index: 5;
-}
-
-/* Arrow wrap divs */
-.slick-prev-wrap,
-.slick-next-wrap {
-  position: relative; /* button absolute ke liye parent relative */
-}
-
-/* Custom buttons style */
-.collection-slider-btn {
-  width: 40px;
-  height: 40px;
-  background: rgba(0,0,0,0.3);
-  border-radius: 50%;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  pointer-events: auto; /* button clickable */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: background 0.3s;
-}
-
-.collection-slider-btn.prev {
-  left: 10px;
-}
-
-.collection-slider-btn.next {
-  right: 10px;
-}
-
-.collection-slider-btn:hover {
-  background: rgba(0,0,0,0.6);
-}
-
-.collection-slider-btn i {
-  color: #fff;
-  font-size: 16px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
   .collection-slider-title {
-    font-size: 24px;
+    color: #343132;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 500;
   }
+
+  .slider-item.slick-slide {
+    padding: 0 15px;
+  }
+
+  .collection-slider-img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Slider main relative */
+  .collection-slider-main {
+    position: relative;
+  }
+
+  /* Custom arrows container */
+  .collection-slick-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none; /* wrap container non-clickable */
+    z-index: 5;
+  }
+
+  /* Arrow wrap divs */
+  .slick-prev-wrap,
+  .slick-next-wrap {
+    position: relative; /* button absolute ke liye parent relative */
+  }
+
+  /* Custom buttons style */
   .collection-slider-btn {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto; /* button clickable */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background 0.3s;
   }
-}
 
-@media (max-width: 600px) {
-  .collection-slider-title {
-    font-size: 20px;
+  .collection-slider-btn.prev {
+    left: 10px;
   }
-  .collection-slider-btn {
-    width: 30px;
-    height: 30px;
+
+  .collection-slider-btn.next {
+    right: 10px;
   }
-}
 
+  .collection-slider-btn:hover {
+    background: rgba(0,0,0,0.6);
+  }
 
+  .collection-slider-btn i {
+    color: #fff;
+    font-size: 16px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .collection-slider-title {
+      font-size: 24px;
+    }
+    .collection-slider-btn {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .collection-slider-title {
+      font-size: 20px;
+    }
+    .collection-slider-btn {
+      width: 30px;
+      height: 30px;
+    }
+  }
 </style>
 
 <section class="collection-slider-sec">
@@ -148,25 +146,22 @@
             </div>
           </div>
         {% endfor %}
-        
       </div>
-       <div class="collection-slick-nav">
-      <div class="slick-prev-wrap">
-        <button class="collection-slider-btn prev">
-          <i class="fas fa-chevron-left"></i>
-        </button>
+      <div class="collection-slick-nav">
+        <div class="slick-prev-wrap">
+          <button class="collection-slider-btn prev">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+        </div>
+        <div class="slick-next-wrap">
+          <button class="collection-slider-btn next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
       </div>
-      <div class="slick-next-wrap">
-        <button class="collection-slider-btn next">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-      </div>
-    </div>
     </div>
 
     <!-- AAP KE CUSTOM BUTTONS (SAME) -->
-   
-
   </div>
 </section>
 
@@ -175,39 +170,37 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 <script>
-$(document).ready(function () {
+  $(document).ready(function () {
+    var $slider = $('.collection-slider-main .slick-slider');
 
-  var $slider = $('.collection-slider-main .slick-slider');
+    /* 🔹 SLICK INIT (sirf arrows setting change ki) */
+    $slider.slick({
+      slidesToShow: 3.2,
+      slidesToScroll: 1,
+      arrows: false, // ❌ slick default arrows band
+      dots: false,
+      autoplay: false,
+      infinite: false,
+      rtl: false,
+      responsive: [
+        { breakpoint: 992, settings: { slidesToShow: 2 } },
+        { breakpoint: 600, settings: { slidesToShow: 1 } },
+      ],
+    });
 
-  /* 🔹 SLICK INIT (sirf arrows setting change ki) */
-  $slider.slick({
-    slidesToShow: 3.2,
-    slidesToScroll: 1,
-    arrows: false,        // ❌ slick default arrows band
-    dots: false,
-    autoplay: false,
-    infinite: false,
-    rtl: false,
-    responsive: [
-      { breakpoint: 992, settings: { slidesToShow: 2 } },
-      { breakpoint: 600, settings: { slidesToShow: 1 } }
-    ]
+    /* 🔹 AAP KE CUSTOM BUTTONS CONNECT */
+    $('.collection-slider-btn.prev').on('click', function () {
+      $slider.slick('slickPrev');
+    });
+
+    $('.collection-slider-btn.next').on('click', function () {
+      $slider.slick('slickNext');
+    });
+
+    /* 🔹 LAST SLIDE SE START (same logic) */
+    var totalSlides = $slider.slick('getSlick').slideCount;
+    $slider.slick('slickGoTo', totalSlides - 1, true);
   });
-
-  /* 🔹 AAP KE CUSTOM BUTTONS CONNECT */
-  $('.collection-slider-btn.prev').on('click', function () {
-    $slider.slick('slickPrev');
-  });
-
-  $('.collection-slider-btn.next').on('click', function () {
-    $slider.slick('slickNext');
-  });
-
-  /* 🔹 LAST SLIDE SE START (same logic) */
-  var totalSlides = $slider.slick('getSlick').slideCount;
-  $slider.slick('slickGoTo', totalSlides - 1, true);
-
-});
 </script>
 
 {% schema %}
