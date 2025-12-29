@@ -41,12 +41,10 @@
     margin-bottom: 10px;
   }
 
-  /* Slider main relative */
   .collection-slider-main {
     position: relative;
   }
 
-  /* Custom arrows container */
   .collection-slick-nav {
     position: absolute;
     top: 50%;
@@ -55,28 +53,26 @@
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
-    pointer-events: none; /* wrap container non-clickable */
+    pointer-events: none; 
     z-index: 5;
   }
 
-  /* Arrow wrap divs */
   .slick-prev-wrap,
   .slick-next-wrap {
-    position: relative; /* button absolute ke liye parent relative */
+    position: relative;
   }
 
-  /* Custom buttons style */
   .collection-slider-btn {
     width: 40px;
     height: 40px;
-    background: rgba(0,0,0,0.3);
+    background: #ffffff;
     border-radius: 50%;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    pointer-events: auto; /* button clickable */
+    pointer-events: auto;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -92,11 +88,11 @@
   }
 
   .collection-slider-btn:hover {
-    background: rgba(0,0,0,0.6);
+    background: rgba(230, 213, 213, 0.6);
   }
 
   .collection-slider-btn i {
-    color: #fff;
+    color: #000000;
     font-size: 16px;
   }
 
