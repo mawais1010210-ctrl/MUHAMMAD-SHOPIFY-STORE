@@ -74,19 +74,22 @@
       slidesToScroll: 1,
       arrows: true,
       dots: false,
-      autoplay: true,
-      autoplaySpeed: 3000,
+      autoplay: false,       // autoplay disable
+      infinite: false,       // last slide par rukne ke liye
+      rtl: true,             // right se start ke liye
       responsive: [
         {
           breakpoint: 992,
           settings: {
             slidesToShow: 2,
+            rtl: false,       // medium screens me normal
           },
         },
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 1,
+            rtl: false,
           },
         },
       ],
