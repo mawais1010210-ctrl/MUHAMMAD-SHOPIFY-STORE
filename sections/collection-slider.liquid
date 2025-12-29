@@ -160,12 +160,9 @@
         </div>
       </div>
     </div>
-
-    <!-- AAP KE CUSTOM BUTTONS (SAME) -->
   </div>
 </section>
 
-<!-- jQuery + Slick JS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
@@ -173,11 +170,10 @@
   $(document).ready(function () {
     var $slider = $('.collection-slider-main .slick-slider');
 
-    /* 🔹 SLICK INIT (sirf arrows setting change ki) */
     $slider.slick({
       slidesToShow: 3.2,
       slidesToScroll: 1,
-      arrows: false, // ❌ slick default arrows band
+      arrows: false, 
       dots: false,
       autoplay: false,
       infinite: false,
@@ -188,7 +184,6 @@
       ],
     });
 
-    /* 🔹 AAP KE CUSTOM BUTTONS CONNECT */
     $('.collection-slider-btn.prev').on('click', function () {
       $slider.slick('slickPrev');
     });
@@ -197,7 +192,6 @@
       $slider.slick('slickNext');
     });
 
-    /* 🔹 LAST SLIDE SE START (same logic) */
     var totalSlides = $slider.slick('getSlick').slideCount;
     $slider.slick('slickGoTo', totalSlides - 1, true);
   });
