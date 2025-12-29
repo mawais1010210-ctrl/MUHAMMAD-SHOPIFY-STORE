@@ -1,44 +1,49 @@
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Slick Slider CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
 <style>
-  .collection-slider-sec {
-    padding: 30px 0;
-  }
+.collection-slider-sec {
+  padding: 30px 0;
+}
 
-  .collection-slider-container {
-    max-width: 1380px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 50px;
-  }
+.collection-slider-container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+}
 
-  .collection-slider-heading {
-    margin-bottom: 10px;
-  }
+.collection-slider-heading {
+  margin-bottom: 10px;
+}
 
-  .collection-slider-title {
-    color: #343132;
-    text-align: center;
-    margin-bottom: 24px;
-    font-size: 28px;
-    font-weight: 500;
-  }
+.collection-slider-title {
+  color: #343132;
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 500;
+}
 
-  .slider-item.slick-slide {
-    padding: 0 15px;
-   }
-  .collection-slider-img {
-    width: 100%;
-    height: 370px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 0 0 10px;
-  }
+.slider-item.slick-slide {
+  padding: 0 15px;
+}
 
+.collection-slider-img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 0 10px;
+}
 
-  .slick-prev, .slick-next {
+/* Custom Arrows */
+.slick-prev, .slick-next {
   width: 40px;
   height: 40px;
   background: rgba(0,0,0,0.3);
@@ -56,24 +61,15 @@
 .slick-prev {
   left: -20px;
 }
+
 .slick-next {
   right: -20px;
 }
 
-/* Arrow icons */
-.slick-prev:before, .slick-next:before {
-  content: '';
-}
-
-.slick-prev svg, .slick-next svg {
-  width: 15px;
-  height: 15px;
-  fill: #fff;
-}
-
-/* Optional: spacing between slides */
-.slider-item.slick-slide {
-  padding: 0 15px;
+/* Font Awesome icon style */
+.slick-prev i, .slick-next i {
+  color: #fff;
+  font-size: 16px;
 }
 </style>
 
@@ -104,40 +100,40 @@
   </div>
 </section>
 
+<!-- jQuery + Slick JS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
 <script>
-  $(document).ready(function () {
-    var $slider = $('.collection-slider-main .slick-slider');
+$(document).ready(function () {
+  var $slider = $('.collection-slider-main .slick-slider');
 
-    $slider.slick({
-      slidesToShow: 3.2,
-      slidesToScroll: 1,
-      arrows: true,
-      dots: false,
-      autoplay: false,
-      infinite: false,
-      rtl: false, 
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
-    });
-
-    // Right se start karne ke liye last slide index par jump
-    var totalSlides = $slider.slick('getSlick').slideCount;
-    $slider.slick('slickGoTo', totalSlides - 1, true); // true = no animation
+  $slider.slick({
+    slidesToShow: 3.2,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: false,
+    autoplay: false,
+    infinite: false,
+    rtl: false,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: { slidesToShow: 2 }
+      },
+      {
+        breakpoint: 600,
+        settings: { slidesToShow: 1 }
+      }
+    ]
   });
+
+  // Right se start karne ke liye last slide index par jump
+  var totalSlides = $slider.slick('getSlick').slideCount;
+  $slider.slick('slickGoTo', totalSlides - 1, true);
+});
 </script>
 
 {% schema %}
