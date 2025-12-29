@@ -19,10 +19,14 @@
 .collection-slider-title {
   text-align: center;
   font-size: 28px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 /* ===== Slider ===== */
+.collection-slider {
+  display: block;
+}
+
 .slider-item {
   padding: 0 15px;
 }
@@ -71,8 +75,9 @@
       {{ section.settings.collection_heading }}
     </h2>
 
+    <!-- SLIDER -->
     <div class="collection-slider-main">
-      <div class="slick-slider">
+      <div class="collection-slider">
         {% for block in section.blocks %}
         <div class="slider-item">
           {% if block.settings.collection_image != blank %}
@@ -88,7 +93,7 @@
       </div>
     </div>
 
-    <!-- Custom Navigation -->
+    <!-- CUSTOM NAV -->
     <div class="collection-slick-nav">
       <button class="collection-slider-btn prev">
         <i class="fas fa-chevron-left"></i>
@@ -110,12 +115,12 @@
 <script>
 $(document).ready(function () {
 
-  var $slider = $('.slick-slider');
+  var $slider = $('.collection-slider');
 
   $slider.slick({
     slidesToShow: 3.2,
     slidesToScroll: 1,
-    arrows: false,   // ❌ slick arrows OFF
+    arrows: false,   // ❌ slick default arrows off
     dots: false,
     infinite: false,
     responsive: [
@@ -124,12 +129,12 @@ $(document).ready(function () {
     ]
   });
 
-  // Custom buttons
-  $('.collection-slider-btn.prev').click(function () {
+  // Custom buttons control
+  $('.collection-slider-btn.prev').on('click', function () {
     $slider.slick('slickPrev');
   });
 
-  $('.collection-slider-btn.next').click(function () {
+  $('.collection-slider-btn.next').on('click', function () {
     $slider.slick('slickNext');
   });
 
@@ -148,7 +153,7 @@ $(document).ready(function () {
   ],
   "blocks": [
     {
-      "type": "image",
+      "type": "slide",
       "name": "Slide",
       "settings": [
         {
