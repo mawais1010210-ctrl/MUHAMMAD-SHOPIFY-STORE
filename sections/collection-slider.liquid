@@ -69,31 +69,35 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
   $(document).ready(function () {
-    $('.collection-slider-main .slick-slider').slick({
+    var $slider = $('.collection-slider-main .slick-slider');
+
+    $slider.slick({
       slidesToShow: 3.1,
       slidesToScroll: 1,
       arrows: true,
       dots: false,
-      autoplay: false,       // autoplay disable
-      infinite: false,       // last slide par rukne ke liye
-      rtl: true,             // right se start ke liye
+      autoplay: false,
+      infinite: false,
+      rtl: false, // RTL disabled
       responsive: [
         {
           breakpoint: 992,
           settings: {
             slidesToShow: 2,
-            rtl: false,       // medium screens me normal
           },
         },
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 1,
-            rtl: false,
           },
         },
       ],
     });
+
+    // Right se start karne ke liye last slide index par jump
+    var totalSlides = $slider.slick('getSlick').slideCount;
+    $slider.slick('slickGoTo', totalSlides - 1, true); // true = no animation
   });
 </script>
 
