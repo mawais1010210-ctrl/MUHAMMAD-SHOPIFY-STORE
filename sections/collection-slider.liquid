@@ -41,79 +41,39 @@
   margin-bottom: 10px;
 }
 
-/* Slider main relative */
-.collection-slider-main {
-  position: relative;
-}
-
-/* Custom Arrows container */
-.collection-slick-nav {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  pointer-events: none;
-  z-index: 5;
-}
-
-/* Arrows button style */
-.collection-slider-btn {
+/* (CSS SAME rakhi hai – aap ne kaha tha aur kuch change na karen) */
+.slick-prev, .slick-next {
   width: 40px;
   height: 40px;
   background: rgba(0,0,0,0.3);
   border-radius: 50%;
-  border: none;
-  display: flex;
+  z-index: 2;
+  display: flex !important;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  pointer-events: auto; /* clickable */
-  position: absolute; /* slider ke andar overlay */
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  transition: background 0.3s;
 }
 
-.collection-slider-btn.prev {
-  left: 10px; /* left side */
-}
-
-.collection-slider-btn.next {
-  right: 10px; /* right side */
-}
-
-.collection-slider-btn:hover {
+.slick-prev:hover, .slick-next:hover {
   background: rgba(0,0,0,0.6);
 }
 
-.collection-slider-btn i {
+.slick-prev {
+  left: -20px;
+}
+
+.slick-next {
+  right: -20px;
+}
+
+.slick-prev i, .slick-next i {
   color: #fff;
   font-size: 16px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .collection-slider-title {
-    font-size: 24px;
-  }
-  .collection-slider-btn {
-    width: 35px;
-    height: 35px;
-  }
-}
 
-@media (max-width: 600px) {
-  .collection-slider-title {
-    font-size: 20px;
-  }
-  .collection-slider-btn {
-    width: 30px;
-    height: 30px;
-  }
-}
 
 </style>
 
