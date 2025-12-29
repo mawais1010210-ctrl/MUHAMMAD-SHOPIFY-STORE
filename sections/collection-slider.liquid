@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
 <style>
   .collection-slider-sec {
@@ -71,8 +71,10 @@
   </div>
 </section>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
-  $(document).ready(function(){
+  $(document).ready(function () {
     $('.collection-slider-main .slick-slider').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -82,18 +84,18 @@
       autoplaySpeed: 3000,
       responsive: [
         {
-          breakpoint: 992, 
+          breakpoint: 992,
           settings: {
-            slidesToShow: 2
-          }
+            slidesToShow: 2,
+          },
         },
         {
-          breakpoint: 600, 
+          breakpoint: 600,
           settings: {
-            slidesToShow: 1
-          }
-        }
-      ]
+            slidesToShow: 1,
+          },
+        },
+      ],
     });
   });
 </script>
