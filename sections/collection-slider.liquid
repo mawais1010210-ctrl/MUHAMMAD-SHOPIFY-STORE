@@ -89,7 +89,7 @@
   }
 
   .collection-slider-btn:hover {
-    background: rgba(230, 213, 213, 0.6);
+    background: rgb(136 112 112 / 60%);
   }
 
   .collection-slider-btn i {
@@ -185,7 +185,6 @@ $(document).ready(function () {
     ]
   });
 
-  /* 🔹 Update arrows opacity based on current slide */
   function updateArrows() {
     var current = $slider.slick('slickCurrentSlide');
     var total = $slider.slick('getSlick').slideCount;
@@ -197,21 +196,18 @@ $(document).ready(function () {
     }
 
     if (current >= total - $slider.slick('slickGetOption', 'slidesToShow')) {
-      $next.css('opacity', 0.3); // disable right arrow
+      $next.css('opacity', 0.3); 
     } else {
       $next.css('opacity', 1);
     }
   }
 
-  /* 🔹 Initial update */
   updateArrows();
 
-  /* 🔹 On slide change */
   $slider.on('afterChange', function () {
     updateArrows();
   });
 
-  /* 🔹 Custom buttons click */
   $prev.on('click', function () {
     $slider.slick('slickPrev');
   });
