@@ -1,8 +1,22 @@
-
+<section class="watches-sec">
+  <div class="watches-container">
+    <div class="watrches-boxtitle">
+      <div class="subtitle-div">
+        {% if section.settings.gemini_logo1 != blank %}
+          <img class="gemini-logo" src="{{ section.settings.gemini_logo1 | img_url:'master' }}">
+        {% endif %}
+        <h4 class="luxury-text">{{ section.settings.luxury_text }}</h4>
+        {% if section.settings.gemini_logo2 != blank %}
+          <img class="gemini-logo" src="{{ section.settings.gemini_logo2 | img_url:'master' }}">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
 
 {% schema %}
 {
-"name": "Watches Section",
-"settings": [],
+  "name": "Watches Section",
+  "settings": []
 }
 {% endschema %}
