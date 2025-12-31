@@ -12,6 +12,28 @@
       </div>
       <h2 class="precision-heading">{{ section.settings.precision_heading }}</h2>
     </div>
+
+    <div class="video-flex-content">
+      <div class="main-content-div">
+        <h2 class="explore-luxury-text">{{ section.settings.exploreluxury_title }}</h2>
+        <div class="title-description-gold">{{ section.settings.gold_description }}</div>
+        <a href="#" class="gold-button">{{ section.settings.gold_button }}</a>
+      </div>
+
+      <div class="middle-video-div">
+        <div class="video-middle-block">
+          
+        </div>
+      </div>
+
+      <div class="end-video-div">
+        <div class="last-content-video">
+          {% if section.settings.right_image != blank %}
+            <img class="last-image" src="{{ section.settings.right_image | img_url: 'master' }}">
+          {% endif %}
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
