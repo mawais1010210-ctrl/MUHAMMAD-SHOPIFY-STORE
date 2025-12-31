@@ -1,15 +1,39 @@
-<style></style>
+<style>
+  .watches-sec {
+      padding: 60px 0;
+  }
+
+  .watches-boxtitle {
+      width: 30%;
+      text-align: center;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      border-top-right-radius: 250px;
+      border-top-left-radius: 250px;
+      border-bottom: none;
+  }
+
+  .subtitle-div {
+      max-width: 60%;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 75px;
+      padding-bottom: 20px;
+  }
+</style>
 <section class="watches-sec">
   <div class="watches-container">
     <div class="watches-boxtitle">
       <div class="subtitle-div">
-        {% if section.settings.gemini_logo1 != blank %}
-          <img class="gemini-logo" src="{{ section.settings.gemini_logo1 | img_url:'master' }}">
-        {% endif %}
-        <h4 class="luxury-text">{{ section.settings.luxury_text }}</h4>
-        {% if section.settings.gemini_logo2 != blank %}
-          <img class="gemini-logo" src="{{ section.settings.gemini_logo2 | img_url:'master' }}">
-        {% endif %}
+        <div class="subtitle-flex-div">
+          {% if section.settings.gemini_logo1 != blank %}
+            <img class="gemini-logo" src="{{ section.settings.gemini_logo1 | img_url:'master' }}">
+          {% endif %}
+          <h4 class="luxury-text">{{ section.settings.luxury_text }}</h4>
+          {% if section.settings.gemini_logo2 != blank %}
+            <img class="gemini-logo" src="{{ section.settings.gemini_logo2 | img_url:'master' }}">
+          {% endif %}
+        </div>
       </div>
       <h2 class="precision-heading">{{ section.settings.precision_heading }}</h2>
     </div>
@@ -65,40 +89,40 @@
       "label": "Gemini Logo2"
     },
     {
-    "type": "text",
-    "id": "precision_heading",
-    "label": "Precision Heading"
+      "type": "text",
+      "id": "precision_heading",
+      "label": "Precision Heading"
     },
     {
-    "type": "text",
-    "id": "exploreluxury_title",
-    "label": "Explore Text"
+      "type": "text",
+      "id": "exploreluxury_title",
+      "label": "Explore Text"
     },
     {
-    "type": "richtext",
-    "id": "gold_description",
-    "label": "Gold Description"
+      "type": "richtext",
+      "id": "gold_description",
+      "label": "Gold Description"
     },
     {
-    "type": "text",
-    "id": "gold_button",
-    "label": "Gold Button"
+      "type": "text",
+      "id": "gold_button",
+      "label": "Gold Button"
     },
     {
-    "type": "url",
-    "id": "middle_video",
-    "label": "middle_video"
+      "type": "url",
+      "id": "middle_video",
+      "label": "middle_video"
     },
     {
-    "type": "image_picker",
-    "id": "right_image",
-    "label": "Right Image"
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Right Image"
     }
   ],
 
   "presets": [
     {
-    "name": "Watches Section"
+      "name": "Watches Section"
     }
   ]
 }
