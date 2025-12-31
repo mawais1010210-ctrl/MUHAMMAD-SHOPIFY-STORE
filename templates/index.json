@@ -975,6 +975,20 @@
       "settings": {
         "collection_heading": "Explore Our Collections"
       }
+    },
+    "watches_sect_j6xBty": {
+      "type": "watches-sect",
+      "name": "Watches Section",
+      "settings": {
+        "gemini_logo1": "shopify://shop_images/download_2d9b5e69-6970-4e98-a84d-d52339162632.png",
+        "luxury_text": "Luxury Made Honest",
+        "gemini_logo2": "shopify://shop_images/download_48b16cfa-724a-4496-a7b8-df05b9d176bb.png",
+        "precision_heading": "New York Precision.",
+        "exploreluxury_title": "EXPLORE OUR WORLD OF LUXURY",
+        "gold_description": "<p>At Sea Wave Diamonds, we bring over 30 years of expertise from New York’s renowned Diamond District. Our heritage is built on trust, precision, and unparalleled quality.</p>",
+        "gold_button": "Uncover Your Perfect Piece",
+        "middle_video": ""
+      }
     }
   },
   "order": [
@@ -994,6 +1008,7 @@
     "testimonial_slider_wHVK9H",
     "larkspur_slider_baby_NLtC9n",
     "larkspur_video_text_RMx7Ke",
-    "collection_slider_eMVWTW"
+    "collection_slider_eMVWTW",
+    "watches_sect_j6xBty"
   ]
 }
