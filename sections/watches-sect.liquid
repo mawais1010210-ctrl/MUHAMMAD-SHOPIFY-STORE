@@ -196,8 +196,13 @@
       <div class="main-content-div">
         <h2 class="explore-luxury-text">{{ section.settings.exploreluxury_title }}</h2>
         <div class="title-description-gold">{{ section.settings.gold_description }}</div>
-        <a href="#" class="gold-button">{{ section.settings.gold_button }}
-          <span class="arrow-image"></span>
+        <a href="#" class="gold-button">
+          {{- section.settings.gold_button }}
+          <span class="arrow-image">
+            {% if section.settings.arrow_image %}
+              <img class="arrow-main" src="{{ section.settings.arrow_image }}">
+            {% endif %}
+          </span>
         </a>
       </div>
 
@@ -263,6 +268,11 @@
       "type": "text",
       "id": "gold_button",
       "label": "Gold Button"
+    },
+    {
+      "type": "image_picker",
+      "id": "arrow_image",
+      "label": "Arrow Image"
     },
     {
       "type": "url",
