@@ -1025,7 +1025,10 @@
         "hover_card_cRYymW": {
           "type": "hover_card",
           "settings": {
-            "card_title": ""
+            "desktop_image": "shopify://shop_images/download_898d6c7a-6dd0-474a-b65c-5905b5310472.webp",
+            "hover_image": "shopify://shop_images/download_2980b91d-98d4-4c12-87ea-d1df42d76384.webp",
+            "card_title": "WEDDING RING",
+            "arrow_hover": "shopify://shop_images/download_9c2c2540-4a05-46bf-832a-f05c33b04ecc.png"
           }
         }
       },
