@@ -1016,7 +1016,10 @@
         "hover_card_Ahy6CU": {
           "type": "hover_card",
           "settings": {
-            "card_title": ""
+            "desktop_image": "shopify://shop_images/download_379d176e-f101-4b19-8419-bad28bb0c937.webp",
+            "hover_image": "shopify://shop_images/download.jpg",
+            "card_title": "Jewellery",
+            "arrow_hover": "shopify://shop_images/download_4bd2a20b-5587-41b8-be11-54f8e3b5a166.png"
           }
         },
         "hover_card_cRYymW": {
