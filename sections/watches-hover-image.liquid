@@ -1,3 +1,26 @@
+<section class="hover-images-sec">
+  <div class="hover-images-container">
+    <div class="hover-images-fles">
+      <div class="block-repeat-hover-card">
+        <a href="#" class="block-card-anker">
+          <div class="block-hover-image-card">
+            <img class="show-image" src="{{ block.settings.desktop_image | img_url: 'master' }}">
+            <img class="hover-image" src="{{ block.settings.hover_image | img_url: 'master' }}">
+          </div>
+
+          <div class="title-arrow-image">
+            <div class="title-block-col">
+              <h2 class="title-card">{{ block.settings.card_title }}</h2>
+              <span class="arrow-image">
+                <img class="arrow-image-main" src="{{ block.settings.arrow_hover | img_url: 'master' }}">
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 {% schema %}
 {
   "name": "Watches Hover Images",
