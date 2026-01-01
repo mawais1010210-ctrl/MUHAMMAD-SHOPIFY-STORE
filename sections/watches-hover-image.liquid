@@ -4,89 +4,83 @@
 >
 
 <style>
-.hover-images-flex {
-    display: flex;
-    justify-content: space-between;
-}
+  .hover-images-flex {
+      display: flex;
+      justify-content: space-between;
+  }
 
-.block-repeat-hover-card {
-    width: 25%;
-    border-top: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    position: relative;
-}
+  .block-repeat-hover-card {
+      width: 25%;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      position: relative;
+  }
 
-.block-card-anker {
-    text-decoration: none;
-    display: block;
-}
+  .block-card-anker {
+      text-decoration: none;
+      display: block;
+  }
 
-.block-hover-image-card {
-    position: relative;
-    height: 0;
-    padding-bottom: 120%;
-}
+  .block-hover-image-card {
+      position: relative;
+      height: 0;
+      padding-bottom: 120%;
+  }
 
-.show-image,
-.hover-image {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    transition: all 0.3s ease-in-out;
-}
+  .show-image,
+  .hover-image {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease-in-out;
+  }
 
-/* Hide hover image initially */
-.hover-image {
-    opacity: 0;
-}
+  .hover-image {
+      opacity: 0;
+  }
 
-/* Show hover image on hover */
-.block-repeat-hover-card:hover .hover-image {
-    opacity: 1;
-}
+  .block-repeat-hover-card:hover .hover-image {
+      opacity: 1;
+  }
 
-/* Optional: slightly fade main image when hover */
-.block-repeat-hover-card:hover .show-image {
-    opacity: 0.3;
-}
+  .block-repeat-hover-card:hover .show-image {
+      opacity: 0.3;
+  }
 
-/* Title section */
-.title-block-col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
-    border-top: 1px solid #cacaca;
-    padding: 18px 0;
-    position: relative;
-}
+  .title-block-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease-in-out;
+      border-top: 1px solid #cacaca;
+      padding: 18px 0;
+      position: relative;
+  }
 
-/* Arrow icon initially hidden */
-.title-block-col .arrow-image {
-    opacity: 0;
-    margin-left: 10px;
-    transition: all 0.3s ease-in-out;
-    display: inline-block;
-}
+  .title-block-col .arrow-image {
+      opacity: 0;
+      margin-left: 10px;
+      transition: all 0.3s ease-in-out;
+      display: inline-block;
+  }
 
-/* Show arrow on hover */
-.block-repeat-hover-card:hover .title-block-col .arrow-image {
-    opacity: 1;
-}
+  .block-repeat-hover-card:hover .title-block-col .arrow-image {
+      opacity: 1;
+  }
 
-.title-card {
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #181818;
-    font-family: TestDomaineDisplayRegular;
-    text-transform: uppercase;
-    margin: 0;
-    transition: all 0.3s ease-in-out;
-}
+  .title-card {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #181818;
+      font-family: TestDomaineDisplayRegular;
+      text-transform: uppercase;
+      margin: 0;
+      transition: all 0.3s ease-in-out;
+  }
 </style>
 
 <section class="watcheshover-images-sec">
