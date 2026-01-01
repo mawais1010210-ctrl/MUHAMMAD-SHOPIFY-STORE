@@ -177,64 +177,54 @@
 
 @media (max-width: 768px) {
 
-  /* Desktop wali side cheezen band */
-  .main-content-div,
-  .end-video-div {
-    display: none;
-  }
-
-  /* Center box full width */
-  .middle-video-div {
-    width: 100%;
-    border: none;
-    padding: 0 20px;
-  }
-
-  /* Arc image exact look */
-  .video-middle-block {
-    padding-bottom: 130%;
+  .mobile-arc-box {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-bottom: none;
     border-top-left-radius: 260px;
     border-top-right-radius: 260px;
-    overflow: hidden;
-  }
-
-  /* Box title center */
-  .watches-boxtitle {
-    width: 90%;
-    border-top-left-radius: 220px;
-    border-top-right-radius: 220px;
-  }
-
-  .precision-heading {
-    max-width: 100%;
-    font-size: 22px;
-  }
-
-  /* TEXT BELOW IMAGE */
-  .mobile-text {
-    display: block;
+    padding-top: 70px;
     text-align: center;
-    padding: 30px 20px;
   }
 
-  .mobile-text h2 {
+  .mobile-arc-media {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 200px 200px 0 0;
+  }
+
+  .mobile-arc-media img,
+  .mobile-arc-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mobile-arc-text {
+    padding: 25px 20px 40px;
+  }
+
+  .mobile-arc-text h2 {
     font-size: 22px;
-    font-weight: 400;
     text-transform: uppercase;
+    font-weight: 400;
   }
 
-  .mobile-text p {
+  .mobile-arc-text p {
     font-size: 14px;
     color: #7e7e7e;
     line-height: 24px;
     margin-top: 10px;
   }
 
-  .mobile-text a {
+  .mobile-arc-text a {
     margin: 20px auto 0;
     display: inline-flex;
   }
 }
+
 
 
 </style>
@@ -281,13 +271,30 @@
           ></video>
         </div>
       </div>
-<div class="mobile-text">
-  <h2>{{ section.settings.exploreluxury_title }}</h2>
-  {{ section.settings.gold_description }}
-  <a href="#" class="gold-button">
-    {{ section.settings.gold_button }}
-  </a>
+<div class="mobile-arc-box">
+  <div class="subtitle-flex-div">
+    {% if section.settings.gemini_logo1 %}
+      <img class="gemini-logo" src="{{ section.settings.gemini_logo1 | img_url:'master' }}">
+    {% endif %}
+    <h4 class="luxury-text">{{ section.settings.luxury_text }}</h4>
+    {% if section.settings.gemini_logo2 %}
+      <img class="gemini-logo" src="{{ section.settings.gemini_logo2 | img_url:'master' }}">
+    {% endif %}
+  </div>
+
+  <h2 class="precision-heading">{{ section.settings.precision_heading }}</h2>
+
+  <div class="mobile-arc-media">
+    <img src="{{ section.settings.right_image | img_url:'master' }}">
+  </div>
+
+  <div class="mobile-arc-text">
+    <h2>{{ section.settings.exploreluxury_title }}</h2>
+    {{ section.settings.gold_description }}
+    <a href="#" class="gold-button">{{ section.settings.gold_button }}</a>
+  </div>
 </div>
+
 
       <div class="end-video-div">
         <div class="last-content-video">
