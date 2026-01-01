@@ -1,224 +1,231 @@
 <style>
-                .watches-sec {
-                    padding: 60px 0;
-                }
+                  .watches-sec {
+                      padding: 60px 0;
+                  }
 
-                .watches-boxtitle {
-                    width: 30%;
-                    text-align: center;
-                    margin: 0 auto;
-                    border: 1px solid #ccc;
-                    border-top-right-radius: 250px;
-                    border-top-left-radius: 250px;
-                    border-bottom: none;
-                }
+                  .watches-boxtitle {
+                      width: 30%;
+                      text-align: center;
+                      margin: 0 auto;
+                      border: 1px solid #ccc;
+                      border-top-right-radius: 250px;
+                      border-top-left-radius: 250px;
+                      border-bottom: none;
+                  }
 
-                .subtitle-div {
+                  .subtitle-div {
+                      max-width: 60%;
+                      margin: 0 auto;
+                      text-align: center;
+                      padding-top: 75px;
+                      padding-bottom: 20px;
+                  }
+
+                  .subtitle-flex-div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  }
+
+                  .gemini-logo {
+                    width: 100%;
+                    height: 100%;
+                    max-width: 17px;
+                    object-fit: contain;
+                  }
+
+                  .luxury-text {
+                    font-size: 14px;
+                    font-style: italic;
+                    font-weight: 400;
+                    color: #7e7e7e;
+                    padding: 5px 3px;
+                  }
+
+                  .precision-heading {
+                    color: #181818;
+                    font-size: 26px;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    letter-spacing: 0;
+                    line-height: 1.2;
                     max-width: 60%;
                     margin: 0 auto;
-                    text-align: center;
-                    padding-top: 75px;
+                    padding-top: 5px;
                     padding-bottom: 20px;
+                    font-family: TestDomaineDisplayRegular;
+                  }
+
+                  .video-flex-content {
+                    display: flex;
+                    justify-content: space-between;
+                    border-top: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
                 }
 
-                .subtitle-flex-div {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
+                .main-content-div {
+                    width: 33%;
+                    display: flex;
+                    padding: 0 40px;
+                    flex-direction: column;
+                    justify-content: center;
                 }
 
-                .gemini-logo {
-                  width: 100%;
-                  height: 100%;
-                  max-width: 17px;
-                  object-fit: contain;
-                }
-
-                .luxury-text {
-                  font-size: 14px;
-                  font-style: italic;
-                  font-weight: 400;
-                  color: #7e7e7e;
-                  padding: 5px 3px;
-                }
-
-                .precision-heading {
-                  color: #181818;
+                .explore-luxury-text {
+                  margin: 0;
                   font-size: 26px;
-                  text-transform: uppercase;
                   font-weight: 400;
                   letter-spacing: 0;
-                  line-height: 1.2;
-                  max-width: 60%;
-                  margin: 0 auto;
-                  padding-top: 5px;
-                  padding-bottom: 20px;
+                  text-transform: uppercase;
                   font-family: TestDomaineDisplayRegular;
-                }
+               }
 
-                .video-flex-content {
-                  display: flex;
-                  justify-content: space-between;
-                  border-top: 1px solid #ccc;
-                  border-bottom: 1px solid #ccc;
-              }
-
-              .main-content-div {
-                  width: 33%;
-                  display: flex;
-                  padding: 0 40px;
-                  flex-direction: column;
-                  justify-content: center;
-              }
-
-              .explore-luxury-text {
+               .title-description-gold p {
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: .6px;
+                font-family: Product Sans Regular;
+                color: #7e7e7e;
                 margin: 0;
-                font-size: 26px;
-                font-weight: 400;
-                letter-spacing: 0;
-                text-transform: uppercase;
-                font-family: TestDomaineDisplayRegular;
-             }
+                padding-top: 12px;
+                padding-bottom: 25px;
+            }
 
-             .title-description-gold p {
-              font-size: 14px;
-              line-height: 24px;
-              letter-spacing: .6px;
+            .gold-button {
+              display: flex;
+              padding: 7px 12px;
+              background: #181818;
+              width: fit-content;
+              color: #fff;
+              font-size: 12px;
+              text-decoration: none;
               font-family: Product Sans Regular;
-              color: #7e7e7e;
-              margin: 0;
-              padding-top: 12px;
-              padding-bottom: 25px;
+              text-transform: uppercase;
+              line-height: 24px;
+              justify-content: space-between;
+              align-items: center;
+              letter-spacing: 1px;
+              transition: all .4s ease-in-out;
+            }
+
+            .middle-video-div {
+              border-right: 1px solid #ccc;
+              width: 30%;
+              padding: 16px 30px 0;
+              border-left: 1px solid #ccc;
+            }
+
+            .video-middle-block {
+              line-height: 0;
+              height: 0;
+              position: relative;
+              overflow: hidden;
+              padding-bottom: 94%;
+              margin-top: .3px;
+              border-top-left-radius: 285px;
+              border-top-right-radius: 285px;
           }
 
-          .gold-button {
-            display: flex;
-            padding: 7px 12px;
-            background: #181818;
-            width: fit-content;
-            color: #fff;
-            font-size: 12px;
-            text-decoration: none;
-            font-family: Product Sans Regular;
-            text-transform: uppercase;
-            line-height: 24px;
-            justify-content: space-between;
-            align-items: center;
-            letter-spacing: 1px;
-            transition: all .4s ease-in-out;
+          .center-video {
+              height: 100%;
+              position: absolute;
+              width: 100%;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              object-fit: cover;
           }
 
-          .middle-video-div {
-            border-right: 1px solid #ccc;
-            width: 30%;
-            padding: 16px 30px 0;
-            border-left: 1px solid #ccc;
-          }
-
-          .video-middle-block {
-            line-height: 0;
-            height: 0;
-            position: relative;
-            overflow: hidden;
-            padding-bottom: 94%;
-            margin-top: .3px;
-            border-top-left-radius: 285px;
-            border-top-right-radius: 285px;
+          .end-video-div {
+            width: 33%;
         }
 
-        .center-video {
+        .last-content-video {
+            position: relative;
+            height: 0;
+            padding-bottom: 35%;
+            max-width: 60%;
+            margin: 0 auto;
+            border-bottom-left-radius: 276px;
+            overflow: hidden;
+            border-bottom-right-radius: 250px;
+        }
+
+        .last-image {
+            width: 100%;
             height: 100%;
             position: absolute;
-            width: 100%;
             top: 0;
             left: 0;
-            bottom: 0;
             right: 0;
+            bottom: 0;
             object-fit: cover;
         }
 
-        .end-video-div {
-          width: 33%;
+      .arrow-main {
+          max-width: 20px;
+          height: auto;
       }
 
-      .last-content-video {
-          position: relative;
-          height: 0;
-          padding-bottom: 35%;
-          max-width: 60%;
+      .arrow-image {
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .gold-button:hover .arrow-image {
+        opacity: 1;
+        visibility: visible;
+        width: 20px;
+        margin-left: 8px;
+      }
+
+    @media screen and (max-width: 767px){
+      .video-flex-content {
+        display: flex;
+        flex-direction: column-reverse;
+     }
+
+    .main-content-div {
+          width: 90%;
+          padding: 40px 15px;
           margin: 0 auto;
-          border-bottom-left-radius: 276px;
-          overflow: hidden;
-          border-bottom-right-radius: 250px;
-      }
-
-      .last-image {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          object-fit: cover;
-      }
-
-    .arrow-main {
-        max-width: 20px;
-        height: auto;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
     }
 
-    .arrow-image {
-      opacity: 0;
-      visibility: hidden;
-      width: 0;
-      overflow: hidden;
-      transition: all 0.3s ease;
-      display: inline-flex;
-      align-items: center;
-    }
-
-    .gold-button:hover .arrow-image {
-      opacity: 1;
-      visibility: visible;
-      width: 20px;
-      margin-left: 8px;
-    }
-
-  @media screen and (max-width: 767px){
-    .video-flex-content {
-      display: flex;
-      flex-direction: column-reverse;
-   }
-
-  .main-content-div {
-        width: 90%;
-        padding: 40px 15px;
-        margin: 0 auto;
-        border-left: 1px solid #ccc;
-        border-right: 1px solid #ccc;
-  }
-
-  .watches-boxtitle {
-    width: 90%;
-  }
-
-  .video-middle-block {
-    max-width: 62%;
-    margin: 0 auto;
-    padding-bottom: 78%;
-    margin-bottom: -1px !important;
-  }
-  .middle-video-div {
+    .watches-boxtitle {
       width: 90%;
-      margin: 0 auto;
-      border-bottom: 1px solid #ccc;
-  }
+    }
 
-  .end-video-div {
-      display: none;
+    .video-middle-block {
+      max-width: 62%;
+      margin: 0 auto;
+      padding-bottom: 78%;
+      margin-bottom: -1px !important;
+    }
+    .middle-video-div {
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .end-video-div {
+        display: none;
+    }
+
+    .explore-luxury-text {
+      font-size: 20px;
+      max-width: 69%;
+      margin: 0 auto;
+      text-align: center;
   }
-  }
+    }
 </style>
 <section class="watches-sec">
   <div class="watches-container">
