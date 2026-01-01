@@ -991,6 +991,46 @@
         "middle_video": "https://watches-diamond-development.myshopify.com/cdn/shop/videos/c/vp/89e87e30b6114d49bae42c8547ec223d/89e87e30b6114d49bae42c8547ec223d.m3u8?v=0",
         "right_image": "shopify://shop_images/download_74311234-6106-47a1-aa37-a42bbd1c4aac.webp"
       }
+    },
+    "watches_hover_image_ibx8kV": {
+      "type": "watches-hover-image",
+      "blocks": {
+        "hover_card_iCCmwa": {
+          "type": "hover_card",
+          "settings": {
+            "desktop_image": "shopify://shop_images/download_049a4043-cef7-47e4-ab17-f5f720925d63.webp",
+            "hover_image": "shopify://shop_images/download_87804819-43c0-49cb-a125-0b74072347af.webp",
+            "card_title": "Loose Diamonds",
+            "arrow_hover": "shopify://shop_images/download_84f5b420-5691-4aab-8cd4-c99ba703e0cf.png"
+          }
+        },
+        "hover_card_HLJzjq": {
+          "type": "hover_card",
+          "settings": {
+            "card_title": ""
+          }
+        },
+        "hover_card_Ahy6CU": {
+          "type": "hover_card",
+          "settings": {
+            "card_title": ""
+          }
+        },
+        "hover_card_cRYymW": {
+          "type": "hover_card",
+          "settings": {
+            "card_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "hover_card_iCCmwa",
+        "hover_card_HLJzjq",
+        "hover_card_Ahy6CU",
+        "hover_card_cRYymW"
+      ],
+      "name": "Watches Hover Images",
+      "settings": {}
     }
   },
   "order": [
@@ -1011,6 +1051,7 @@
     "larkspur_slider_baby_NLtC9n",
     "larkspur_video_text_RMx7Ke",
     "collection_slider_eMVWTW",
-    "watches_sect_j6xBty"
+    "watches_sect_j6xBty",
+    "watches_hover_image_ibx8kV"
   ]
 }
