@@ -175,12 +175,34 @@
       object-fit: cover;
   }
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
 
+  /* Desktop wali side cheezen band */
+  .main-content-div,
+  .end-video-div {
+    display: none;
+  }
+
+  /* Center box full width */
+  .middle-video-div {
+    width: 100%;
+    border: none;
+    padding: 0 20px;
+  }
+
+  /* Arc image exact look */
+  .video-middle-block {
+    padding-bottom: 130%;
+    border-top-left-radius: 260px;
+    border-top-right-radius: 260px;
+    overflow: hidden;
+  }
+
+  /* Box title center */
   .watches-boxtitle {
     width: 90%;
-    border-top-left-radius: 180px;
-    border-top-right-radius: 180px;
+    border-top-left-radius: 220px;
+    border-top-right-radius: 220px;
   }
 
   .precision-heading {
@@ -188,56 +210,32 @@
     font-size: 22px;
   }
 
-  /* MAIN FLEX COLUMN */
-  .video-flex-content {
-    flex-direction: column;
-    border: none;
-  }
-
-  /* CENTER VIDEO FIRST */
-  .middle-video-div {
-    width: 100%;
-    order: 1;
-    border: none;
-    padding: 0 20px;
-  }
-
-  .video-middle-block {
-    padding-bottom: 120%;
-    border-top-left-radius: 200px;
-    border-top-right-radius: 200px;
-  }
-
-  /* TEXT CONTENT */
-  .main-content-div {
-    width: 100%;
-    order: 2;
+  /* TEXT BELOW IMAGE */
+  .mobile-text {
+    display: block;
     text-align: center;
     padding: 30px 20px;
   }
 
-  .explore-luxury-text {
+  .mobile-text h2 {
     font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
   }
 
-  .gold-button {
-    margin: 0 auto;
+  .mobile-text p {
+    font-size: 14px;
+    color: #7e7e7e;
+    line-height: 24px;
+    margin-top: 10px;
   }
 
-  /* BOTTOM IMAGE */
-  .end-video-div {
-    width: 100%;
-    order: 3;
-    padding-bottom: 30px;
-  }
-
-  .last-content-video {
-    max-width: 85%;
-    padding-bottom: 60%;
-    border-bottom-left-radius: 200px;
-    border-bottom-right-radius: 200px;
+  .mobile-text a {
+    margin: 20px auto 0;
+    display: inline-flex;
   }
 }
+
 
 </style>
 <section class="watches-sec">
@@ -283,6 +281,13 @@
           ></video>
         </div>
       </div>
+<div class="mobile-text">
+  <h2>{{ section.settings.exploreluxury_title }}</h2>
+  {{ section.settings.gold_description }}
+  <a href="#" class="gold-button">
+    {{ section.settings.gold_button }}
+  </a>
+</div>
 
       <div class="end-video-div">
         <div class="last-content-video">
