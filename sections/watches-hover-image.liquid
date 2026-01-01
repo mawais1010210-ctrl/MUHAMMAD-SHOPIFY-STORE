@@ -85,11 +85,21 @@
       margin: 0;
       transition: all 0.3s ease-in-out;
   }
+
+  @media (max-width: 767px) {
+  .hover-images-flex {
+    display: block; /* owl handle karega */
+  }
+
+  .block-repeat-hover-card {
+    width: 100%;
+  }
+}
 </style>
 
 <section class="watcheshover-images-sec">
   <div class="watcheshover-images-container">
-    <div class="hover-images-flex">
+    <div class="hover-images-flex owl-carousel">
       {% for block in section.blocks %}
         <div class="block-repeat-hover-card">
           <a href="{{ block.settings.link_url }}" class="block-card-anker">
