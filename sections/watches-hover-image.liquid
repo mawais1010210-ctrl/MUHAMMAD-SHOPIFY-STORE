@@ -1,7 +1,7 @@
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.6.0/css/all.min.css"
   rel="stylesheet"
-/>
+>
 
 <style>
 .hover-images-flex {
@@ -15,7 +15,6 @@
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     position: relative;
-    overflow: hidden;
 }
 
 .block-card-anker {
@@ -50,12 +49,12 @@
     opacity: 1;
 }
 
-/* Optional: fade main image slightly */
+/* Optional: slightly fade main image when hover */
 .block-repeat-hover-card:hover .show-image {
     opacity: 0.3;
 }
 
-/* Title block */
+/* Title section */
 .title-block-col {
     display: flex;
     align-items: center;
@@ -66,6 +65,19 @@
     position: relative;
 }
 
+/* Arrow icon initially hidden */
+.title-block-col .arrow-image {
+    opacity: 0;
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* Show arrow on hover */
+.block-repeat-hover-card:hover .title-block-col .arrow-image {
+    opacity: 1;
+}
+
 .title-card {
     font-size: 14px;
     letter-spacing: 1px;
@@ -73,27 +85,7 @@
     font-family: TestDomaineDisplayRegular;
     text-transform: uppercase;
     margin: 0;
-}
-
-/* Arrow positioning */
-.title-arrow-image {
-    position: absolute;
-    top: 50%;
-    right: 15px; /* adjust arrow horizontal position */
-    transform: translateY(-50%);
-    z-index: 2;
-}
-
-.title-arrow-image .arrow-image {
-    opacity: 0;
     transition: all 0.3s ease-in-out;
-    font-size: 18px; /* arrow size */
-    color: #181818; /* arrow color */
-}
-
-/* Show arrow on hover */
-.block-repeat-hover-card:hover .title-arrow-image .arrow-image {
-    opacity: 1;
 }
 </style>
 
@@ -132,7 +124,6 @@
     </div>
   </div>
 </section>
-
 
 {% schema %}
 {
