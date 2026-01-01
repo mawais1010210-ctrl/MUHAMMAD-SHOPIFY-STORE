@@ -3,49 +3,77 @@
   rel="stylesheet"
 />
 
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.6.0/css/all.min.css"
+  rel="stylesheet"
+/>
+
 <style>
-      .hover-images-flex {
-      display: flex;
-      justify-content: space-between;
-  }
+.hover-images-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
 
-  .block-repeat-hover-card {
-      width: 25%;
-      border-top: 1px solid #ccc;
-      border-right: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-  }
+.block-repeat-hover-card {
+    width: 25%;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+}
 
-  .block-hover-image-card {
-      position: relative;
-      height: 0;
-      padding-bottom: 120%;
-  }
+.block-hover-image-card {
+    position: relative;
+    height: 0;
+    padding-bottom: 120%;
+    overflow: hidden;
+}
 
-  .show-image {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transition: all .3s ease-in-out;
-  }
+.show-image,
+.hover-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
 
-  .hover-image {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transition: all .3s ease-in-out;
-  }
+.hover-image {
+    opacity: 0;
+}
+
+.block-repeat-hover-card:hover .hover-image {
+    opacity: 1;
+}
+
+.block-repeat-hover-card:hover .show-image {
+    opacity: 0;
+}
+
+.title-arrow-image {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.title-card {
+    font-size: 16px;
+    margin-right: 8px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.arrow-image i {
+    font-size: 16px;
+}
 </style>
+
 <section class="watcheshover-images-sec">
   <div class="watcheshover-images-container">
     <div class="hover-images-flex">
@@ -70,12 +98,10 @@
             </div>
 
             <div class="title-arrow-image">
-              <div class="title-block-col">
                 <h2 class="title-card">{{ block.settings.card_title }}</h2>
                 <span class="arrow-image">
                   <i class="fas fa-arrow-right"></i>
                 </span>
-              </div>
             </div>
           </a>
         </div>
@@ -83,6 +109,7 @@
     </div>
   </div>
 </section>
+
 {% schema %}
 {
   "name": "Watches Hover Images",
