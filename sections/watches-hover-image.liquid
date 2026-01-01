@@ -68,13 +68,7 @@
               <div class="title-block-col">
                 <h2 class="title-card">{{ block.settings.card_title }}</h2>
                 <span class="arrow-image">
-                  {% if block.settings.arrow_hover != blank %}
-                    <img
-                      class="arrow-image-main"
-                      src="{{ block.settings.arrow_hover | img_url: 'master' }}"
-                      alt="{{ block.settings.card_title }} Arrow"
-                    >
-                  {% endif %}
+                  <i class="fa fa-solid-arrow"></i>
                 </span>
               </div>
             </div>
@@ -107,11 +101,6 @@
           "type": "text",
           "id": "card_title",
           "label": "Card Title"
-        },
-        {
-          "type": "image_picker",
-          "id": "arrow_hover",
-          "label": "Arrow Hover"
         }
       ]
     }
