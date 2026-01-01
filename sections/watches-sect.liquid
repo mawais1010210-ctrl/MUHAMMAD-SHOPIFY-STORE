@@ -197,10 +197,10 @@
         <h2 class="explore-luxury-text">{{ section.settings.exploreluxury_title }}</h2>
         <div class="title-description-gold">{{ section.settings.gold_description }}</div>
         <a href="#" class="gold-button">
-          {{- section.settings.gold_button }}
+          {{ section.settings.gold_button }}
           <span class="arrow-image">
-            {% if section.settings.arrow_image %}
-              <img class="arrow-main" src="{{ section.settings.arrow_image }}">
+            {% if section.settings.arrow_image != blank %}
+              <img class="arrow-main" src="{{ section.settings.arrow_image | img_url: 'master' }}">
             {% endif %}
           </span>
         </a>
