@@ -47,6 +47,16 @@
         right: 0;
         transition: all .3s ease-in-out;
     }
+
+
+    .title-block-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+    border-top: 1px solid #cacaca;
+    padding: 18px 0;
+    }
 </style>
 <section class="watcheshover-images-sec">
   <div class="watcheshover-images-container">
@@ -74,9 +84,7 @@
             <div class="title-arrow-image">
               <div class="title-block-col">
                 <h2 class="title-card">{{ block.settings.card_title }}</h2>
-                <span class="arrow-image">
-                  <i class="fas fa-arrow-right"></i> </span
-                ><i class="fas fa-arrow-right"></i>
+                <span class="arrow-image"> <i class="fas fa-arrow-right"></i> </span><i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </a>
