@@ -1007,7 +1007,10 @@
         "hover_card_HLJzjq": {
           "type": "hover_card",
           "settings": {
-            "card_title": ""
+            "desktop_image": "shopify://shop_images/download_6742a293-c568-489d-932e-836e379d35e1.webp",
+            "hover_image": "shopify://shop_images/download_c0b37a47-16f0-4901-989e-93ba12fa8db6.webp",
+            "card_title": "Engagement Ring",
+            "arrow_hover": "shopify://shop_images/download_43181689-9483-4395-bb20-8e8b412cb74d.png"
           }
         },
         "hover_card_Ahy6CU": {
