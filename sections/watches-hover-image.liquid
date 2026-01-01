@@ -1,50 +1,52 @@
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.6.0/css/all.min.css"
   rel="stylesheet"
-/>
+>
 
 <style>
-      .hover-images-flex {
-      display: flex;
-      justify-content: space-between;
-  }
+        .hover-images-flex {
+        display: flex;
+        justify-content: space-between;
+    }
 
-  .block-repeat-hover-card {
-      width: 25%;
-      border-top: 1px solid #ccc;
-      border-right: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
+    .block-repeat-hover-card {
+        width: 25%;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+  .block-card-anker {
+      text-decoration: none;
   }
+    .block-hover-image-card {
+        position: relative;
+        height: 0;
+        padding-bottom: 120%;
+    }
 
-  .block-hover-image-card {
-      position: relative;
-      height: 0;
-      padding-bottom: 120%;
-  }
+    .show-image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all .3s ease-in-out;
+    }
 
-  .show-image {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transition: all .3s ease-in-out;
-  }
-
-  .hover-image {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transition: all .3s ease-in-out;
-  }
+    .hover-image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all .3s ease-in-out;
+    }
 </style>
 <section class="watcheshover-images-sec">
   <div class="watcheshover-images-container">
@@ -73,8 +75,8 @@
               <div class="title-block-col">
                 <h2 class="title-card">{{ block.settings.card_title }}</h2>
                 <span class="arrow-image">
-                  <i class="fas fa-arrow-right"></i>
-                </span><i class="fas fa-arrow-right"></i>
+                  <i class="fas fa-arrow-right"></i> </span
+                ><i class="fas fa-arrow-right"></i>
               </div>
             </div>
           </a>
