@@ -1,23 +1,43 @@
 <section class="hover-images-sec">
   <div class="hover-images-container">
-    <div class="hover-images-fles">
-      <div class="block-repeat-hover-card">
-        <a href="#" class="block-card-anker">
-          <div class="block-hover-image-card">
-            <img class="show-image" src="{{ block.settings.desktop_image | img_url: 'master' }}">
-            <img class="hover-image" src="{{ block.settings.hover_image | img_url: 'master' }}">
-          </div>
-
-          <div class="title-arrow-image">
-            <div class="title-block-col">
-              <h2 class="title-card">{{ block.settings.card_title }}</h2>
-              <span class="arrow-image">
-                <img class="arrow-image-main" src="{{ block.settings.arrow_hover | img_url: 'master' }}">
-              </span>
+    <div class="hover-images-flex">
+      {% for block in section.blocks %}
+        <div class="block-repeat-hover-card">
+          <a href="{{ block.settings.link_url }}" class="block-card-anker">
+            <div class="block-hover-image-card">
+              {% if block.settings.desktop_image != blank %}
+                <img
+                  class="show-image"
+                  src="{{ block.settings.desktop_image | img_url: 'master' }}"
+                  alt="{{ block.settings.card_title }}"
+                >
+              {% endif %}
+              {% if block.settings.hover_image != blank %}
+                <img
+                  class="hover-image"
+                  src="{{ block.settings.hover_image | img_url: 'master' }}"
+                  alt="{{ block.settings.card_title }}"
+                >
+              {% endif %}
             </div>
-          </div>
-        </a>
-      </div>
+
+            <div class="title-arrow-image">
+              <div class="title-block-col">
+                <h2 class="title-card">{{ block.settings.card_title }}</h2>
+                <span class="arrow-image">
+                  {% if block.settings.arrow_hover != blank %}
+                    <img
+                      class="arrow-image-main"
+                      src="{{ block.settings.arrow_hover | img_url: 'master' }}"
+                      alt="{{ block.settings.card_title }} Arrow"
+                    >
+                  {% endif %}
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>
