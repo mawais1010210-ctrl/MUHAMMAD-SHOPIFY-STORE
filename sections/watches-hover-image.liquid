@@ -1,33 +1,45 @@
 <style>
-    .hover-images-flex {
-    display: flex;
-    justify-content: space-between;
-}
+      .hover-images-flex {
+      display: flex;
+      justify-content: space-between;
+  }
 
-.block-repeat-hover-card {
-    width: 25%;
-    border-top: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-}
+  .block-repeat-hover-card {
+      width: 25%;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+  }
 
-.block-hover-image-card {
-    position: relative;
-    height: 0;
-    padding-bottom: 120%;
-}
+  .block-hover-image-card {
+      position: relative;
+      height: 0;
+      padding-bottom: 120%;
+  }
 
-.show-image {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: all .3s ease-in-out;
-}
+  .show-image {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: all .3s ease-in-out;
+  }
+
+  .hover-image {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: all .3s ease-in-out;
+  }
 </style>
 <section class="watcheshover-images-sec">
   <div class="watcheshover-images-container">
@@ -78,30 +90,30 @@
   "settings": [],
   "blocks": [
     {
-    "type": "hover_card",
-    "name": "Hover Card",
-    "settings": [
+      "type": "hover_card",
+      "name": "Hover Card",
+      "settings": [
         {
-        "type": "image_picker",
-        "id": "desktop_image",
-        "label": "Desktop Image"
+          "type": "image_picker",
+          "id": "desktop_image",
+          "label": "Desktop Image"
         },
         {
-        "type": "image_picker",
-        "id": "hover_image",    
-        "label": "Hover Image"
+          "type": "image_picker",
+          "id": "hover_image",
+          "label": "Hover Image"
         },
         {
-        "type": "text",
-        "id": "card_title",
-        "label": "Card Title"
+          "type": "text",
+          "id": "card_title",
+          "label": "Card Title"
         },
         {
-        "type": "image_picker",
-        "id": "arrow_hover",
-        "label": "Arrow Hover"
+          "type": "image_picker",
+          "id": "arrow_hover",
+          "label": "Arrow Hover"
         }
-    ]
+      ]
     }
   ],
   "presets": [
