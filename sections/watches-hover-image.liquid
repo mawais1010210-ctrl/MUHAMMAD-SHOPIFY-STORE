@@ -1,26 +1,25 @@
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.6.0/css/all.min.css"
   rel="stylesheet"
-/>
+>
 
 <style>
   .hover-images-flex {
       display: flex;
       justify-content: space-between;
-      gap: 20px;
   }
 
   .block-repeat-hover-card {
       width: 25%;
-      border: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
       position: relative;
-      overflow: hidden;
   }
 
   .block-card-anker {
       text-decoration: none;
       display: block;
-      color: inherit;
   }
 
   .block-hover-image-card {
@@ -32,11 +31,11 @@
   .show-image,
   .hover-image {
       position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
       transition: all 0.3s ease-in-out;
   }
 
@@ -67,8 +66,6 @@
       margin-left: 10px;
       transition: all 0.3s ease-in-out;
       display: inline-block;
-      font-family: "Font Awesome 7 Free";
-      font-weight: 900; /* solid style */
   }
 
   .block-repeat-hover-card:hover .title-block-col .arrow-image {
