@@ -280,14 +280,16 @@
 
       <div class="middle-video-div">
         <div class="video-middle-block">
+          {% if section.settings.middle_video !=blank %}
           <video
             class="center-video"
-            src="{{ section.settings.middle_video }}"
+            src="{{ section.settings.middle_video.source[1].url }}"
             playsinline
             autoplay
             muted
             loop
           ></video>
+          {% endif %}
         </div>
       </div>
       <div class="end-video-div">
