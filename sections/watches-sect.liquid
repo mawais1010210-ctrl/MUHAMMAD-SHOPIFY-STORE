@@ -280,16 +280,14 @@
 
       <div class="middle-video-div">
         <div class="video-middle-block">
-          {% if section.settings.middle_video !=blank %}
           <video
             class="center-video"
-            src="{{ section.settings.middle_video.source[1].url }}"
+            src="{{ section.settings.middle_video }}"
             playsinline
             autoplay
             muted
             loop
           ></video>
-          {% endif %}
         </div>
       </div>
       <div class="end-video-div">
@@ -348,7 +346,7 @@
       "label": "Arrow Image"
     },
     {
-      "type": "video",
+      "type": "url",
       "id": "middle_video",
       "label": "middle_video"
     },
