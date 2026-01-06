@@ -1,17 +1,49 @@
 <section class="diamond-hover-images-sec">
-    <div class="diamond-images-container">
-        <div class="diamond-images-flex">
-           <div class="main-banner-images">
-            {% if section.settings.banner_image !=blank %}
-            <img class="bnr-img" src="{{ section.settings.banner_image | img_url: 'master' }}">
-            {% endif %}
-           </div>
+  <div class="diamond-images-container">
+    <div class="diamond-images-flex">
+      <div class="main-banner-images">
+        {% if section.settings.banner_image != blank %}
+          <img class="bnr-img" src="{{ section.settings.banner_image | img_url: 'master' }}">
+        {% endif %}
+      </div>
+
+      <div class="custom-watches-text-content">
+        <div class="custom-sub-content">
+          {{ section.settings.subcontent_text }}
         </div>
+
+        <div class="customer-watches-title">
+          <h2 class="custom-title-content">{{ section.settings.text_title }}</h2>
+        </div>
+
+        <div class="custom-watches-desription">
+          {{ section.settings.dep_title }}
+        </div>
+
+        <div class="custom-lgc-buttom">
+          <a class="link-button-text">
+            {{ section.settings.shop_text }}
+            <span class="arrow-image">
+              {% if section.settings.arrow_image != blank %}
+                <img class="main-arrow-img" src="{{ section.settings.arrow_image | img_url: 'master' }}">
+              {% endif %}
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="custom-watches-images-content">
+        <div class="img-lgo-content">
+            <div class="custom-watches-images">
+                <img class="hvr-images" src="{{  }}">
+            </div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 {% schema %}
 {
-"name": "Diamond Hover Images",
-"settings": []
+  "name": "Diamond Hover Images",
+  "settings": []
 }
 {% endschema %}
