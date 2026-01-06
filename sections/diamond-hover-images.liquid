@@ -1,0 +1,17 @@
+<section class="diamond-hover-images-sec">
+    <div class="diamond-images-container">
+        <div class="diamond-images-flex">
+           <div class="main-banner-images">
+            {% if section.settings.banner_image !=blank %}
+            <img class="bnr-img" src="{{ section.settings.banner_image | img_url: 'master' }}">
+            {% endif %}
+           </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+"name": "Diamond Hover Images",
+"settings": []
+}
+{% endschema %}
