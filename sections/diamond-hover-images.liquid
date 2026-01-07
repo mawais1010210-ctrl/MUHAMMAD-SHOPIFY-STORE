@@ -25,7 +25,7 @@
             {{ section.settings.shop_text }}
             <span class="arrow-image">
               {% if section.settings.arrow_image != blank %}
-                <img class="main-arrow-img" src="{{ section.settings.arrow_image | img_url: 'master' }}">
+                <img class="main-arrow-img" src="{{ section.settings.arrow_image | img_url: 'master' }}" alt="arrow-image">
               {% endif %}
             </span>
           </a>
@@ -33,11 +33,17 @@
       </div>
       <div class="custom-watches-images-content">
         <div class="img-lgo-content">
-          <div class="custom-watches-images">
-            {% if block.settings.hover_images != blank %}
-              <img class="hvr-images" src="{{ block.settings.hover_images | img_url:'master' }}">
-            {% endif %}
-          </div>
+          {% for block in section.blocks %}
+            <div class="custom-watches-images">
+              {% if block.settings.hover_images != blank %}
+                <img
+                  class="hvr-images"
+                  src="{{ block.settings.hover_images | img_url: 'master' }}"
+                  alt="Hover Image"
+                >
+              {% endif %}
+            </div>
+          {% endfor %}
         </div>
       </div>
     </div>
