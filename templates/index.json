@@ -1039,6 +1039,37 @@
     },
     "diamond_hover_images_iLpzFe": {
       "type": "diamond-hover-images",
+      "blocks": {
+        "hover_image_block_recd9g": {
+          "type": "hover_image_block",
+          "settings": {
+            "hover_images": "shopify://shop_images/download_15ce4075-559a-4b37-9002-5e8595bad13a.webp"
+          }
+        },
+        "hover_image_block_9UKY9p": {
+          "type": "hover_image_block",
+          "settings": {}
+        },
+        "hover_image_block_4zFfHn": {
+          "type": "hover_image_block",
+          "settings": {}
+        },
+        "hover_image_block_FriJnb": {
+          "type": "hover_image_block",
+          "settings": {}
+        },
+        "hover_image_block_eaaGRV": {
+          "type": "hover_image_block",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "hover_image_block_recd9g",
+        "hover_image_block_9UKY9p",
+        "hover_image_block_4zFfHn",
+        "hover_image_block_FriJnb",
+        "hover_image_block_eaaGRV"
+      ],
       "name": "Diamond Hover Images",
       "settings": {
         "banner_image": "shopify://shop_images/download_39445a9f-c6f4-4c71-8ff1-9d0f3503d204.webp",
