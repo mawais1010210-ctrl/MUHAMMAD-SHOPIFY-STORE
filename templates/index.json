@@ -1066,7 +1066,9 @@
         },
         "hover_image_block_eaaGRV": {
           "type": "hover_image_block",
-          "settings": {}
+          "settings": {
+            "hover_images": "shopify://shop_images/download_0168984a-2d24-4f62-b097-4b970f2144f1.webp"
+          }
         }
       },
       "block_order": [
