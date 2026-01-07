@@ -33,9 +33,11 @@
       </div>
       <div class="custom-watches-images-content">
         <div class="img-lgo-content">
-            <div class="custom-watches-images">
-                <img class="hvr-images" src="{{  }}">
-            </div>
+          <div class="custom-watches-images">
+            {% if block.settings.hover_images != blank %}
+              <img class="hvr-images" src="{{ block.settings.hover_images | img_url:'master' }}">
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
