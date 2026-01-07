@@ -1048,7 +1048,9 @@
         },
         "hover_image_block_9UKY9p": {
           "type": "hover_image_block",
-          "settings": {}
+          "settings": {
+            "hover_images": "shopify://shop_images/download_94c7fec5-1e0a-4e97-864a-cf6b274c078f.webp"
+          }
         },
         "hover_image_block_4zFfHn": {
           "type": "hover_image_block",
