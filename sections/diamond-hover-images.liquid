@@ -23,15 +23,7 @@
         <div class="custom-lgc-buttom">
           <a class="link-button-text">
             {{ section.settings.shop_text }}
-            <span class="arrow-image">
-              {% if section.settings.arrow_image != blank %}
-                <img
-                  class="main-arrow-img"
-                  src="{{ section.settings.arrow_image | img_url: 'master' }}"
-                  alt="arrow-image"
-                >
-              {% endif %}
-            </span>
+            <span class="arrow-image"></span>
           </a>
         </div>
       </div>
@@ -81,11 +73,6 @@
       "type": "text",
       "id": "shop_text",
       "label": "Shop Text"
-    },
-    {
-      "type": "image_picker",
-      "id": "arrow_image",
-      "label": "Arrow Image"
     }
   ],
   "blocks": [
