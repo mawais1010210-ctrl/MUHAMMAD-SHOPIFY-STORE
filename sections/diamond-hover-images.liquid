@@ -25,7 +25,11 @@
             {{ section.settings.shop_text }}
             <span class="arrow-image">
               {% if section.settings.arrow_image != blank %}
-                <img class="main-arrow-img" src="{{ section.settings.arrow_image | img_url: 'master' }}" alt="arrow-image">
+                <img
+                  class="main-arrow-img"
+                  src="{{ section.settings.arrow_image | img_url: 'master' }}"
+                  alt="arrow-image"
+                >
               {% endif %}
             </span>
           </a>
@@ -54,25 +58,53 @@
   "name": "Diamond Hover Images",
   "settings": [
     {
-    "type": "image_picker",
-    "id": "banner_image",
-    "label": "Banner Image"
+      "type": "image_picker",
+      "id": "banner_image",
+      "label": "Banner Image"
     },
     {
-    "type": "text",
-    "id": "subcontent_text",
-    "label": "Subcontent Text"
+      "type": "text",
+      "id": "subcontent_text",
+      "label": "Subcontent Text"
     },
     {
-    "type": "text",
-    "id": "text_title",
-    "label": "Text Title"
+      "type": "text",
+      "id": "text_title",
+      "label": "Text Title"
     },
     {
-    "type": "richtext",
-    "id": "desp_title",
-    "label": "Desp Title"
+      "type": "richtext",
+      "id": "desp_title",
+      "label": "Desp Title"
+    },
+    {
+      "type": "text",
+      "id": "shop_text",
+      "label": "Shop Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "arrow_image",
+      "label": "Arrow Image"
     }
   ],
+  "blocks": [
+    {
+      "type": "hover_image_block",
+      "name": "Hover Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "hover_images",
+          "label": "Hover Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Diamond Hover Images"
+    }
+  ]
 }
 {% endschema %}
