@@ -1060,7 +1060,9 @@
         },
         "hover_image_block_FriJnb": {
           "type": "hover_image_block",
-          "settings": {}
+          "settings": {
+            "hover_images": "shopify://shop_images/download_55f91b8e-4307-47c4-86ec-9c3ccd2c5755.webp"
+          }
         },
         "hover_image_block_eaaGRV": {
           "type": "hover_image_block",
